@@ -10,22 +10,61 @@
 <meta property="og:description" content="The ownership layer for the AI media era. Every claim in this deck answered a live check on July 3, 2026.">
 <meta property="og:url" content="https://map.suedeai.ai/deck/">
 <meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1b1b1e">
+<meta property="og:site_name" content="Suede Labs AI">
+<meta property="og:image" content="https://app.suedeai.ai/opengraph.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AISUEDE">
+<meta name="twitter:title" content="Suede Labs AI — The Ecosystem Is Already Live">
+<meta name="twitter:description" content="Investor presentation: 30+ live surfaces, 22 paid endpoints, 8 iOS apps — every claim live-verified.">
+<meta name="twitter:image" content="https://app.suedeai.ai/opengraph.png">
+<link rel="icon" type="image/png" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Suede Labs AI — Investor Presentation",
+      "url": "https://map.suedeai.ai/deck/",
+      "isPartOf": { "@id": "https://map.suedeai.ai/#website" },
+      "about": {
+        "@type": "Organization",
+        "@id": "https://suedeai.ai/#org",
+        "name": "Suede Labs AI",
+        "url": "https://suedeai.ai"
+      }
+    }
+  ]
+}
+</script>
 <style>
   :root {
-    /* Suede Institutional IP Terminal tokens (suede-home/globals.css) */
-    --ink-deep: #050b16;
-    --ink-panel: #09101b;
-    --ink-control: #0d1726;
-    --mist: #eef2f7;
-    --slate: #8a97a8;
+    /* warm charcoal + stone paper (granola-informed), Suede green accent family */
+    --ink-deep: #1b1b1e;
+    --ink-panel: #232326;
+    --ink-control: #2a2a2e;
+    --mist: #f2f2ec;
+    --slate: #9e9e99;
     --rights-red: #9f101a;
     --rights-red-bright: #d11f2b;
+    --red-mist: #ef4444; /* the ask slide + primary CTA only */
+    --green: #94f27f;      /* accent on dark */
+    --green-strong: #79d65e;
+    --green-ink: #0d7916;  /* accent text on paper */
     --cyan: #22d3ee;
-    --emerald: #34d399;
-    --hairline: rgba(255, 255, 255, 0.09);
+    --emerald: #79d65e;
+    --paper: #f7f7f2;
+    --paper-card: #fcfcf8;
+    --paper-ink: #232326;
+    --paper-muted: #6b6b64;
+    --paper-hairline: #eaebe5;
+    --hairline: rgba(255, 255, 255, 0.10);
     --hairline-cyan: rgba(34, 211, 238, 0.16);
     /* modular scale 1.333: 18 · 24 · 32 · 57 · 76 · 101 */
     --t-cap: 18px;
@@ -50,9 +89,9 @@
     font-size: var(--t-body);
     line-height: 1.5;
   }
-  a { color: var(--cyan); text-decoration: none; }
+  a { color: var(--green); text-decoration: none; }
   a:hover { text-decoration: underline; text-underline-offset: 3px; }
-  a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 
   .slide {
     min-height: 100vh;
@@ -91,10 +130,10 @@
     font-size: var(--t-cap);
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--cyan);
+    color: var(--green);
     margin: 0 0 24px;
   }
-  .eyebrow.red { color: var(--rights-red-bright); }
+  .eyebrow.red { color: #f87171; }
 
   h1, h2 {
     font-family: var(--font-display);
@@ -109,8 +148,8 @@
   h2 { font-size: var(--t-title); }
   .big h2 { font-size: var(--t-big); }
   em { font-style: italic; }
-  h1 em, h2 em { color: var(--cyan); }
-  .redslide h2 em { color: var(--rights-red-bright); }
+  h1 em, h2 em { color: var(--green); }
+  .redslide h2 em { color: var(--red-mist); }
 
   .sub {
     font-size: var(--t-body);
@@ -145,7 +184,7 @@
     font-family: var(--font-display);
     font-size: var(--t-big);
     line-height: 1;
-    color: var(--cyan);
+    color: var(--mist);
     display: block;
     font-variant-numeric: tabular-nums;
   }
@@ -173,7 +212,7 @@
     max-width: 1100px;
   }
   .col {
-    border-top: 1px solid var(--hairline-cyan);
+    border-top: 1px solid rgba(148, 242, 127, 0.35);
     padding-top: 24px;
   }
   .col .k {
@@ -181,7 +220,7 @@
     font-size: var(--t-cap);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--cyan);
+    color: var(--green);
     display: block;
     margin-bottom: 8px;
   }
@@ -205,7 +244,7 @@
   .chain .what { font-size: var(--t-cap); color: var(--slate); line-height: 1.45; }
   .chain .verb {
     font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.14em;
-    text-transform: uppercase; color: var(--cyan);
+    text-transform: uppercase; color: var(--green);
     display: block; margin: 0 0 -8px;
     padding-top: 16px;
   }
@@ -266,6 +305,32 @@
     color: #fff;
   }
   .cta.primary:hover { background: var(--rights-red-bright); border-color: var(--rights-red-bright); }
+
+  /* paper spotlight — the proof slide breaks the dark rhythm */
+  .slide.paper { background: var(--paper); color: var(--paper-ink); }
+  .slide.paper .eyebrow { color: var(--green-ink); }
+  .slide.paper h2 em { color: var(--green-ink); }
+  .slide.paper .stat { background: var(--paper-card); border-color: var(--paper-hairline); }
+  .slide.paper .stat .n { color: var(--green-ink); }
+  .slide.paper .stat .l { color: var(--paper-ink); }
+  .slide.paper .stat .s { color: var(--paper-muted); }
+  .slide.paper .chrome-logo span, .slide.paper .chrome-idx { color: var(--paper-muted); }
+  .stamp {
+    position: absolute;
+    top: clamp(48px, 10vh, 120px);
+    right: clamp(24px, 6vw, 128px);
+    transform: rotate(5deg);
+    border: 2px solid var(--green-ink);
+    border-radius: 4px;
+    color: var(--green-ink);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    opacity: 0.85;
+  }
+  @media (max-width: 900px) { .stamp { display: none; } }
 
   .kbd-hint {
     position: fixed; right: clamp(24px, 6vw, 128px); top: 32px;
@@ -336,7 +401,8 @@
 </section>
 
 <!-- 05 · THE PROOF -->
-<section class="slide" id="s5">
+<section class="slide paper" id="s5">
+  <div class="stamp" aria-hidden="true">Live-verified · 07.03.2026</div>
   <p class="eyebrow">The proof — verified live, July 3, 2026</p>
   <h2>We didn’t write a roadmap. <em>We shipped the map.</em></h2>
   <div class="stats">

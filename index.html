@@ -10,34 +10,95 @@
 <meta property="og:description" content="One person, one company, one lab, 30+ live surfaces. Every Suede address on one legible page.">
 <meta property="og:url" content="https://map.suedeai.ai/">
 <meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1b1b1e">
+<meta property="og:site_name" content="Suede Labs AI">
+<meta property="og:image" content="https://app.suedeai.ai/opengraph.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AISUEDE">
+<meta name="twitter:title" content="The Suede Universe Map">
+<meta name="twitter:description" content="Every Suede Labs AI site, app, and tool — one legible map. Live-verified.">
+<meta name="twitter:image" content="https://app.suedeai.ai/opengraph.png">
+<link rel="icon" type="image/png" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suedeai.ai/#org",
+      "name": "Suede Labs AI",
+      "url": "https://suedeai.ai",
+      "logo": "https://app.suedeai.ai/suede-approved-logo.png",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "JC Investment Group LLC",
+        "url": "https://jcinvestmentgroup.ventures"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Jason Colapietro",
+        "alternateName": "Johnny Suede",
+        "url": "https://jasoncolapietro.com"
+      },
+      "sameAs": [
+        "https://x.com/AISUEDE",
+        "https://github.com/Suede-AI",
+        "https://suedeai.org"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://map.suedeai.ai/#website",
+      "name": "Suede Universe Map",
+      "url": "https://map.suedeai.ai",
+      "publisher": { "@id": "https://suedeai.ai/#org" }
+    },
+    {
+      "@type": "CollectionPage",
+      "url": "https://map.suedeai.ai/",
+      "name": "The Suede Universe Map",
+      "description": "A plain-English map of the entire Suede Labs AI ecosystem — every site, app, and tool, what each is for, how they all connect, and which link to click.",
+      "isPartOf": { "@id": "https://map.suedeai.ai/#website" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <!-- ARTIFACT-START -->
 <style>
   :root {
-    --ink-deep: #050b16;
-    --ink-panel: #09101b;
-    --ink-control: #0d1726;
-    --mist: #eef2f7;
-    --slate: #8a97a8;
-    --paper: #F7F3EA;
-    --card: #FFFEFA;
-    --ink: #21242B;
-    --muted: #6C7078;
-    --hairline: #E5DECB;
-    --hairline-strong: #D2C8B0;
-    --hairline-dark: rgba(255,255,255,0.09);
+    /* warm charcoal + stone paper (granola-informed), Suede green accent family */
+    --ink-deep: #1b1b1e;
+    --ink-panel: #232326;
+    --ink-control: #2a2a2e;
+    --mist: #f2f2ec;
+    --slate: #9e9e99;
+    --paper: #f7f7f2;
+    --card: #fcfcf8;
+    --ink: #232326;
+    --muted: #6b6b64;
+    --hairline: #eaebe5;
+    --hairline-strong: #d5d5d2;
+    --hairline-dark: rgba(255,255,255,0.10);
     --rights-red: #9f101a;
     --rights-red-bright: #d11f2b;
+    --red-mist: #ef4444; /* brand dot only */
+    --green: #94f27f;        /* accent on dark */
+    --green-strong: #79d65e; /* live marks on dark */
+    --green-ink: #0d7916;    /* accent text on light */
+    --green-ink-hover: #0a5f12;
     --registry-cyan: #22d3ee;
     --cyan-ink: #0E7C93;
-    --emerald: #1E7F5C;
-    --emerald-bright: #34d399;
-    --amber: #9A6A0B;
-    --amber-wash: #FAF1DC;
+    --emerald: #0d7916;
+    --emerald-bright: #79d65e;
+    --amber: #8a6b0a;
+    --amber-wash: #f8f1ca;
     --radius: 5px;
     --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
     --font-ui: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -58,23 +119,24 @@
   }
   * { box-sizing: border-box; }
 
-  a { color: var(--rights-red); text-decoration: none; }
-  a:hover { color: var(--rights-red-bright); }
-  a:focus-visible { outline: 2px solid var(--registry-cyan); outline-offset: 2px; border-radius: 2px; }
+  a { color: var(--green-ink); text-decoration: none; }
+  a:hover { color: var(--green-ink-hover); }
+  a:focus-visible { outline: 2px solid var(--green-ink); outline-offset: 2px; border-radius: 2px; }
 
   .wrap { max-width: 1020px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 44px); }
 
   /* ---------- top nav ---------- */
   nav.bar {
     position: sticky; top: 0; z-index: 50;
-    background: rgba(5, 11, 22, 0.92);
+    background: rgba(27, 27, 30, 0.94);
     -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--hairline-dark);
   }
   nav.bar .in {
     max-width: 1020px; margin: 0 auto;
     padding: 11px clamp(18px, 4vw, 44px);
-    display: flex; align-items: center; gap: 18px;
+    display: flex; align-items: center; gap: 10px 18px;
+    flex-wrap: wrap;
   }
   nav.bar .mark {
     font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em;
@@ -87,8 +149,8 @@
     transition: color var(--dur) var(--ease);
   }
   nav.bar .links a:hover { color: var(--mist); }
-  nav.bar .links a.deck { color: var(--registry-cyan); }
-  nav.bar .links a.deck:hover { color: #7ee6f5; }
+  nav.bar .links a.deck { color: var(--green); }
+  nav.bar .links a.deck:hover { color: #b5f7a6; }
 
   /* ---------- hero ---------- */
   header.hero {
@@ -109,9 +171,10 @@
   .eyebrow {
     font-family: var(--font-mono);
     font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase;
-    color: var(--registry-cyan);
+    color: var(--slate);
     margin: 0 0 18px;
   }
+  .eyebrow .rd { color: var(--green); }
   h1 {
     font-family: var(--font-display);
     font-weight: 400;
@@ -122,7 +185,7 @@
     max-width: 16ch;
     letter-spacing: -0.005em;
   }
-  h1 em { font-style: italic; color: var(--registry-cyan); }
+  h1 em { font-style: italic; color: var(--green); }
   .lede {
     font-size: clamp(1.05rem, 1rem + 0.5vw, 1.3rem);
     max-width: 56ch;
@@ -137,7 +200,7 @@
   .legend .item { display: inline-flex; align-items: center; gap: 8px; }
   .dot-live {
     width: 8px; height: 8px; border-radius: 50%;
-    background: var(--emerald-bright);
+    background: var(--green-strong);
     display: inline-block; flex: none;
   }
   .legend .glyph-fwd { font-family: var(--font-mono); font-size: 13px; }
@@ -160,7 +223,7 @@
   .route::before {
     content: "";
     position: absolute; top: 7px; left: 10px; right: 10px; height: 2px;
-    background: linear-gradient(90deg, var(--rights-red), var(--rights-red) 70%, var(--hairline-strong));
+    background: linear-gradient(90deg, var(--green-ink), var(--green-ink) 70%, var(--hairline-strong));
   }
   .station { position: relative; flex: 1 1 0; min-width: 0; padding-top: 26px; }
   .station::before {
@@ -168,19 +231,19 @@
     position: absolute; top: 0; left: 0;
     width: 12px; height: 12px; border-radius: 50%;
     background: var(--paper);
-    border: 3px solid var(--rights-red);
+    border: 3px solid var(--green-ink);
   }
   .station:last-child::before { border-color: var(--hairline-strong); background: var(--paper); }
   .station .verb {
     font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--rights-red); display: block; margin-bottom: 2px;
+    text-transform: uppercase; color: var(--green-ink); display: block; margin-bottom: 2px;
   }
   .station .what { font-weight: 650; font-size: 15.5px; display: block; line-height: 1.3; }
   .station .who { font-size: 13px; color: var(--muted); }
   @media (max-width: 680px) {
     .route { flex-direction: column; gap: 20px; }
     .route::before { top: 10px; bottom: 10px; left: 5px; right: auto; width: 2px; height: auto;
-      background: linear-gradient(180deg, var(--rights-red), var(--rights-red) 70%, var(--hairline-strong)); }
+      background: linear-gradient(180deg, var(--green-ink), var(--green-ink) 70%, var(--hairline-strong)); }
     .station { padding-top: 0; padding-left: 28px; }
   }
 
@@ -201,14 +264,14 @@
     top: 8px;
     width: 14px; height: 14px;
     border-radius: 50%;
-    background: var(--rights-red);
+    background: var(--green-ink);
     border: 3px solid var(--paper);
     box-shadow: 0 0 0 1.5px var(--hairline-strong);
   }
   .layer-eyebrow {
     font-family: var(--font-mono);
     font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--rights-red);
+    color: var(--green-ink);
     margin: 0 0 6px;
   }
   .layer h2 {
@@ -251,8 +314,8 @@
     transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
   }
   a.site:hover {
-    border-color: var(--rights-red);
-    box-shadow: 0 6px 18px rgba(33, 36, 43, 0.09);
+    border-color: var(--green-ink);
+    box-shadow: 0 6px 18px rgba(35, 35, 38, 0.09);
     transform: translateY(-2px);
     color: var(--ink);
   }
@@ -261,7 +324,7 @@
   .site .url {
     font-family: var(--font-mono);
     font-size: 12px;
-    color: var(--rights-red);
+    color: var(--green-ink);
     word-break: break-all;
     display: inline-flex; align-items: center; gap: 6px;
   }
@@ -277,7 +340,7 @@
     padding: 22px 20px 20px;
   }
   a.door:hover {
-    border-color: var(--registry-cyan);
+    border-color: var(--green-strong);
     box-shadow: 0 10px 28px rgba(5, 11, 22, 0.35);
     transform: translateY(-3px);
     color: var(--mist);
@@ -285,12 +348,12 @@
   .door .doorword {
     font-family: var(--font-mono);
     font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
-    color: var(--registry-cyan);
+    color: var(--green);
     display: block; margin-bottom: 10px;
   }
   .door .name { font-family: var(--font-display); font-size: 27px; font-weight: 400; letter-spacing: 0; }
-  .door .url { color: var(--registry-cyan); margin-top: 8px; }
-  .door .url .dot-live { background: var(--emerald-bright); }
+  .door .url { color: var(--green); margin-top: 8px; }
+  .door .url .dot-live { background: var(--green-strong); }
   .door .usewhen { font-size: 13.5px; color: var(--slate); margin: 10px 0 0; }
   .door .usewhen b { color: var(--mist); font-weight: 600; }
 
@@ -320,7 +383,7 @@
   }
   table.ledger td { padding: 11px 16px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
   table.ledger tbody tr { transition: background var(--dur) var(--ease); }
-  table.ledger tbody tr:hover { background: rgba(159, 16, 26, 0.035); }
+  table.ledger tbody tr:hover { background: rgba(13, 121, 22, 0.05); }
   table.ledger tr:last-child td { border-bottom: none; }
   table.ledger td.mono, table.ledger td .mono, .mono { font-family: var(--font-mono); font-size: 12.5px; }
   table.ledger .quiet { color: var(--muted); }
@@ -369,8 +432,8 @@
   footer p { margin: 0 0 10px; max-width: 78ch; }
   footer b { color: var(--mist); font-weight: 600; }
   footer .mono { font-size: 12px; }
-  footer a { color: var(--registry-cyan); }
-  footer a:hover { color: #7ee6f5; }
+  footer a { color: var(--green); }
+  footer a:hover { color: #b5f7a6; }
   footer .doors-line { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--hairline-dark); }
 
   /* ---------- reveal ---------- */
@@ -398,7 +461,7 @@
   <canvas id="constellation" aria-hidden="true"></canvas>
   <div class="wrap">
     <div class="in">
-      <p class="eyebrow">Suede Labs AI · Registry Map · Verified July 2026</p>
+      <p class="eyebrow">Suede Labs AI · Registry Map · <span class="rd">Verified July 2026</span></p>
       <h1>The whole Suede universe, on <em>one page</em></h1>
       <p class="lede">
         Jason Colapietro runs <strong>about 30 websites and 8 phone apps</strong>, and they all belong
@@ -579,17 +642,17 @@
 
         <div class="shelf">
           <h3>AI agents &amp; earning</h3>
-          <p class="shelf-sub">Small AI workers you can build and send out to earn. They charge tiny automatic payments (in digital dollars) per task.</p>
+          <p class="shelf-sub">Small AI workers you can build and send out to earn. They charge tiny automatic payments (in digital dollars) per task. <b>Build in Agent Studio. Track earnings in Agentix. Two different tools.</b></p>
           <div class="cardgrid">
             <a class="site" href="https://agents.suedeai.ai" target="_blank" rel="noopener">
-              <div class="toprow"><span class="name">Suede Agent Studio</span></div>
+              <div class="toprow"><span class="name">Suede Agent Studio — where you build</span> <span class="glyph-flag" title="Often confused with Agentix — see thin spots below">⚑</span></div>
               <span class="url"><span class="dot-live"></span>agents.suedeai.ai ↗</span>
-              <p class="desc">Build an AI agent visually, then launch it as a paid service — no code.</p>
+              <p class="desc">The one that matters for launching agents. Design one visually, ship it as a paid service — no code. Start here.</p>
             </a>
             <a class="site" href="https://agentix.suedeai.ai" target="_blank" rel="noopener">
-              <div class="toprow"><span class="name">Agentix</span></div>
+              <div class="toprow"><span class="name">Agentix — just the scoreboard</span> <span class="glyph-flag" title="Often confused with Agent Studio — see thin spots below">⚑</span></div>
               <span class="url"><span class="dot-live"></span>agentix.suedeai.ai ↗</span>
-              <p class="desc">The scoreboard — watch the agents you launched earn, call by call.</p>
+              <p class="desc">Nothing is built here. It only tracks what the agents you launched in Agent Studio are earning, call by call.</p>
             </a>
             <a class="site" href="https://launch.suedeai.ai" target="_blank" rel="noopener">
               <div class="toprow"><span class="name">Suede Launchpad</span></div>
@@ -730,6 +793,7 @@
           <tr><td>Get better at guitar</td><td class="mono"><a href="https://strumly.suedeai.ai" target="_blank" rel="noopener">strumly.suedeai.ai</a></td></tr>
           <tr><td>Nerd out about famous guitarists’ gear</td><td class="mono"><a href="https://dna.suedeai.ai" target="_blank" rel="noopener">dna.suedeai.ai</a></td></tr>
           <tr><td>Build an AI agent that earns money</td><td class="mono"><a href="https://agents.suedeai.ai" target="_blank" rel="noopener">agents.suedeai.ai</a></td></tr>
+          <tr><td>Check what my agents have earned</td><td class="mono"><a href="https://agentix.suedeai.ai" target="_blank" rel="noopener">agentix.suedeai.ai</a></td></tr>
           <tr><td>See everything Suede has shipped, in one place</td><td class="mono"><a href="https://hub.suedeai.ai" target="_blank" rel="noopener">hub.suedeai.ai</a></td></tr>
           <tr><td>Read the full story, or show it to an investor</td><td class="mono"><a href="https://suedeai.org" target="_blank" rel="noopener">suedeai.org</a></td></tr>
           <tr><td>Know who Jason is</td><td class="mono"><a href="https://jasoncolapietro.com" target="_blank" rel="noopener">jasoncolapietro.com</a></td></tr>
@@ -745,10 +809,15 @@
   <div class="wrap">
     <h2><span class="glyph-flag">⚑</span> Where the map is thin today</h2>
     <p class="sub">
-      Every address above answered a live check — nothing is broken. But six spots would genuinely
+      Every address above answered a live check — nothing is broken. But seven spots would genuinely
       confuse a first-time visitor, and each has a small fix.
     </p>
     <div class="thin-list">
+      <div class="thin-item rv">
+        <div class="t-head"><span class="glyph-flag">⚑</span> Agentix sounds like Agent Studio</div>
+        <p><span class="m">agents.suedeai.ai</span> (Agent Studio — where agents get built and launched; the one that matters) and <span class="m">agentix.suedeai.ai</span> (a portfolio tracker that only watches earnings) get mistaken for each other constantly. Someone looking to deploy an agent who lands on Agentix hits a dead end.</p>
+        <p><span class="fixlabel">Easy fix</span> — one line on each: Agentix says “build agents at agents.suedeai.ai”; Agent Studio says “track earnings at agentix.”</p>
+      </div>
       <div class="thin-item rv">
         <div class="t-head"><span class="glyph-flag">⚑</span> Two things are named “Suede Social”</div>
         <p><span class="m">suede.social</span> (the gear magazine) and <span class="m">social.suedeai.ai</span> (the creator network, which also shares its name with the iOS app) are different products with nearly identical names. The single most confusing pair on the map.</p>
@@ -836,7 +905,7 @@
         vx: (Math.random() - 0.5) * 0.14,
         vy: (Math.random() - 0.5) * 0.14,
         r: Math.random() < 0.12 ? 2.2 : 1.4,
-        red: Math.random() < 0.1
+        red: Math.random() < 0.18
       });
     }
   }
@@ -848,7 +917,7 @@
         var dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
         var d = Math.sqrt(dx * dx + dy * dy);
         if (d < linkDist) {
-          ctx.strokeStyle = 'rgba(34, 211, 238, ' + (0.09 * (1 - d / linkDist)).toFixed(3) + ')';
+          ctx.strokeStyle = 'rgba(158, 158, 153, ' + (0.11 * (1 - d / linkDist)).toFixed(3) + ')';
           ctx.lineWidth = 1;
           ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); ctx.stroke();
         }
@@ -856,7 +925,7 @@
     }
     for (var k = 0; k < pts.length; k++) {
       var p = pts[k];
-      ctx.fillStyle = p.red ? 'rgba(209, 31, 43, 0.75)' : 'rgba(34, 211, 238, 0.55)';
+      ctx.fillStyle = p.red ? 'rgba(148, 242, 127, 0.85)' : 'rgba(158, 158, 153, 0.5)';
       ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
     }
   }
