@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suede Labs AI — The Ecosystem Is Already Live | Investor Presentation</title>
+<meta name="description" content="Investor presentation for Suede Labs AI: the ownership layer for the AI media era. 30+ live surfaces, 22 paid endpoints, 8 iOS apps — every claim live-verified.">
+<link rel="canonical" href="https://map.suedeai.ai/deck/">
+<meta property="og:title" content="Suede Labs AI — The Ecosystem Is Already Live">
+<meta property="og:description" content="The ownership layer for the AI media era. Every claim in this deck answered a live check on July 3, 2026.">
+<meta property="og:url" content="https://map.suedeai.ai/deck/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Suede Institutional IP Terminal tokens (suede-home/globals.css) */
+    --ink-deep: #050b16;
+    --ink-panel: #09101b;
+    --ink-control: #0d1726;
+    --mist: #eef2f7;
+    --slate: #8a97a8;
+    --rights-red: #9f101a;
+    --rights-red-bright: #d11f2b;
+    --cyan: #22d3ee;
+    --emerald: #34d399;
+    --hairline: rgba(255, 255, 255, 0.09);
+    --hairline-cyan: rgba(34, 211, 238, 0.16);
+    /* modular scale 1.333: 18 · 24 · 32 · 57 · 76 · 101 */
+    --t-cap: 18px;
+    --t-body: 24px;
+    --t-sub: 32px;
+    --t-title: clamp(40px, 5vw, 57px);
+    --t-big: clamp(52px, 6.6vw, 76px);
+    --t-hero: clamp(60px, 8.8vw, 101px);
+    --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+    --font-ui: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "Geist Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--ink-deep);
+    color: var(--mist);
+    font-family: var(--font-ui);
+    font-size: var(--t-body);
+    line-height: 1.5;
+  }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+
+  .slide {
+    min-height: 100vh;
+    min-height: 100svh;
+    scroll-snap-align: start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(64px, 9vh, 128px) clamp(24px, 6vw, 128px) clamp(96px, 12vh, 160px);
+  }
+  .slide.alt { background: var(--ink-panel); }
+
+  /* chrome: logo bottom-left, index bottom-right — inside 5% safe zone */
+  .chrome-logo {
+    position: absolute;
+    left: clamp(24px, 6vw, 128px);
+    bottom: clamp(28px, 5vh, 56px);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .chrome-logo img { height: 24px; width: 24px; display: block; }
+  .chrome-logo span {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--slate);
+  }
+  .chrome-idx {
+    position: absolute;
+    right: clamp(24px, 6vw, 128px);
+    bottom: clamp(28px, 5vh, 56px);
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em;
+    color: var(--slate);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: var(--t-cap);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin: 0 0 24px;
+  }
+  .eyebrow.red { color: var(--rights-red-bright); }
+
+  h1, h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.08;
+    margin: 0 0 32px;
+    text-wrap: balance;
+    max-width: 20ch;
+    letter-spacing: -0.005em;
+  }
+  h1 { font-size: var(--t-hero); max-width: 15ch; }
+  h2 { font-size: var(--t-title); }
+  .big h2 { font-size: var(--t-big); }
+  em { font-style: italic; }
+  h1 em, h2 em { color: var(--cyan); }
+  .redslide h2 em { color: var(--rights-red-bright); }
+
+  .sub {
+    font-size: var(--t-body);
+    color: var(--slate);
+    max-width: 46ch;
+    margin: 0 0 48px;
+  }
+  .sub b, .sub strong { color: var(--mist); font-weight: 600; }
+
+  .capline {
+    font-family: var(--font-mono);
+    font-size: var(--t-cap);
+    color: var(--slate);
+    max-width: 60ch;
+  }
+  .capline .ok { color: var(--emerald); }
+
+  /* stat grids */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+  }
+  .stat {
+    background: var(--ink-control);
+    border: 1px solid var(--hairline);
+    border-radius: 5px;
+    padding: 24px;
+  }
+  .stat .n {
+    font-family: var(--font-display);
+    font-size: var(--t-big);
+    line-height: 1;
+    color: var(--cyan);
+    display: block;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat .l {
+    display: block;
+    margin-top: 8px;
+    font-size: var(--t-cap);
+    color: var(--mist);
+    font-weight: 500;
+    line-height: 1.35;
+  }
+  .stat .s {
+    display: block;
+    margin-top: 8px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--slate);
+  }
+
+  /* three-up reason cards */
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+  }
+  .col {
+    border-top: 1px solid var(--hairline-cyan);
+    padding-top: 24px;
+  }
+  .col .k {
+    font-family: var(--font-mono);
+    font-size: var(--t-cap);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .col p { margin: 0; font-size: var(--t-body); color: var(--mist); line-height: 1.45; max-width: 34ch; }
+  .col p .q { color: var(--slate); }
+
+  /* the ownership chain */
+  .chain { max-width: 1100px; }
+  .chain .row {
+    display: flex; align-items: baseline; gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .chain .row:last-child { border-bottom: none; }
+  .chain .who {
+    font-family: var(--font-display);
+    font-size: var(--t-sub);
+    min-width: min(42%, 420px);
+    line-height: 1.15;
+  }
+  .chain .what { font-size: var(--t-cap); color: var(--slate); line-height: 1.45; }
+  .chain .verb {
+    font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--cyan);
+    display: block; margin: 0 0 -8px;
+    padding-top: 16px;
+  }
+
+  /* rails table */
+  .rails { max-width: 1100px; width: 100%; border-collapse: collapse; }
+  .rails td {
+    padding: 24px 24px 24px 0;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: baseline;
+  }
+  .rails tr:last-child td { border-bottom: none; }
+  .rails .r-name { font-family: var(--font-display); font-size: var(--t-sub); white-space: nowrap; }
+  .rails .r-desc { font-size: var(--t-cap); color: var(--slate); }
+  .pill {
+    font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid currentColor; border-radius: 999px;
+    padding: 4px 14px; white-space: nowrap;
+  }
+  .pill.live { color: var(--emerald); }
+  .pill.next { color: var(--slate); }
+
+  /* quote / founder */
+  .founder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 48px;
+    max-width: 1100px;
+    align-items: start;
+  }
+  .fact-list { list-style: none; margin: 0; padding: 0; }
+  .fact-list li {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--hairline);
+    font-size: var(--t-body);
+  }
+  .fact-list li:last-child { border-bottom: none; }
+  .fact-list .m { font-family: var(--font-mono); font-size: var(--t-cap); color: var(--slate); }
+
+  /* CTA slide */
+  .cta-links {
+    display: flex; flex-wrap: wrap; gap: 16px;
+    margin-top: 48px;
+  }
+  .cta {
+    font-family: var(--font-mono);
+    font-size: var(--t-cap);
+    padding: 16px 32px;
+    border-radius: 5px;
+    border: 1px solid var(--hairline);
+    color: var(--mist);
+  }
+  .cta:hover { text-decoration: none; border-color: var(--slate); }
+  .cta.primary {
+    background: var(--rights-red);
+    border-color: var(--rights-red);
+    color: #fff;
+  }
+  .cta.primary:hover { background: var(--rights-red-bright); border-color: var(--rights-red-bright); }
+
+  .kbd-hint {
+    position: fixed; right: clamp(24px, 6vw, 128px); top: 32px;
+    font-family: var(--font-mono); font-size: 12px; color: var(--slate);
+    letter-spacing: 0.1em; z-index: 10; opacity: 0.8;
+  }
+
+  @media (max-width: 720px) {
+    :root { --t-body: 19px; --t-sub: 26px; --t-cap: 15px; }
+    .slide { padding-bottom: 112px; }
+    .chain .row { flex-direction: column; gap: 8px; }
+    .rails .r-name { white-space: normal; }
+    .kbd-hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<p class="kbd-hint" aria-hidden="true">scroll or ↑ ↓ to navigate</p>
+
+<!-- 01 · COVER -->
+<section class="slide" id="s1">
+  <p class="eyebrow">Suede Labs AI · Investor Presentation · July 2026</p>
+  <h1>The ownership layer is <em>already live.</em></h1>
+  <p class="sub">Programmable IP and creator ownership infrastructure for AI-native media —
+  proof of creation, machine-readable licensing, royalty routing, and agent commerce.</p>
+  <p class="capline"><span class="ok">●</span>&nbsp; Every claim in this deck answered a live check on July 3, 2026. Verify it yourself: <a href="https://map.suedeai.ai">map.suedeai.ai</a></p>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">01 / 11</span>
+</section>
+
+<!-- 02 · PROBLEM -->
+<section class="slide alt" id="s2">
+  <p class="eyebrow">The problem</p>
+  <div class="big"><h2>AI made creation free. It didn’t make <em>ownership</em> work.</h2></div>
+  <p class="sub">Machines now produce media at industrial scale — with no scaled way to prove
+  who made what, license it, or route the money. <b>The creation layer exploded.
+  The ownership layer never shipped.</b></p>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">02 / 11</span>
+</section>
+
+<!-- 03 · WHY NOW -->
+<section class="slide" id="s3">
+  <p class="eyebrow">Why now — three curves crossing at once</p>
+  <h2>This window doesn’t stay open.</h2>
+  <div class="cols">
+    <div class="col"><span class="k">01 · Volume</span><p>AI media output is compounding. <span class="q">Every new file is an unclaimed asset.</span></p></div>
+    <div class="col"><span class="k">02 · Agents</span><p>Autonomous agents are becoming buyers. <span class="q">They pay machines, not invoices.</span></p></div>
+    <div class="col"><span class="k">03 · Standards</span><p>x402 and ERC-8004 just matured. <span class="q">The rails exist — someone will own them.</span></p></div>
+  </div>
+  <p class="capline" style="margin-top:48px">The proof layer for AI media is still unowned. That is a timing fact, not a slogan.</p>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">03 / 11</span>
+</section>
+
+<!-- 04 · WHAT SUEDE IS -->
+<section class="slide alt" id="s4">
+  <p class="eyebrow">What Suede is</p>
+  <h2>Create. <em>Prove.</em> License. Earn.</h2>
+  <div class="cols">
+    <div class="col"><span class="k">Prove</span><p>Upload a work, get a Rights Passport — a verifiable record of authorship.</p></div>
+    <div class="col"><span class="k">License</span><p>Machine-readable terms agents can discover, negotiate, and accept.</p></div>
+    <div class="col"><span class="k">Earn</span><p>Per-call USDC settlement on Base. Royalties route by the split, automatically.</p></div>
+  </div>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">04 / 11</span>
+</section>
+
+<!-- 05 · THE PROOF -->
+<section class="slide" id="s5">
+  <p class="eyebrow">The proof — verified live, July 3, 2026</p>
+  <h2>We didn’t write a roadmap. <em>We shipped the map.</em></h2>
+  <div class="stats">
+    <div class="stat"><span class="n">30+</span><span class="l">live web surfaces</span><span class="s">every address answered a live check</span></div>
+    <div class="stat"><span class="n">22</span><span class="l">x402-paid endpoints</span><span class="s">USDC per call, live on Base mainnet</span></div>
+    <div class="stat"><span class="n">8</span><span class="l">iOS apps on the App Store</span><span class="s">studio, social, agents, guitar, voice</span></div>
+    <div class="stat"><span class="n">3</span><span class="l">ERC-8004 contracts</span><span class="s">deployed on Base mainnet</span></div>
+    <div class="stat"><span class="n">23</span><span class="l">on-chain agent identities</span><span class="s">registered and addressable</span></div>
+    <div class="stat"><span class="n">5</span><span class="l">published books</span><span class="s">plus the free Signal Chain series</span></div>
+  </div>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">05 / 11</span>
+</section>
+
+<!-- 06 · ENTITY GRAPH -->
+<section class="slide alt" id="s6">
+  <p class="eyebrow">The structure</p>
+  <h2>One owner. One graph. <em>No loose ends.</em></h2>
+  <div class="chain">
+    <div class="row"><span class="who">Jason Colapietro</span><span class="what">founder — publishes and performs as “Johnny Suede”</span></div>
+    <span class="verb">owns</span>
+    <div class="row"><span class="who">JC Investment Group LLC</span><span class="what">parent entity, founded 2016 — holds all 19 domains and every property</span></div>
+    <span class="verb">operates</span>
+    <div class="row"><span class="who">Suede Labs AI</span><span class="what">the operating company — three front doors, six product shelves, one registry</span></div>
+    <span class="verb">ships</span>
+    <div class="row"><span class="who">30+ live surfaces</span><span class="what">apps, endpoints, communities, publications — a moat made of shipped software</span></div>
+  </div>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">06 / 11</span>
+</section>
+
+<!-- 07 · AGENTS PAY -->
+<section class="slide" id="s7">
+  <p class="eyebrow">Agent commerce — not a demo</p>
+  <div class="big"><h2>Agents already pay Suede <em>in USDC.</em></h2></div>
+  <p class="sub">Autonomous agents discover the catalog, accept license terms, and settle
+  <b>$1.99–$7.99 per call</b> on Base — no human in the loop. A Suede producer agent is
+  hireable on the Virtuals platform today.</p>
+  <p class="capline">While the category writes whitepapers, Suede clears payments.</p>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">07 / 11</span>
+</section>
+
+<!-- 08 · BUSINESS MODEL -->
+<section class="slide alt" id="s8">
+  <p class="eyebrow">Business model — four revenue rails</p>
+  <h2>Two rails live. Two loaded.</h2>
+  <table class="rails">
+    <tr><td class="r-name">Agent commerce</td><td class="r-desc">per-call USDC pricing on paid endpoints</td><td><span class="pill live">live</span></td></tr>
+    <tr><td class="r-name">Credits &amp; subscriptions</td><td class="r-desc">creator plans — e.g. Distro at $7.99/mo</td><td><span class="pill live">live</span></td></tr>
+    <tr><td class="r-name">Vault &amp; royalty take-rate</td><td class="r-desc">a slice of settled royalties</td><td><span class="pill next">next</span></td></tr>
+    <tr><td class="r-name">Registry &amp; licensing fees</td><td class="r-desc">verification and rights transactions</td><td><span class="pill next">next</span></td></tr>
+  </table>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">08 / 11</span>
+</section>
+
+<!-- 09 · MARKET -->
+<section class="slide" id="s9">
+  <p class="eyebrow">The market</p>
+  <h2>A $1.35T creator economy with <em>no proof layer.</em></h2>
+  <div class="stats" style="max-width:760px">
+    <div class="stat"><span class="n">$1.35T</span><span class="l">creator economy by 2033</span><span class="s">projected market size</span></div>
+    <div class="stat"><span class="n">~$19B</span><span class="l">rights &amp; royalties SAM</span><span class="s">the slice Suede’s rails address</span></div>
+  </div>
+  <p class="capline" style="margin-top:48px">Ecosystem rails: Base · Stripe · Google Cloud · Chainlink · LayerZero · Virtuals</p>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">09 / 11</span>
+</section>
+
+<!-- 10 · FOUNDER -->
+<section class="slide alt" id="s10">
+  <p class="eyebrow">The founder</p>
+  <h2>One founder, shipping at <em>fleet speed.</em></h2>
+  <div class="founder-grid">
+    <p class="sub" style="margin:0">Jason Colapietro — “Johnny Suede.” Founder &amp; CEO.
+    Published author and Forbes contributor. Every commit, endpoint, and
+    release is public. <b>The receipts are the pitch.</b></p>
+    <ul class="fact-list">
+      <li>Author, <em>Stake Your Claim</em> + 4 more titles <span class="m">· Amazon Kindle</span></li>
+      <li>Parent entity founded 2016 <span class="m">· JC Investment Group LLC</span></li>
+      <li>Public build log <span class="m">· github.com/Suede-AI</span></li>
+    </ul>
+  </div>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">10 / 11</span>
+</section>
+
+<!-- 11 · ASK -->
+<section class="slide redslide" id="s11">
+  <p class="eyebrow red">The ask</p>
+  <div class="big"><h2>The rails are live. The layer is unclaimed. <em>The window is now.</em></h2></div>
+  <p class="sub">Raising to deepen the ownership and settlement rails and scale what is
+  already earning. Round size and terms shared directly.</p>
+  <div class="cta-links">
+    <a class="cta primary" href="mailto:info@suedeai.ai">info@suedeai.ai</a>
+    <a class="cta" href="https://map.suedeai.ai">explore the live map ↗</a>
+    <a class="cta" href="https://jasoncolapietro.github.io/suede-investor-deck/">full investor brief ↗</a>
+  </div>
+  <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
+  <span class="chrome-idx">11 / 11</span>
+</section>
+
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  function current() {
+    var y = window.scrollY + window.innerHeight / 2;
+    for (var i = 0; i < slides.length; i++) {
+      var r = slides[i];
+      if (r.offsetTop <= y && y < r.offsetTop + r.offsetHeight) return i;
+    }
+    return 0;
+  }
+  window.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
+      var n = Math.min(current() + 1, slides.length - 1);
+      slides[n].scrollIntoView({ behavior: 'smooth' }); e.preventDefault();
+    } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+      var p = Math.max(current() - 1, 0);
+      slides[p].scrollIntoView({ behavior: 'smooth' }); e.preventDefault();
+    }
+  });
+})();
+</script>
+</body>
+</html>

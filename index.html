@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Suede Universe Map — every Suede Labs AI site, explained | Suede Labs AI</title>
+<meta name="description" content="A plain-English map of the entire Suede Labs AI ecosystem — every site, app, and tool, what each is for, how they all connect, and which link to click.">
+<link rel="canonical" href="https://map.suedeai.ai/">
+<meta property="og:title" content="The Suede Universe Map">
+<meta property="og:description" content="One person, one company, one lab, 30+ live surfaces. Every Suede address on one legible page.">
+<meta property="og:url" content="https://map.suedeai.ai/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ARTIFACT-START -->
+<style>
+  :root {
+    --ink-deep: #050b16;
+    --ink-panel: #09101b;
+    --ink-control: #0d1726;
+    --mist: #eef2f7;
+    --slate: #8a97a8;
+    --paper: #F7F3EA;
+    --card: #FFFEFA;
+    --ink: #21242B;
+    --muted: #6C7078;
+    --hairline: #E5DECB;
+    --hairline-strong: #D2C8B0;
+    --hairline-dark: rgba(255,255,255,0.09);
+    --rights-red: #9f101a;
+    --rights-red-bright: #d11f2b;
+    --registry-cyan: #22d3ee;
+    --cyan-ink: #0E7C93;
+    --emerald: #1E7F5C;
+    --emerald-bright: #34d399;
+    --amber: #9A6A0B;
+    --amber-wash: #FAF1DC;
+    --radius: 5px;
+    --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+    --font-ui: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "Geist Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --dur: 200ms;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  * { box-sizing: border-box; }
+
+  a { color: var(--rights-red); text-decoration: none; }
+  a:hover { color: var(--rights-red-bright); }
+  a:focus-visible { outline: 2px solid var(--registry-cyan); outline-offset: 2px; border-radius: 2px; }
+
+  .wrap { max-width: 1020px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 44px); }
+
+  /* ---------- top nav ---------- */
+  nav.bar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(5, 11, 22, 0.92);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--hairline-dark);
+  }
+  nav.bar .in {
+    max-width: 1020px; margin: 0 auto;
+    padding: 11px clamp(18px, 4vw, 44px);
+    display: flex; align-items: center; gap: 18px;
+  }
+  nav.bar .mark {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em;
+    color: var(--mist); text-transform: uppercase; white-space: nowrap;
+  }
+  nav.bar .mark .rd { color: var(--rights-red-bright); }
+  nav.bar .links { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
+  nav.bar .links a {
+    font-size: 13px; color: var(--slate); font-weight: 500;
+    transition: color var(--dur) var(--ease);
+  }
+  nav.bar .links a:hover { color: var(--mist); }
+  nav.bar .links a.deck { color: var(--registry-cyan); }
+  nav.bar .links a.deck:hover { color: #7ee6f5; }
+
+  /* ---------- hero ---------- */
+  header.hero {
+    position: relative;
+    background: var(--ink-deep);
+    color: var(--mist);
+    overflow: hidden;
+  }
+  #constellation {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    display: block;
+  }
+  header.hero .in {
+    position: relative;
+    padding: clamp(64px, 10vw, 120px) 0 clamp(56px, 8vw, 96px);
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--registry-cyan);
+    margin: 0 0 18px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(2.6rem, 1.6rem + 5.4vw, 5.4rem);
+    line-height: 1.02;
+    margin: 0 0 22px;
+    text-wrap: balance;
+    max-width: 16ch;
+    letter-spacing: -0.005em;
+  }
+  h1 em { font-style: italic; color: var(--registry-cyan); }
+  .lede {
+    font-size: clamp(1.05rem, 1rem + 0.5vw, 1.3rem);
+    max-width: 56ch;
+    margin: 0 0 30px;
+    color: var(--slate);
+  }
+  .lede strong { color: var(--mist); font-weight: 600; }
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 10px 24px;
+    font-size: 13px; color: var(--slate); align-items: center;
+  }
+  .legend .item { display: inline-flex; align-items: center; gap: 8px; }
+  .dot-live {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--emerald-bright);
+    display: inline-block; flex: none;
+  }
+  .legend .glyph-fwd { font-family: var(--font-mono); font-size: 13px; }
+  .tag-dev {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em;
+    color: var(--cyan-ink); border: 1px solid currentColor;
+    border-radius: 3px; padding: 1px 5px; text-transform: uppercase;
+  }
+  .legend .tag-dev { color: var(--registry-cyan); }
+  .glyph-flag { color: var(--amber); font-size: 13px; }
+  .legend .glyph-flag { color: #e8b64c; }
+
+  /* ---------- transit line (the short version) ---------- */
+  .shortversion { padding: clamp(34px, 5vw, 56px) 0 0; }
+  .sv-title {
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--muted); margin: 0 0 22px;
+  }
+  .route { position: relative; display: flex; justify-content: space-between; gap: 12px; }
+  .route::before {
+    content: "";
+    position: absolute; top: 7px; left: 10px; right: 10px; height: 2px;
+    background: linear-gradient(90deg, var(--rights-red), var(--rights-red) 70%, var(--hairline-strong));
+  }
+  .station { position: relative; flex: 1 1 0; min-width: 0; padding-top: 26px; }
+  .station::before {
+    content: "";
+    position: absolute; top: 0; left: 0;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--paper);
+    border: 3px solid var(--rights-red);
+  }
+  .station:last-child::before { border-color: var(--hairline-strong); background: var(--paper); }
+  .station .verb {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--rights-red); display: block; margin-bottom: 2px;
+  }
+  .station .what { font-weight: 650; font-size: 15.5px; display: block; line-height: 1.3; }
+  .station .who { font-size: 13px; color: var(--muted); }
+  @media (max-width: 680px) {
+    .route { flex-direction: column; gap: 20px; }
+    .route::before { top: 10px; bottom: 10px; left: 5px; right: auto; width: 2px; height: auto;
+      background: linear-gradient(180deg, var(--rights-red), var(--rights-red) 70%, var(--hairline-strong)); }
+    .station { padding-top: 0; padding-left: 28px; }
+  }
+
+  /* ---------- spine + layers ---------- */
+  .map { padding: clamp(44px, 7vw, 80px) 0 8px; }
+  .spine { position: relative; padding-left: clamp(30px, 5vw, 56px); }
+  .spine::before {
+    content: "";
+    position: absolute; left: 9px; top: 12px; bottom: 12px;
+    width: 2px;
+    background: var(--hairline-strong);
+  }
+  .layer { position: relative; padding-bottom: clamp(26px, 4vw, 40px); }
+  .layer::before {
+    content: "";
+    position: absolute;
+    left: calc(-1 * clamp(30px, 5vw, 56px) + 2px);
+    top: 8px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--rights-red);
+    border: 3px solid var(--paper);
+    box-shadow: 0 0 0 1.5px var(--hairline-strong);
+  }
+  .layer-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--rights-red);
+    margin: 0 0 6px;
+  }
+  .layer h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(1.8rem, 1.35rem + 2.2vw, 2.8rem);
+    line-height: 1.08;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .layer .explain { max-width: 62ch; margin: 0 0 20px; color: var(--ink); }
+  .layer .explain b { font-weight: 650; }
+  .layer .explain.small { font-size: 15px; color: var(--muted); }
+
+  .rail-verb { position: relative; margin: 0 0 clamp(26px, 4vw, 40px); height: 22px; }
+  .rail-verb span {
+    position: absolute;
+    left: calc(-1 * clamp(30px, 5vw, 56px) + -12px);
+    top: 0;
+    font-family: var(--font-mono);
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--paper);
+    background: var(--ink);
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  /* ---------- cards ---------- */
+  .cardgrid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); }
+  .cardgrid.doors { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+
+  a.site, div.site {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    padding: 15px 17px;
+    color: var(--ink);
+    transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+  a.site:hover {
+    border-color: var(--rights-red);
+    box-shadow: 0 6px 18px rgba(33, 36, 43, 0.09);
+    transform: translateY(-2px);
+    color: var(--ink);
+  }
+  .site .toprow { display: flex; align-items: baseline; gap: 8px; margin-bottom: 3px; }
+  .site .name { font-weight: 650; font-size: 15.5px; }
+  .site .url {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--rights-red);
+    word-break: break-all;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .site .url .dot-live { width: 6px; height: 6px; background: var(--emerald); }
+  .site .desc { font-size: 13.5px; color: var(--muted); margin: 6px 0 0; }
+  .site .fwd { font-size: 12px; color: var(--muted); font-family: var(--font-mono); margin: 6px 0 0; }
+
+  /* front doors — inverted feature cards */
+  a.door {
+    background: var(--ink-panel);
+    border: 1px solid var(--hairline-dark);
+    color: var(--mist);
+    padding: 22px 20px 20px;
+  }
+  a.door:hover {
+    border-color: var(--registry-cyan);
+    box-shadow: 0 10px 28px rgba(5, 11, 22, 0.35);
+    transform: translateY(-3px);
+    color: var(--mist);
+  }
+  .door .doorword {
+    font-family: var(--font-mono);
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--registry-cyan);
+    display: block; margin-bottom: 10px;
+  }
+  .door .name { font-family: var(--font-display); font-size: 27px; font-weight: 400; letter-spacing: 0; }
+  .door .url { color: var(--registry-cyan); margin-top: 8px; }
+  .door .url .dot-live { background: var(--emerald-bright); }
+  .door .usewhen { font-size: 13.5px; color: var(--slate); margin: 10px 0 0; }
+  .door .usewhen b { color: var(--mist); font-weight: 600; }
+
+  .shelf { margin-bottom: 26px; }
+  .shelf h3 {
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 3px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .shelf h3::after { content: ""; flex: 1; height: 1px; background: var(--hairline); }
+  .shelf .shelf-sub { font-size: 13.5px; color: var(--muted); margin: 0 0 12px; max-width: 64ch; }
+  .shelf .shelf-sub b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- ledger tables ---------- */
+  .ledger-scroll { overflow-x: auto; border: 1px solid var(--hairline); border-radius: var(--radius); background: var(--card); }
+  table.ledger { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 14px; }
+  table.ledger th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 10.5px; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--hairline-strong);
+  }
+  table.ledger td { padding: 11px 16px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  table.ledger tbody tr { transition: background var(--dur) var(--ease); }
+  table.ledger tbody tr:hover { background: rgba(159, 16, 26, 0.035); }
+  table.ledger tr:last-child td { border-bottom: none; }
+  table.ledger td.mono, table.ledger td .mono, .mono { font-family: var(--font-mono); font-size: 12.5px; }
+  table.ledger .quiet { color: var(--muted); }
+
+  /* ---------- thin spots ---------- */
+  .thin-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); }
+  .thin-item {
+    background: var(--amber-wash);
+    border: 1px dashed var(--hairline-strong);
+    border-radius: var(--radius);
+    padding: 16px 17px;
+  }
+  .thin-item .t-head {
+    display: flex; align-items: baseline; gap: 8px;
+    font-weight: 650; font-size: 15px; margin-bottom: 6px;
+  }
+  .thin-item .t-head .glyph-flag { flex: none; }
+  .thin-item p { margin: 0; font-size: 13.5px; color: var(--ink); }
+  .thin-item p + p { margin-top: 8px; }
+  .thin-item .fixlabel {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.11em;
+    text-transform: uppercase; color: var(--amber);
+  }
+  .thin-item .m { font-family: var(--font-mono); font-size: 12px; }
+
+  /* ---------- sections ---------- */
+  .sect { padding-top: clamp(36px, 6vw, 64px); }
+  .sect > .wrap > h2, .sect > h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(1.8rem, 1.35rem + 2.2vw, 2.8rem);
+    line-height: 1.08;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .sect .sub { color: var(--muted); font-size: 15px; margin: 0 0 18px; max-width: 62ch; }
+
+  /* ---------- footer ---------- */
+  footer {
+    margin-top: clamp(48px, 8vw, 88px);
+    background: var(--ink-deep);
+    color: var(--slate);
+    padding: 40px 0 56px;
+    font-size: 13.5px;
+  }
+  footer p { margin: 0 0 10px; max-width: 78ch; }
+  footer b { color: var(--mist); font-weight: 600; }
+  footer .mono { font-size: 12px; }
+  footer a { color: var(--registry-cyan); }
+  footer a:hover { color: #7ee6f5; }
+  footer .doors-line { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--hairline-dark); }
+
+  /* ---------- reveal ---------- */
+  .rv { opacity: 0; transform: translateY(14px); transition: opacity 500ms var(--ease), transform 500ms var(--ease); }
+  .rv.on { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .rv { opacity: 1; transform: none; transition: none; }
+    a.site, a.door, table.ledger tbody tr { transition: none; }
+  }
+</style>
+
+<nav class="bar" aria-label="Page navigation">
+  <div class="in">
+    <span class="mark"><span class="rd">●</span>&nbsp; Suede · Universe Map</span>
+    <span class="links">
+      <a href="#map">The map</a>
+      <a href="#router">Which link?</a>
+      <a href="#thin">Thin spots</a>
+      <a class="deck" href="https://map.suedeai.ai/deck/">Investor deck ↗</a>
+    </span>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="constellation" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="in">
+      <p class="eyebrow">Suede Labs AI · Registry Map · Verified July 2026</p>
+      <h1>The whole Suede universe, on <em>one page</em></h1>
+      <p class="lede">
+        Jason Colapietro runs <strong>about 30 websites and 8 phone apps</strong>, and they all belong
+        to one connected family. This page is the map: read it top to bottom — each level owns or
+        runs the one below it. <strong>Every address is clickable.</strong>
+      </p>
+      <div class="legend" role="note" aria-label="How to read this map">
+        <span class="item"><span class="dot-live"></span> answered a live check July&nbsp;3,&nbsp;2026</span>
+        <span class="item"><span class="glyph-fwd">→</span> forwards to another address</span>
+        <span class="item"><span class="tag-dev">dev</span> for developers — safe to ignore</span>
+        <span class="item"><span class="glyph-flag">⚑</span> a thin spot, listed at the bottom</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="shortversion">
+  <div class="wrap">
+    <p class="sv-title">The short version — one line, four stops</p>
+    <div class="route">
+      <div class="station"><span class="verb">The person</span><span class="what">Jason Colapietro</span><span class="who">stage name “Johnny Suede”</span></div>
+      <div class="station"><span class="verb">owns</span><span class="what">JC Investment Group LLC</span><span class="who">the legal owner of it all</span></div>
+      <div class="station"><span class="verb">which operates</span><span class="what">Suede Labs AI</span><span class="who">the brand you actually see</span></div>
+      <div class="station"><span class="verb">which ships</span><span class="what">The tools &amp; sites</span><span class="who">apps, communities, books</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="map" id="map">
+  <div class="wrap">
+    <div class="spine">
+
+      <!-- LAYER 1 -->
+      <div class="layer rv">
+        <p class="layer-eyebrow">Level 1 · The person</p>
+        <h2>Jason Colapietro — stage name “Johnny Suede”</h2>
+        <p class="explain">
+          One founder, two names. <b>Jason Colapietro</b> is the professional name;
+          <b>Johnny Suede</b> is the artist name he releases music under. Both have their own home page.
+        </p>
+        <div class="cardgrid">
+          <a class="site" href="https://jasoncolapietro.com" target="_blank" rel="noopener">
+            <div class="toprow"><span class="name">Jason Colapietro</span></div>
+            <span class="url"><span class="dot-live"></span>jasoncolapietro.com ↗</span>
+            <p class="desc">The founder’s page — who Jason is and what he builds.</p>
+          </a>
+          <a class="site" href="https://johnnysuede.com" target="_blank" rel="noopener">
+            <div class="toprow"><span class="name">Johnny Suede</span></div>
+            <span class="url"><span class="dot-live"></span>johnnysuede.com ↗</span>
+            <p class="desc">The artist’s page — original AI-era music and compositions.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="rail-verb"><span>owns</span></div>
+
+      <!-- LAYER 2 -->
+      <div class="layer rv">
+        <p class="layer-eyebrow">Level 2 · The company</p>
+        <h2>JC Investment Group LLC</h2>
+        <p class="explain">
+          The legal company (founded 2016) that owns everything on this map. Think of it as the
+          <b>filing cabinet</b>: you rarely need to visit it, but it’s where ownership lives.
+          Its <b>/domains</b> page is the official master list of every web address and where each one points.
+        </p>
+        <div class="cardgrid">
+          <a class="site" href="https://jcinvestmentgroup.ventures" target="_blank" rel="noopener">
+            <div class="toprow"><span class="name">JC Investment Group</span></div>
+            <span class="url"><span class="dot-live"></span>jcinvestmentgroup.ventures ↗</span>
+            <p class="desc">The parent company: what it backs, builds, and operates, and why.</p>
+          </a>
+          <a class="site" href="https://jcinvestmentgroup.ventures/domains" target="_blank" rel="noopener">
+            <div class="toprow"><span class="name">The master domain list</span> <span class="glyph-flag" title="Written for search engines, not people — see thin spots below">⚑</span></div>
+            <span class="url"><span class="dot-live"></span>jcinvestmentgroup.ventures/domains ↗</span>
+            <p class="desc">The official registry of all 19 owned domain names. (Written in technical language — the page you’re reading is the friendly version.)</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="rail-verb"><span>operates</span></div>
+
+      <!-- LAYER 3 -->
+      <div class="layer rv">
+        <p class="layer-eyebrow">Level 3 · The brand — three front doors</p>
+        <h2>Suede Labs AI</h2>
+        <p class="explain">
+          Suede helps creators <b>prove they made something, put it under license on their own terms,
+          and get paid automatically</b> when it’s used — built for the AI era. Suede has three main
+          front doors online. They show the same world at different depths, so pick by what you need:
+        </p>
+        <div class="cardgrid doors">
+          <a class="site door" href="https://suedeai.ai" target="_blank" rel="noopener">
+            <span class="doorword">The front door</span>
+            <span class="name">suedeai.ai</span><br>
+            <span class="url"><span class="dot-live"></span>suedeai.ai ↗</span>
+            <p class="usewhen"><b>Use it when:</b> you want to see what Suede actually does, or sign up and use it. The product lives here.</p>
+          </a>
+          <a class="site door" href="https://suedeai.org" target="_blank" rel="noopener">
+            <span class="doorword">The library</span>
+            <span class="name">suedeai.org</span><br>
+            <span class="url"><span class="dot-live"></span>suedeai.org ↗</span>
+            <p class="usewhen"><b>Use it when:</b> you want the full story — the thesis, the proof it’s all real, the books, the founder, investor info.</p>
+          </a>
+          <a class="site door" href="https://hub.suedeai.ai" target="_blank" rel="noopener">
+            <span class="doorword">The directory</span>
+            <span class="name">hub.suedeai.ai</span><br>
+            <span class="url"><span class="dot-live"></span>hub.suedeai.ai ↗</span>
+            <p class="usewhen"><b>Use it when:</b> you want to browse everything Suede has shipped in one interactive map — every site, app, and endpoint.</p>
+          </a>
+        </div>
+        <p class="explain small" style="margin-top:16px">
+          Easy way to remember: <b>.ai is the product, .org is the story, hub is the index.</b>
+        </p>
+      </div>
+
+      <div class="rail-verb"><span>ships</span></div>
+
+      <!-- LAYER 4 -->
+      <div class="layer rv">
+        <p class="layer-eyebrow">Level 4 · The tools — what you can actually use</p>
+        <h2>Six shelves of things Suede has shipped</h2>
+        <p class="explain">Grouped by what you’d want to do, not by how they’re built.</p>
+
+        <div class="shelf">
+          <h3>Own &amp; release your work</h3>
+          <p class="shelf-sub">Register what you made, get a certificate of ownership, and put your music out into the world.</p>
+          <div class="cardgrid">
+            <a class="site" href="https://suedeai.ai/vaults" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">The Suede app</span></div>
+              <span class="url"><span class="dot-live"></span>app.suedeai.ai ↗</span>
+              <p class="desc">The main dashboard — your works, rights, and royalties in one place.</p>
+              <p class="fwd">→ forwards to suedeai.ai/vaults</p>
+            </a>
+            <a class="site" href="https://ip.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">IP Registry</span></div>
+              <span class="url"><span class="dot-live"></span>ip.suedeai.ai ↗</span>
+              <p class="desc">Upload a work, get a “Rights Passport” — a verifiable record that you made it.</p>
+            </a>
+            <a class="site" href="https://studio.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede Studio</span></div>
+              <span class="url"><span class="dot-live"></span>studio.suedeai.ai ↗</span>
+              <p class="desc">Make music with AI where you own the master and keep 100% of the royalties.</p>
+            </a>
+            <a class="site" href="https://distro.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede Distro</span></div>
+              <span class="url"><span class="dot-live"></span>distro.suedeai.ai ↗</span>
+              <p class="desc">Put your music on streaming services — $7.99/month, rights protection built in.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="shelf">
+          <h3>Learn &amp; practice</h3>
+          <p class="shelf-sub">For guitarists and musicians who want to get better.</p>
+          <div class="cardgrid">
+            <a class="site" href="https://strumly.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Strumly</span></div>
+              <span class="url"><span class="dot-live"></span>strumly.suedeai.ai ↗</span>
+              <p class="desc">A 24/7 AI guitar coach you chat with — it even scores your chord drills.</p>
+            </a>
+            <a class="site" href="https://muse.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede Muse</span></div>
+              <span class="url"><span class="dot-live"></span>muse.suedeai.ai ↗</span>
+              <p class="desc">A creative training companion for musicians — like a personal trainer for your craft.</p>
+            </a>
+            <a class="site" href="https://play.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede Play</span></div>
+              <span class="url"><span class="dot-live"></span>play.suedeai.ai ↗</span>
+              <p class="desc">The guided tour of Suede’s musician tools — a good starting point for players.</p>
+            </a>
+            <a class="site" href="https://fretpulse.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">FretPulse</span></div>
+              <span class="url"><span class="dot-live"></span>fretpulse.suedeai.ai ↗</span>
+              <p class="desc">Guitar care companion — tuner, timing trainer, rig analyzer, gear oracle.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="shelf">
+          <h3>AI agents &amp; earning</h3>
+          <p class="shelf-sub">Small AI workers you can build and send out to earn. They charge tiny automatic payments (in digital dollars) per task.</p>
+          <div class="cardgrid">
+            <a class="site" href="https://agents.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede Agent Studio</span></div>
+              <span class="url"><span class="dot-live"></span>agents.suedeai.ai ↗</span>
+              <p class="desc">Build an AI agent visually, then launch it as a paid service — no code.</p>
+            </a>
+            <a class="site" href="https://agentix.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Agentix</span></div>
+              <span class="url"><span class="dot-live"></span>agentix.suedeai.ai ↗</span>
+              <p class="desc">The scoreboard — watch the agents you launched earn, call by call.</p>
+            </a>
+            <a class="site" href="https://launch.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede Launchpad</span></div>
+              <span class="url"><span class="dot-live"></span>launch.suedeai.ai ↗</span>
+              <p class="desc">Where music + AI creator projects launch and earn — nothing dilutes.</p>
+            </a>
+            <a class="site" href="https://api.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede API</span> <span class="tag-dev">dev</span></div>
+              <span class="url"><span class="dot-live"></span>api.suedeai.ai ↗</span>
+              <p class="desc">The machine-to-machine doorway. For developers; everyone else can skip it.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="shelf">
+          <h3>Community &amp; reading</h3>
+          <p class="shelf-sub">The guitar-world publications and communities Suede runs.</p>
+          <div class="cardgrid">
+            <a class="site" href="https://social.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede Social (the network)</span> <span class="glyph-flag" title="Nearly the same name as suede.social — see thin spots below">⚑</span></div>
+              <span class="url"><span class="dot-live"></span>social.suedeai.ai ↗</span>
+              <p class="desc">The creator community — curated by people, not ranked by an algorithm.</p>
+            </a>
+            <a class="site" href="https://suede.social" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede Social (the magazine)</span> <span class="glyph-flag" title="Nearly the same name as social.suedeai.ai — see thin spots below">⚑</span></div>
+              <span class="url"><span class="dot-live"></span>suede.social ↗</span>
+              <p class="desc">Sourced gear takes and rig roasts — an editorial site, not the network above.</p>
+            </a>
+            <a class="site" href="https://guitarhub.org" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">GuitarHub</span></div>
+              <span class="url"><span class="dot-live"></span>guitarhub.org ↗</span>
+              <p class="desc">“Real rigs, real gear, real talk” — open guitar editorial.</p>
+            </a>
+            <a class="site" href="https://dna.suedeai.ai" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Suede DNA</span></div>
+              <span class="url"><span class="dot-live"></span>dna.suedeai.ai ↗</span>
+              <p class="desc">An archive of 400+ famous guitarists’ rigs and signal chains.</p>
+            </a>
+            <a class="site" href="https://guitarchords.info" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">GuitarChords.info</span></div>
+              <span class="url"><span class="dot-live"></span>guitarchords.info ↗</span>
+              <p class="desc">Free tools: chord library, scales, tuner, metronome.</p>
+            </a>
+            <a class="site" href="https://guitar.solutions" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Guitar.solutions</span></div>
+              <span class="url"><span class="dot-live"></span>guitar.solutions ↗</span>
+              <p class="desc">Engineering-grade reference for guitar signal chains, pickup to speaker.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="shelf">
+          <h3>On your phone — 8 iOS apps</h3>
+          <p class="shelf-sub">
+            All on the App Store: <b>Suede Studio Guitar</b>, <b>Suede Studio Voice</b>,
+            <b>Suede Studio Muse</b>, <b>Suede AI Music Generator</b>, <b>Suede Social</b>,
+            <b>Suede Agents</b>, <b>Agentix</b>, and <b>FretPulse</b>.
+            The full linked list lives on <a href="https://suedeai.org" target="_blank" rel="noopener">suedeai.org</a> under “Ecosystem.”
+          </p>
+        </div>
+
+        <div class="shelf">
+          <h3>Books, posts &amp; code</h3>
+          <div class="cardgrid">
+            <a class="site" href="https://jasoncolapietro.substack.com" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">The newsletter</span></div>
+              <span class="url">jasoncolapietro.substack.com ↗</span>
+              <p class="desc">Jason’s writing on creator ownership, delivered by email.</p>
+            </a>
+            <a class="site" href="https://suedeai.org/#books" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">The books</span></div>
+              <span class="url">suedeai.org → Books ↗</span>
+              <p class="desc">Five published titles plus the free Signal Chain series on guitar history.</p>
+            </a>
+            <a class="site" href="https://github.com/Suede-AI" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">The code</span> <span class="tag-dev">dev</span></div>
+              <span class="url">github.com/Suede-AI ↗</span>
+              <p class="desc">Suede’s public source code, docs, brand assets, and 21 free creator skills.</p>
+            </a>
+            <a class="site" href="https://x.com/AISUEDE" target="_blank" rel="noopener">
+              <div class="toprow"><span class="name">Social accounts</span></div>
+              <span class="url">x.com/AISUEDE · x.com/johnnysuede ↗</span>
+              <p class="desc">Company account and Jason’s personal account on X.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rail-verb"><span>and holds in reserve</span></div>
+
+      <!-- LAYER 5 -->
+      <div class="layer rv" style="padding-bottom:0">
+        <p class="layer-eyebrow">Level 5 · The spare name tags</p>
+        <h2>17 extra domain names</h2>
+        <p class="explain">
+          These are <b>different spellings of the same names</b> — owned so nobody else can grab them.
+          Each is either a small one-page site or a signpost that forwards you to the right place.
+          <b>You never need to remember any of these.</b>
+        </p>
+        <div class="ledger-scroll">
+          <table class="ledger">
+            <thead><tr><th>Name tag</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td class="mono"><a href="https://suedeailabs.com" target="_blank" rel="noopener">suedeailabs.com</a></td><td class="quiet">One-page site: Suede AI Labs — research &amp; development</td></tr>
+              <tr><td class="mono"><a href="https://suedemusicai.com" target="_blank" rel="noopener">suedemusicai.com</a></td><td class="quiet">One-page site: AI tools for guitarists &amp; music creators</td></tr>
+              <tr><td class="mono"><a href="https://suedeart.com" target="_blank" rel="noopener">suedeart.com</a></td><td class="quiet">One-page site: AI-powered music and visual art</td></tr>
+              <tr><td class="mono"><a href="https://colapietroai.com" target="_blank" rel="noopener">colapietroai.com</a></td><td class="quiet">One-page site: Jason Colapietro, AI for music</td></tr>
+              <tr><td class="mono"><a href="https://jasonsuede.com" target="_blank" rel="noopener">jasonsuede.com</a></td><td class="quiet">One-page site (Jason Suede)</td></tr>
+              <tr><td class="mono"><a href="https://colapietro.vip" target="_blank" rel="noopener">colapietro.vip</a></td><td class="quiet">One-page site (Colapietro)</td></tr>
+              <tr><td class="mono">colapietrolabs.com</td><td class="quiet mono">→ colapietroai.com</td></tr>
+              <tr><td class="mono">jasoncolapietro.vip &nbsp;·&nbsp; jasoncolapietro.xyz</td><td class="quiet mono">→ jasoncolapietro.com</td></tr>
+              <tr><td class="mono">jasonsuedeai.com &nbsp;·&nbsp; johnnysuedeai.com</td><td class="quiet mono">→ suedemusicai.com</td></tr>
+              <tr><td class="mono">jasonsuedelabs.com &nbsp;·&nbsp; jasonsuedeart.com</td><td class="quiet mono">→ jasonsuede.com</td></tr>
+              <tr><td class="mono">johnnysuedelabs.com &nbsp;·&nbsp; johnnysuedeart.com &nbsp;·&nbsp; johnnysuedemusic.com</td><td class="quiet mono">→ johnnysuede.com</td></tr>
+              <tr><td class="mono">colapietro.stream</td><td class="quiet mono">→ social.suedeai.ai</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ROUTER -->
+<section class="sect" id="router">
+  <div class="wrap">
+    <h2>“I just want to…” — which link to click</h2>
+    <p class="sub">Skip the map entirely. Find your sentence, click the address next to it.</p>
+    <div class="ledger-scroll rv">
+      <table class="ledger">
+        <thead><tr><th>I want to…</th><th>Go here</th></tr></thead>
+        <tbody>
+          <tr><td>Understand what Suede is in two minutes</td><td class="mono"><a href="https://suedeai.ai" target="_blank" rel="noopener">suedeai.ai</a></td></tr>
+          <tr><td>Prove I made something &amp; own the rights</td><td class="mono"><a href="https://ip.suedeai.ai" target="_blank" rel="noopener">ip.suedeai.ai</a></td></tr>
+          <tr><td>Release a song to streaming services</td><td class="mono"><a href="https://distro.suedeai.ai" target="_blank" rel="noopener">distro.suedeai.ai</a></td></tr>
+          <tr><td>Make music with AI and keep the master</td><td class="mono"><a href="https://studio.suedeai.ai" target="_blank" rel="noopener">studio.suedeai.ai</a></td></tr>
+          <tr><td>Get better at guitar</td><td class="mono"><a href="https://strumly.suedeai.ai" target="_blank" rel="noopener">strumly.suedeai.ai</a></td></tr>
+          <tr><td>Nerd out about famous guitarists’ gear</td><td class="mono"><a href="https://dna.suedeai.ai" target="_blank" rel="noopener">dna.suedeai.ai</a></td></tr>
+          <tr><td>Build an AI agent that earns money</td><td class="mono"><a href="https://agents.suedeai.ai" target="_blank" rel="noopener">agents.suedeai.ai</a></td></tr>
+          <tr><td>See everything Suede has shipped, in one place</td><td class="mono"><a href="https://hub.suedeai.ai" target="_blank" rel="noopener">hub.suedeai.ai</a></td></tr>
+          <tr><td>Read the full story, or show it to an investor</td><td class="mono"><a href="https://suedeai.org" target="_blank" rel="noopener">suedeai.org</a></td></tr>
+          <tr><td>Know who Jason is</td><td class="mono"><a href="https://jasoncolapietro.com" target="_blank" rel="noopener">jasoncolapietro.com</a></td></tr>
+          <tr><td>See what company legally owns all this</td><td class="mono"><a href="https://jcinvestmentgroup.ventures" target="_blank" rel="noopener">jcinvestmentgroup.ventures</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- THIN SPOTS -->
+<section class="sect" id="thin">
+  <div class="wrap">
+    <h2><span class="glyph-flag">⚑</span> Where the map is thin today</h2>
+    <p class="sub">
+      Every address above answered a live check — nothing is broken. But six spots would genuinely
+      confuse a first-time visitor, and each has a small fix.
+    </p>
+    <div class="thin-list">
+      <div class="thin-item rv">
+        <div class="t-head"><span class="glyph-flag">⚑</span> Two things are named “Suede Social”</div>
+        <p><span class="m">suede.social</span> (the gear magazine) and <span class="m">social.suedeai.ai</span> (the creator network, which also shares its name with the iOS app) are different products with nearly identical names. The single most confusing pair on the map.</p>
+        <p><span class="fixlabel">Easy fix</span> — give each homepage a one-line pointer to its sibling.</p>
+      </div>
+      <div class="thin-item rv">
+        <div class="t-head"><span class="glyph-flag">⚑</span> There are two ecosystem hubs</div>
+        <p><span class="m">hub.suedeai.ai</span> and <span class="m">hub2.suedeai.ai</span> both present themselves as “the ecosystem map.” A visitor who lands on the wrong one can’t tell which is current.</p>
+        <p><span class="fixlabel">Easy fix</span> — pick one as canonical and forward the other to it.</p>
+      </div>
+      <div class="thin-item rv">
+        <div class="t-head"><span class="glyph-flag">⚑</span> The three front doors never introduce each other</div>
+        <p>Someone on suedeai.org doesn’t learn that suedeai.ai is where the product lives, and vice versa. Each door reads like the only door.</p>
+        <p><span class="fixlabel">Easy fix</span> — a shared one-line strip on all three: “the product (.ai) · the story (.org) · the index (hub).”</p>
+      </div>
+      <div class="thin-item rv">
+        <div class="t-head"><span class="glyph-flag">⚑</span> The master domain list speaks SEO, not human</div>
+        <p>jcinvestmentgroup.ventures/domains describes itself as a “controlled routing layer” for “authority concentration.” Accurate — and unreadable for a normal visitor. Its nav also promises Founder, Press, and Contact sections with little visible content behind them.</p>
+        <p><span class="fixlabel">Easy fix</span> — keep that page for search engines and link here for humans.</p>
+      </div>
+      <div class="thin-item rv">
+        <div class="t-head"><span class="glyph-flag">⚑</span> docs.suedeai.ai doesn’t answer</div>
+        <p>The developer documentation lives on GitHub (Suede-AI/suede-docs), but <span class="m">docs.suedeai.ai</span> didn’t respond to a live check. The one address a developer would guess first is the one that’s dark.</p>
+        <p><span class="fixlabel">Easy fix</span> — point docs.suedeai.ai at the GitHub docs or the hub’s Developers section.</p>
+      </div>
+      <div class="thin-item rv">
+        <div class="t-head"><span class="glyph-flag">⚑</span> The hub’s numbers need translation</div>
+        <p>“7 groupings · 62 surfaces · 22 endpoints · 5 apps · 2 tokens” is impressive to insiders and meaningless to newcomers — the exact audience a hub exists for.</p>
+        <p><span class="fixlabel">Easy fix</span> — one sentence under the stats: “62 places you can visit, 22 services agents can pay to use, 5 phone apps.”</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>How this map was checked:</b> every address shown with a green dot answered a live request on July&nbsp;3,&nbsp;2026 (the only non-responder, docs.suedeai.ai, is flagged above). Descriptions come from the live pages themselves, the official domain registry at jcinvestmentgroup.ventures/domains, and the public Suede-AI GitHub organization.</p>
+    <p class="mono">Suede Labs AI · JC Investment Group LLC · map compiled July 3, 2026</p>
+    <p class="doors-line mono">
+      The three doors: <a href="https://suedeai.ai">suedeai.ai</a> (product) ·
+      <a href="https://suedeai.org">suedeai.org</a> (story) ·
+      <a href="https://hub.suedeai.ai">hub.suedeai.ai</a> (index) ·
+      <a href="https://map.suedeai.ai/deck/">investor deck</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* scroll reveal */
+  var items = document.querySelectorAll('.rv');
+  if (reduced || !('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('on'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    items.forEach(function (el) { io.observe(el); });
+  }
+
+  /* hero constellation */
+  var canvas = document.getElementById('constellation');
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
+  var hero = canvas.parentElement;
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var W = 0, H = 0, pts = [];
+
+  function size() {
+    W = hero.clientWidth; H = hero.clientHeight;
+    canvas.width = W * dpr; canvas.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function seed() {
+    var n = Math.max(28, Math.min(56, Math.round(W / 26)));
+    pts = [];
+    for (var i = 0; i < n; i++) {
+      pts.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.14,
+        vy: (Math.random() - 0.5) * 0.14,
+        r: Math.random() < 0.12 ? 2.2 : 1.4,
+        red: Math.random() < 0.1
+      });
+    }
+  }
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    var linkDist = Math.min(150, W / 8);
+    for (var i = 0; i < pts.length; i++) {
+      for (var j = i + 1; j < pts.length; j++) {
+        var dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+        var d = Math.sqrt(dx * dx + dy * dy);
+        if (d < linkDist) {
+          ctx.strokeStyle = 'rgba(34, 211, 238, ' + (0.09 * (1 - d / linkDist)).toFixed(3) + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); ctx.stroke();
+        }
+      }
+    }
+    for (var k = 0; k < pts.length; k++) {
+      var p = pts[k];
+      ctx.fillStyle = p.red ? 'rgba(209, 31, 43, 0.75)' : 'rgba(34, 211, 238, 0.55)';
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+    }
+  }
+  function step() {
+    for (var i = 0; i < pts.length; i++) {
+      var p = pts[i];
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < -8) p.x = W + 8; if (p.x > W + 8) p.x = -8;
+      if (p.y < -8) p.y = H + 8; if (p.y > H + 8) p.y = -8;
+    }
+    draw();
+    raf = requestAnimationFrame(step);
+  }
+  var raf = null;
+  size(); seed(); draw();
+  if (!reduced) raf = requestAnimationFrame(step);
+  window.addEventListener('resize', function () { size(); seed(); draw(); });
+  document.addEventListener('visibilitychange', function () {
+    if (reduced) return;
+    if (document.hidden) { if (raf) cancelAnimationFrame(raf); raf = null; }
+    else if (!raf) raf = requestAnimationFrame(step);
+  });
+})();
+</script>
+<!-- ARTIFACT-END -->
+</body>
+</html>
