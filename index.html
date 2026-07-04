@@ -435,6 +435,17 @@
   footer a { color: var(--green); }
   footer a:hover { color: #b5f7a6; }
   footer .doors-line { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--hairline-dark); }
+  footer .founder-line {
+    margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--hairline-dark);
+    display: flex; align-items: center; gap: 12px;
+  }
+  footer .founder-line img {
+    width: 36px; height: 36px; border-radius: 50%; flex: none;
+    border: 1px solid var(--hairline-dark); object-fit: cover; display: block;
+  }
+  footer .founder-line p { margin: 0; color: var(--slate); }
+  footer .founder-line a { color: var(--slate); text-decoration: underline; text-decoration-color: var(--hairline-dark); text-underline-offset: 2px; }
+  footer .founder-line a:hover { color: var(--mist); text-decoration-color: var(--slate); }
 
   /* ---------- reveal ---------- */
   .rv { opacity: 0; transform: translateY(14px); transition: opacity 500ms var(--ease), transform 500ms var(--ease); }
@@ -1002,6 +1013,10 @@
       <a href="https://map.suedeai.ai/deck/">investor deck</a> ·
       <a href="https://map.suedeai.ai/press/">press kit</a>
     </p>
+    <div class="founder-line">
+      <img src="/founder-jason-colapietro.png" alt="Jason Colapietro" width="36" height="36" loading="lazy">
+      <p>Built by <a href="https://suedeai.ai/founder" target="_blank" rel="noopener noreferrer">Jason Colapietro</a>, founder of Suede Labs AI.</p>
+    </div>
   </div>
 </footer>
 

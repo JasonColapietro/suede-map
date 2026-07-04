@@ -358,6 +358,23 @@
     .rails .r-name { white-space: normal; }
     .kbd-hint { display: none; }
   }
+
+  .founder-footer {
+    scroll-snap-align: start;
+    background: var(--ink-panel);
+    color: var(--slate);
+    padding: 22px clamp(24px, 6vw, 128px);
+    display: flex; align-items: center; gap: 12px;
+    font-size: 13.5px;
+    border-top: 1px solid var(--hairline);
+  }
+  .founder-footer img {
+    width: 36px; height: 36px; border-radius: 50%; flex: none;
+    border: 1px solid var(--hairline); object-fit: cover; display: block;
+  }
+  .founder-footer p { margin: 0; }
+  .founder-footer a { color: var(--slate); text-decoration: underline; text-decoration-color: var(--hairline); text-underline-offset: 2px; }
+  .founder-footer a:hover { color: var(--mist); text-decoration-color: var(--slate); }
 </style>
 </head>
 <body>
@@ -520,6 +537,11 @@
   <div class="chrome-logo"><img src="https://app.suedeai.ai/suede-approved-logo.png" alt="Suede Labs AI logo"><span>Suede Labs AI</span></div>
   <span class="chrome-idx">11 / 11</span>
 </section>
+
+<footer class="founder-footer">
+  <img src="/founder-jason-colapietro.png" alt="Jason Colapietro" width="36" height="36" loading="lazy">
+  <p>Built by <a href="https://suedeai.ai/founder" target="_blank" rel="noopener noreferrer">Jason Colapietro</a>, founder of Suede Labs AI.</p>
+</footer>
 
 <script>
 (function () {
