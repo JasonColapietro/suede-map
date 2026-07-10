@@ -123,6 +123,14 @@
   a:hover { color: var(--green-ink-hover); }
   a:focus-visible { outline: 2px solid var(--green-ink); outline-offset: 2px; border-radius: 2px; }
 
+  .skip-link {
+    position: fixed; left: 16px; top: 12px; z-index: 100;
+    padding: 9px 12px; border-radius: var(--radius);
+    background: var(--mist); color: var(--ink-deep); font-weight: 600;
+    transform: translateY(-160%); transition: transform var(--dur) var(--ease);
+  }
+  .skip-link:focus { transform: translateY(0); }
+
   .wrap { max-width: 1020px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 44px); }
 
   /* ---------- top nav ---------- */
@@ -146,6 +154,7 @@
   nav.bar .links { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
   nav.bar .links a {
     font-size: 13px; color: var(--slate); font-weight: 500;
+    display: inline-flex; align-items: center; min-height: 28px;
     transition: color var(--dur) var(--ease);
   }
   nav.bar .links a:hover { color: var(--mist); }
@@ -420,6 +429,19 @@
     text-wrap: balance;
   }
   .sect .sub { color: var(--muted); font-size: 15px; margin: 0 0 18px; max-width: 62ch; }
+  #map, #router { scroll-margin-top: 78px; }
+
+  #router table.ledger { min-width: 0; table-layout: fixed; }
+  #router table.ledger th:first-child,
+  #router table.ledger td:first-child { width: 55%; }
+  #router table.ledger a { overflow-wrap: anywhere; }
+
+  @media (max-width: 680px) {
+    #router table.ledger { font-size: 13px; }
+    #router table.ledger th,
+    #router table.ledger td { padding: 10px 11px; }
+    #router table.ledger td.mono { font-size: 11.5px; }
+  }
 
   /* ---------- footer ---------- */
   footer {
@@ -456,6 +478,8 @@
   }
 </style>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <nav class="bar" aria-label="Page navigation">
   <div class="in">
     <span class="mark"><span class="rd">●</span>&nbsp; Suede · Universe Map</span>
@@ -467,6 +491,8 @@
     </span>
   </div>
 </nav>
+
+<main id="main-content">
 
 <header class="hero">
   <canvas id="constellation" aria-hidden="true"></canvas>
@@ -999,6 +1025,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
