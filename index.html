@@ -30,25 +30,38 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://suedeai.ai/#org",
+      "@id": "https://suedeai.ai/#organization",
       "name": "Suede Labs AI",
       "url": "https://suedeai.ai",
       "logo": "https://app.suedeai.ai/suede-approved-logo.png",
-      "parentOrganization": {
-        "@type": "Organization",
-        "name": "JC Investment Group LLC",
-        "url": "https://jcinvestmentgroup.ventures"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Jason Colapietro",
-        "alternateName": "Johnny Suede",
-        "url": "https://jasoncolapietro.com"
-      },
+      "parentOrganization": { "@id": "https://jcinvestmentgroup.ventures/#organization" },
+      "founder": { "@id": "https://suedeai.ai/founder#person" },
       "sameAs": [
         "https://x.com/AISUEDE",
         "https://github.com/Suede-AI",
+        "https://www.youtube.com/@aisuede",
+        "https://www.linkedin.com/in/jasoncolapietro",
         "https://suedeai.org"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://jcinvestmentgroup.ventures/#organization",
+      "name": "JC Investment Group LLC",
+      "url": "https://jcinvestmentgroup.ventures"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suedeai.ai/founder#person",
+      "name": "Jason Colapietro",
+      "alternateName": "Johnny Suede",
+      "url": "https://suedeai.ai/founder",
+      "jobTitle": "Founder and CEO of Suede Labs AI",
+      "sameAs": [
+        "https://x.com/johnnysuede",
+        "https://github.com/JasonColapietro",
+        "https://www.linkedin.com/in/jasoncolapietro",
+        "https://jasoncolapietro.com"
       ]
     },
     {
@@ -56,14 +69,16 @@
       "@id": "https://map.suedeai.ai/#website",
       "name": "Suede Universe Map",
       "url": "https://map.suedeai.ai",
-      "publisher": { "@id": "https://suedeai.ai/#org" }
+      "publisher": { "@id": "https://suedeai.ai/#organization" }
     },
     {
       "@type": "CollectionPage",
       "url": "https://map.suedeai.ai/",
       "name": "The Suede Universe Map",
-      "description": "A plain-English map of the entire Suede Labs AI ecosystem — every site, app, and tool, what each is for, how they all connect, and which link to click.",
-      "isPartOf": { "@id": "https://map.suedeai.ai/#website" }
+      "description": "A plain-English map of the entire Suede Labs AI ecosystem: every site, app, and tool, what each is for, how they all connect, and which link to click.",
+      "isPartOf": { "@id": "https://map.suedeai.ai/#website" },
+      "datePublished": "2026-07-03",
+      "dateModified": "2026-07-14"
     }
   ]
 }
