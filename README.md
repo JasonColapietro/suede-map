@@ -6,7 +6,7 @@ Plain-English wayfinding map of the entire Suede Labs AI / JC Investment Group e
 
 **Live:** [map.suedeai.ai](https://map.suedeai.ai)
 
-- `index.html` — the map: a five-level ownership spine (person → company → lab → tools → reserve domains), a plain-language link router, and a flagged list of thin spots. Every address on the map answered a live check on the date stamped in the footer.
+- `index.html` — the map: a five-level public operating graph (person → entity → brand → tools → listed domains), a plain-language link router, and a flagged list of thin spots. The graph documents public links and stated roles; it does not establish legal title or ownership percentages. Every address on the map answered a live check on the date stamped in the footer.
 - `deck/index.html` — the ecosystem investor presentation ([map.suedeai.ai/deck](https://map.suedeai.ai/deck/)), built on the Institutional IP Terminal design tokens.
 
 Static site, no build step. Deployed on Vercel.

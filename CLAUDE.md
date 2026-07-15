@@ -10,9 +10,11 @@ The **Suede Universe Map** — live at **https://map.suedeai.ai** — a plain-En
 
 ## Architecture invariants — the "schema" is markup convention
 
-There is no JSON/data file. Surfaces are registered by hand as `<a class="site">` cards inside `.cardgrid` blocks, organized as a **five-level ownership spine** in `index.html` (`<section class="map" id="map">`):
+There is no JSON/data file. Surfaces are registered by hand as `<a class="site">` cards inside `.cardgrid` blocks, organized as a **five-level public operating graph** in `index.html` (`<section class="map" id="map">`):
 
-1. Level 1 the person → 2. the company → 3. the brand's three front doors (`.cardgrid.doors`) → 4. six `.shelf` groups of shipped tools → 5. reserve domains — levels joined by `.rail-verb` connectors ("owns", "operates", "ships", "and holds in reserve").
+1. Level 1 the person → 2. the public-record entity → 3. the brand's three front doors (`.cardgrid.doors`) → 4. six `.shelf` groups of shipped tools → 5. publicly listed domains — levels joined by source-bounded `.rail-verb` connectors.
+
+The graph is a wayfinding and operating map, not a cap table or title record. Do not infer legal ownership, parent/subsidiary relationships, or ownership percentages from public links, a domain directory, or brand proximity.
 
 **Card anatomy** (copy an existing card, keep the shape):
 ```html
