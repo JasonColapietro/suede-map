@@ -25,7 +25,14 @@ test("stale press and deck marketing redirect to the neutral status page", async
   ]);
   const redirects = JSON.parse(config).redirects;
 
-  for (const source of ["/press", "/press/:path*", "/deck", "/deck/:path*"]) {
+  for (const source of [
+    "/press",
+    "/press/",
+    "/press/:path*",
+    "/deck",
+    "/deck/",
+    "/deck/:path*",
+  ]) {
     assert.deepEqual(
       redirects.find((redirect) => redirect.source === source),
       {
