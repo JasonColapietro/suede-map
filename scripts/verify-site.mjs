@@ -111,13 +111,12 @@ expectIncludes("press/index.html", "entity filing checked July 15, 2026", "sourc
 expectIncludes("deck/index.html", "entity language checked July 15, 2026", "source-specific verification date");
 
 const sitemap = read("sitemap.xml");
-for (const route of ["/", "/press/", "/deck/"]) {
-  const escapedRoute = route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const entry = new RegExp(
-    `<loc>https://map\\.suedeai\\.ai${escapedRoute}<\\/loc>[\\s\\S]*?<lastmod>2026-07-15<\\/lastmod>`,
-  );
-  if (!entry.test(sitemap)) {
-    fail(`sitemap.xml: ${route} is missing the 2026-07-15 lastmod`);
+if (!/<loc>https:\/\/map\.suedeai\.ai\/<\/loc>[\s\S]*?<lastmod>2026-07-31<\/lastmod>/.test(sitemap)) {
+  fail("sitemap.xml: root is missing the 2026-07-31 lastmod");
+}
+for (const heldRoute of ["/press/", "/deck/"]) {
+  if (sitemap.includes(`<loc>https://map.suedeai.ai${heldRoute}</loc>`)) {
+    fail(`sitemap.xml: held route ${heldRoute} must not be advertised`);
   }
 }
 
