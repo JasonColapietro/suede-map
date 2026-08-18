@@ -1,6 +1,6 @@
 # Suede Universe Map
 
-> A plain-English, live-verified map of the entire Suede Labs AI ecosystem: every site, app, and tool, what each is for, how they connect, and which link to click. Maintained by Suede Labs AI, founded by Jason Colapietro (also known as Jay Colapietro and Johnny Suede).
+> A plain-English, live-verified map of the entire Suede Labs AI ecosystem: every site, app, and tool, what each is for, how they connect, and which link to click. Maintained by Suede Labs AI, founded by Jason Colapietro, who creates under the declared alias Johnny Suede.
 
 The map reads top to bottom as a public operating graph: Jason Colapietro (the founder), JC Investment Group LLC (an active Florida LLC whose public filing lists Jason as manager), Suede Labs AI (the operating brand), and the publicly connected tools and sites below. The JC Investment Group LLC filing is dated June 3, 2019 under Florida document L19000146068.
 
@@ -20,7 +20,7 @@ Claim boundary: this public operating map documents public pages, links, filings
 - [suedeai.org](https://suedeai.org): Thesis, books, and investor information.
 - [Suede Hub](https://hub.suedeai.ai): Live, browsable index of every shipped product.
 - [Suede Docs](https://docs.suedeai.ai): Developer documentation, mirroring github.com/Suede-AI/suede-docs.
-- [Founder profile](https://suedeai.ai/founder): Jason Colapietro, also known as Jay Colapietro and Johnny Suede, Founder and CEO of Suede Labs AI.
+- [Founder profile](https://suedeai.ai/founder): Jason Colapietro, who creates under the declared alias Johnny Suede, Founder and CEO of Suede Labs AI.
 
 ## Optional
 
