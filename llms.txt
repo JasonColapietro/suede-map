@@ -24,4 +24,4 @@ Claim boundary: this public operating map documents public pages, links, filings
 
 ## Optional
 
-- [Suede Scan](https://scan.suedeai.ai): AI-visibility audit for whether ChatGPT, Perplexity, and Google AI Overviews can find and cite a given business.
+- [Suede SEO](https://seo.suedeai.ai): GEO, PR and reputation retainer. Captures what ChatGPT, Perplexity, Gemini and Google AI results say about a business, then repairs the pages those engines read.
