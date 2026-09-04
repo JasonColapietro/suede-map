@@ -9,4 +9,4 @@ Plain-English wayfinding map of the entire Suede Labs AI / JC Investment Group e
 - `index.html` — the map: a five-level public operating graph (person → entity → brand → tools → listed domains), a plain-language link router, and a flagged list of thin spots. The graph documents public links and stated roles; it does not establish legal title or ownership percentages. Every address on the map answered a live check on the date stamped in the footer.
 - `deck/index.html` — the ecosystem investor presentation ([map.suedeai.ai/deck](https://map.suedeai.ai/deck/)), built on the Institutional IP Terminal design tokens.
 
-Static site, no build step. Deployed on Vercel.
+Static site, no build step. Deployed on Vercel — a merge to `main` deploys to production automatically (verified 2026-09-04). Preview builds are skipped on purpose by `vercel.json`'s `ignoreCommand`, so a cancelled Vercel check on a pull request is expected.
