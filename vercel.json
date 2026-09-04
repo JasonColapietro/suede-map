@@ -2,21 +2,6 @@
   "ignoreCommand": "[ \"$VERCEL_ENV\" != \"production\" ] && exit 0 || exit 1",
   "redirects": [
     {
-      "source": "/press",
-      "destination": "https://suedeai.ai/proof-of-creation",
-      "permanent": false
-    },
-    {
-      "source": "/press/",
-      "destination": "https://suedeai.ai/proof-of-creation",
-      "permanent": false
-    },
-    {
-      "source": "/press/:path*",
-      "destination": "https://suedeai.ai/proof-of-creation",
-      "permanent": false
-    },
-    {
       "source": "/deck",
       "destination": "https://suedeai.ai/proof-of-creation",
       "permanent": false
