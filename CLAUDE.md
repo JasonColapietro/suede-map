@@ -66,6 +66,6 @@ grep -o 'href="https://[^"]*"' index.html | sort -u
 
 ## Deploy
 
-Vercel static deploy, repo root = project root. Linked project: `suede-map` (`.vercel/project.json`, `prj_R60pn0Xb2O5QRGXuQtkhsM7wJfDG`). **Push to `main` does NOT auto-deploy** (verified 2026-07-10 — a push produced no build; earlier "push → production" note was wrong). Ship with `npx vercel --prod --yes` from repo root, then curl map.suedeai.ai to confirm the new content is serving. `vercel.json`'s `ignoreCommand` kills all preview builds (house rule). `.vercelignore` excludes `media/raw-*.mp4`.
+Vercel static deploy, repo root = project root. Linked project: `suede-map` (`.vercel/project.json`, `prj_R60pn0Xb2O5QRGXuQtkhsM7wJfDG`). **A merge to `main` DOES auto-deploy** (re-verified 2026-09-04: merging produced a production build carrying the `suede-map-git-main-suede-ai-64d39175.vercel.app` alias, and `map.suedeai.ai/press` served the new content with no manual step). The 2026-07-10 note saying otherwise was correct when written and has been superseded — git integration was wired since. `npx vercel --prod --yes` from repo root still works to force a build; curl map.suedeai.ai afterwards either way. `vercel.json`'s `ignoreCommand` kills all preview builds (house rule). `.vercelignore` excludes `media/raw-*.mp4`.
 
 Audited at commit 5211ad9b5bca336972e5555c91fb9a292bb1023b (2026-07-06).
