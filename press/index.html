@@ -60,19 +60,45 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Suede Labs AI Press Kit",
-  "url": "https://map.suedeai.ai/press/",
-  "dateModified": "2026-07-15",
-  "isPartOf": { "@id": "https://map.suedeai.ai/#website" },
-  "about": {
-    "@type": "Organization",
-    "@id": "https://suedeai.ai/#organization",
-    "name": "Suede Labs AI",
-    "url": "https://suedeai.ai",
-    "logo": "https://suedeai.ai/suede-ai-logo-transparent.png",
-    "email": "info@suedeai.ai"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://map.suedeai.ai/press/#webpage",
+      "name": "Suede Labs AI Press Kit",
+      "url": "https://map.suedeai.ai/press/",
+      "dateModified": "2026-09-04",
+      "isPartOf": { "@id": "https://map.suedeai.ai/#website" },
+      "about": { "@id": "https://suedeai.ai/#organization" },
+      "mainEntity": { "@id": "https://suedeai.ai/founder#person" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://suedeai.ai/#organization",
+      "name": "Suede Labs AI",
+      "url": "https://suedeai.ai",
+      "logo": "https://suedeai.ai/suede-ai-logo-transparent.png",
+      "email": "info@suedeai.ai",
+      "founder": { "@id": "https://suedeai.ai/founder#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suedeai.ai/founder#person",
+      "name": "Jason Colapietro",
+      "alternateName": ["Johnny Suede"],
+      "url": "https://suedeai.ai/founder",
+      "jobTitle": "Founder and CEO of Suede Labs AI",
+      "worksFor": { "@id": "https://suedeai.ai/#organization" },
+      "sameAs": [
+        "https://www.wikidata.org/entity/Q140235755",
+        "https://x.com/johnnysuede",
+        "https://github.com/JasonColapietro",
+        "https://www.linkedin.com/in/jasoncolapietro",
+        "https://jasoncolapietro.com",
+        "https://johnnysuede.com",
+        "https://apps.apple.com/us/developer/jason-colapietro/id1895958699"
+      ]
+    }
+  ]
 }
 </script>
 <style>
@@ -203,6 +229,7 @@
     <span class="links">
       <a href="https://map.suedeai.ai/">Universe map</a>
       <a href="https://map.suedeai.ai/deck/">Investor deck</a>
+      <a href="#guest">Guest bio</a>
       <a class="here" href="#contact">Contact</a>
     </span>
   </div>
@@ -210,11 +237,12 @@
 
 <header class="masthead">
   <div class="wrap">
-    <p class="eyebrow">Suede Labs AI · Official press kit · <span class="gr">Updated July 15, 2026</span></p>
+    <p class="eyebrow">Suede Labs AI · Official press kit · <span class="gr">Updated September 4, 2026</span></p>
     <h1>Everything a journalist needs, copy-ready.</h1>
     <p class="lede">Boilerplate, facts, founder bio, approved quotes, story angles, logos, and b-roll for
     <b>Suede Labs AI</b>, the creator ownership infrastructure company. Live-surface metrics were checked
-    July 3, 2026; entity filing checked July 15, 2026; the book shelf is current to August 19, 2026.
+    July 3, 2026; entity filing checked July 15, 2026; the founder bio, book shelf, and skills count were
+    re-verified September 4, 2026.
     Use anything on this page without asking.</p>
     <a class="cta" href="mailto:info@suedeai.ai">info@suedeai.ai</a>
     <a class="cta ghost" href="https://map.suedeai.ai/">See the live ecosystem ↗</a>
@@ -228,12 +256,12 @@
     <div class="block">
       <span class="blabel">Short · ~50 words</span>
       <button class="copybtn" data-copy="bp-short">Copy</button>
-      <p id="bp-short">Suede Labs AI builds programmable IP and creator ownership infrastructure for AI-native media. Creators register a work, receive a verifiable Rights Passport, set machine-readable license terms, and get paid automatically in USDC when people or AI agents use it. Suede Labs AI is led by founder Jason Colapietro.</p>
+      <p id="bp-short">Suede Labs AI builds programmable IP and creator ownership infrastructure for AI-native media. Creators register a work, receive a verifiable Rights Passport, set machine-readable license terms, and get paid automatically in USDC when people or AI agents use it. Suede Labs AI is led by founder and CEO Jason Colapietro, who publishes as Johnny Suede.</p>
     </div>
     <div class="block">
       <span class="blabel">Long · ~140 words</span>
       <button class="copybtn" data-copy="bp-long">Copy</button>
-      <p id="bp-long">Suede Labs AI is the ownership layer for the AI media era. AI made creating music and media nearly free, but the infrastructure for proving who made what, licensing it, and routing the money never scaled. Suede builds that layer: creators register a work and receive a verifiable Rights Passport, set license terms machines can read, and receive automatic USDC settlement on Base when a person or an autonomous agent uses their work. The ecosystem is unusually concrete for its stage: more than 30 live web surfaces, 3 paid x402 resources on Base mainnet, 8 iOS apps, and guitar communities that anchor its musician audience, all publicly mapped and live-verified at map.suedeai.ai. Suede Labs AI is led by founder and CEO Jason Colapietro, who performs as Johnny Suede.</p>
+      <p id="bp-long">Suede Labs AI is the ownership layer for the AI media era. AI made creating music and media nearly free, but the infrastructure for proving who made what, licensing it, and routing the money never scaled. Suede builds that layer: creators register a work and receive a verifiable Rights Passport, set license terms machines can read, and receive automatic USDC settlement on Base when a person or an autonomous agent uses their work. The ecosystem is unusually concrete for its stage: more than 30 live web surfaces, 3 paid x402 resources on Base mainnet, 8 iOS apps, and guitar communities that anchor its musician audience, all publicly mapped and live-verified at map.suedeai.ai. Suede Labs AI is led by founder and CEO Jason Colapietro, who publishes and performs as Johnny Suede.</p>
     </div>
     <p class="sub" style="margin-top:14px"><b>Claim boundary:</b> this public operating map documents public pages, links, and stated roles. It does not establish legal title, parent/subsidiary relationships, or ownership percentages.</p>
   </div>
@@ -246,7 +274,7 @@
       <table class="ledger">
         <tr><td class="k">Operating brand</td><td>Suede Labs AI (product name: Suede)</td></tr>
         <tr><td class="k">Public-record entity</td><td>JC Investment Group LLC — active Florida LLC, filed June 3, 2019; Florida document L19000146068. The filing confirms the entity and listed manager, not title to every mapped property.</td></tr>
-        <tr><td class="k">Founder &amp; CEO</td><td>Jason Colapietro, performs as "Johnny Suede"</td></tr>
+        <tr><td class="k">Founder &amp; CEO</td><td>Jason Colapietro &mdash; publishes and performs under the declared pen name "Johnny Suede" (recorded as a pseudonym on Wikidata Q140235755)</td></tr>
         <tr><td class="k">Category</td><td>Programmable IP and creator ownership infrastructure for AI-native media</td></tr>
         <tr><td class="k">What it does</td><td>Proof of creation, machine-readable licensing, royalty routing, agent commerce</td></tr>
         <tr><td class="k">Rails</td><td>x402 per-call USDC settlement on Base mainnet, ERC-8004 on-chain identity, Solana interop</td></tr>
@@ -262,12 +290,12 @@
 <section id="numbers">
   <div class="wrap">
     <h2>The story in five numbers</h2>
-    <p class="sub">Live-surface metrics were checked July 3, 2026; entity filing checked July 15, 2026; the book shelf was last updated August 19, 2026. The public map and audit trail are at <a href="https://map.suedeai.ai">map.suedeai.ai</a>.</p>
+    <p class="sub">Live-surface metrics were checked July 3, 2026; entity filing checked July 15, 2026. The book shelf, the skills count, and the x402 resource list were re-verified against Amazon, GitHub, and the live x402 manifest on September 4, 2026. The public map and audit trail are at <a href="https://map.suedeai.ai">map.suedeai.ai</a>.</p>
     <div class="stats">
       <div class="stat"><span class="n">30+</span><span class="l">live web surfaces</span></div>
-      <div class="stat"><span class="n">22</span><span class="l">pay-per-call endpoints on Base</span></div>
+      <div class="stat"><span class="n">3</span><span class="l">paid x402 resources on Base mainnet</span></div>
       <div class="stat"><span class="n">8</span><span class="l">iOS apps on the App Store</span></div>
-      <div class="stat"><span class="n">3</span><span class="l">published books</span></div>
+      <div class="stat"><span class="n">5</span><span class="l">published books on Amazon</span></div>
       <div class="stat"><span class="n">2019</span><span class="l">Florida LLC filing year</span></div>
     </div>
   </div>
@@ -290,12 +318,55 @@
     <div class="block">
       <span class="blabel">Short bio · copy-ready</span>
       <button class="copybtn" data-copy="bio-short">Copy</button>
-      <p id="bio-short">Jason Colapietro is the founder and CEO of Suede Labs AI, where he builds ownership infrastructure for creators in the AI era. He performs and publishes music as Johnny Suede. He is the author of books including Stake Your Claim, The Screenshot, and the Signal Chain series on guitar history, a Forbes contributor, and he builds Suede in public, with every endpoint, app, and commit visible on GitHub. The Florida public filing for JC Investment Group LLC lists him as manager.</p>
+      <p id="bio-short">Jason Colapietro (Johnny Suede) is the founder and CEO of Suede Labs AI, where he builds ownership and licensing infrastructure for creators in the AI era. He publishes and performs under the pen name Johnny Suede, recorded as a pseudonym on his Wikidata entity. He is the author of five books on Amazon &mdash; The Human Authenticity Layer, Proof as Infrastructure, Stake Your Claim, The Claude Code Bible, and Codex in Production &mdash; plus three independently published titles: The Signal Chain, The Screenshot, and The Guitar Without a Number. He maintains 74 open-source creator skills and ships eight iOS apps. He builds Suede in public, with every endpoint, app, and commit visible on GitHub. The Florida public filing for JC Investment Group LLC lists him as manager.</p>
     </div>
     <div class="block">
       <span class="blabel">Press photo &amp; headshot</span>
       <p>Approved founder photos ship with the brand asset pack: <a href="https://github.com/Suede-AI/suede-brand-assets">github.com/Suede-AI/suede-brand-assets</a>. For a specific format or resolution, email <a href="mailto:info@suedeai.ai">info@suedeai.ai</a>.</p>
     </div>
+  </div>
+</section>
+
+<section id="guest">
+  <div class="wrap">
+    <h2>Guest bio &amp; how to credit</h2>
+    <p class="sub">Built for third parties: podcast show notes, conference programmes, panel bios, bylines. Every version leads with the
+    legal name, discloses the pen name, and ends with the canonical founder URL. Plain text, no formatting, paste as-is.
+    If you use only one line, use the credit line.</p>
+
+    <div class="block">
+      <span class="blabel">How to credit &middot; one line for show notes</span>
+      <button class="copybtn" data-copy="credit-line">Copy</button>
+      <p id="credit-line">Jason Colapietro (Johnny Suede), founder and CEO of Suede Labs AI — https://suedeai.ai/founder</p>
+    </div>
+
+    <div class="block">
+      <span class="blabel">The exact URL to link</span>
+      <button class="copybtn" data-copy="credit-url">Copy</button>
+      <p id="credit-url">https://suedeai.ai/founder</p>
+    </div>
+
+    <div class="block">
+      <span class="blabel">Guest bio &middot; 25 words</span>
+      <button class="copybtn" data-copy="guest-25">Copy</button>
+      <p id="guest-25">Jason Colapietro, who publishes as Johnny Suede, is the founder and CEO of Suede Labs AI, where he builds ownership and licensing infrastructure for creators. https://suedeai.ai/founder</p>
+    </div>
+
+    <div class="block">
+      <span class="blabel">Guest bio &middot; 50 words</span>
+      <button class="copybtn" data-copy="guest-50">Copy</button>
+      <p id="guest-50">Jason Colapietro, who publishes under the pen name Johnny Suede, is the founder and CEO of Suede Labs AI, where he builds ownership and licensing infrastructure for creators. He is the author of five books on Amazon, maintains 74 open-source creator skills, and ships eight iOS apps. https://suedeai.ai/founder</p>
+    </div>
+
+    <div class="block">
+      <span class="blabel">Guest bio &middot; 150 words</span>
+      <button class="copybtn" data-copy="guest-150">Copy</button>
+      <p id="guest-150">Jason Colapietro, who publishes under the pen name Johnny Suede, is the founder and CEO of Suede Labs AI, where he builds ownership and licensing infrastructure for creators in the AI era. Suede Labs AI lets a creator register a work, set license terms that machines can read, and take automatic USDC settlement on Base mainnet when a person or an autonomous agent uses it. Colapietro is the author of five books on Amazon: The Human Authenticity Layer, Proof as Infrastructure, Stake Your Claim, The Claude Code Bible, and Codex in Production, plus three independently published titles on guitar and search. He maintains 74 open-source creator skills, ships eight iOS apps under his own Apple developer account, and runs the business through JC Investment Group LLC, a Florida company filed in 2019. He works in public, and the whole ecosystem is mapped and live-checked at map.suedeai.ai. https://suedeai.ai/founder</p>
+    </div>
+
+    <p class="sub" style="margin-top:14px"><b>Name form:</b> the legal name is Jason Colapietro; Johnny Suede is a declared pen name, not a
+    separate person. Please do not credit an appearance to "Johnny Suede" alone &mdash; on its own it does not resolve to a findable
+    person. "Jason Colapietro (Johnny Suede)" is the preferred form.</p>
   </div>
 </section>
 
@@ -312,7 +383,7 @@
 <section id="angles">
   <div class="wrap">
     <h2>Story angles</h2>
-    <div class="angle"><b>Agents are already paying.</b><span>Autonomous AI agents settle per-call USDC payments on Base mainnet for music and IP services. Machine-to-machine commerce, live, with published prices from $1.99 per call.</span></div>
+    <div class="angle"><b>Agents are already paying.</b><span>Autonomous AI agents settle per-call USDC payments on Base mainnet for music and IP services. Machine-to-machine commerce, live, with published prices from $0.15 per call.</span></div>
     <div class="angle"><b>One founder, thirty live surfaces.</b><span>A solo founder operates an ecosystem most companies would staff a team for: apps, endpoints, communities, publications, all shipped and publicly verifiable.</span></div>
     <div class="angle"><b>The ownership layer AI forgot to build.</b><span>Everyone built generators. Suede builds the proof, licensing, and royalty rails those generators will need.</span></div>
     <div class="angle"><b>From guitar rigs to rights rails.</b><span>A musician-founder whose guitar communities (GuitarHub, Suede DNA, 400+ documented rigs) double as the beachhead audience for ownership infrastructure.</span></div>
@@ -364,10 +435,9 @@
     <h2>Selected coverage &amp; presence</h2>
     <div class="ledger-scroll">
       <table class="ledger">
-        <tr><td class="k">Forbes</td><td>Jason Colapietro is a Forbes contributor</td></tr>
         <tr><td class="k">TechBullion</td><td>Feature coverage of Suede Labs AI</td></tr>
-        <tr><td class="k">Books</td><td>Books on Amazon Kindle, including <a href="https://www.amazon.com/dp/B0GRG8LGQQ" target="_blank" rel="noopener">Stake Your Claim</a>, <a href="https://www.amazon.com/dp/B0GMB2VLXQ" target="_blank" rel="noopener">Proof as Infrastructure</a>, and <a href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener">The Human Authenticity Layer</a>, plus the free <a href="https://seo.suedeai.ai/book" target="_blank" rel="noopener">The Screenshot</a> and the free Signal Chain series</td></tr>
-        <tr><td class="k">Open source</td><td class="mono"><a href="https://github.com/Suede-AI" target="_blank" rel="noopener">github.com/Suede-AI</a> · 21 free creator skills, SDK, docs, brand assets</td></tr>
+        <tr><td class="k">Books</td><td>Five published titles on Amazon Kindle: <a href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener">The Human Authenticity Layer</a>, <a href="https://www.amazon.com/dp/B0GMB2VLXQ" target="_blank" rel="noopener">Proof as Infrastructure</a>, <a href="https://www.amazon.com/dp/B0GRG8LGQQ" target="_blank" rel="noopener">Stake Your Claim</a>, <a href="https://www.amazon.com/dp/B0HGG8M4HL" target="_blank" rel="noopener">The Claude Code Bible</a>, and <a href="https://www.amazon.com/dp/B0HGL425D2" target="_blank" rel="noopener">Codex in Production</a>. Three independently published titles: <a href="https://seo.suedeai.ai/book" target="_blank" rel="noopener">The Screenshot</a> (free in full on the web), The Signal Chain, and The Guitar Without a Number (now incorporated into The Signal Chain)</td></tr>
+        <tr><td class="k">Open source</td><td class="mono"><a href="https://github.com/JasonColapietro/suede-creator-skills" target="_blank" rel="noopener">github.com/JasonColapietro/suede-creator-skills</a> · 74 free creator skills, also at <a href="https://skills.suedeai.ai" target="_blank" rel="noopener">skills.suedeai.ai</a> · <a href="https://github.com/Suede-AI" target="_blank" rel="noopener">github.com/Suede-AI</a> · SDK, docs, brand assets</td></tr>
         <tr><td class="k">Blog</td><td class="mono"><a href="https://suedeai.ai/blog" target="_blank" rel="noopener">suedeai.ai/blog</a> · Suede’s own written pieces on ownership, provenance, and the AI media shift</td></tr>
         <tr><td class="k">Newsletter</td><td class="mono"><a href="https://jasoncolapietro.substack.com" target="_blank" rel="noopener">jasoncolapietro.substack.com</a></td></tr>
       </table>
@@ -379,7 +449,7 @@
   <div class="wrap">
     <p><b>Media contact:</b> <a href="mailto:info@suedeai.ai">info@suedeai.ai</a> · X <a href="https://x.com/AISUEDE">@AISUEDE</a> · Telegram <a href="https://t.me/SUEDEAI">t.me/SUEDEAI</a></p>
     <p>Deeper material: <a href="https://map.suedeai.ai/deck/">investor presentation</a> · <a href="https://suedeai.org">the full story</a> · <a href="https://map.suedeai.ai">the live ecosystem map</a></p>
-    <p class="mono" style="font-family:var(--font-mono);font-size:12px;margin-top:14px">Suede Labs AI · press kit compiled July 3, 2026 · entity language reviewed July 15, 2026 · book shelf updated August 19, 2026</p>
+    <p class="mono" style="font-family:var(--font-mono);font-size:12px;margin-top:14px">Suede Labs AI · press kit compiled July 3, 2026 · entity language reviewed July 15, 2026 · founder bio, book shelf, skills count and x402 resource list re-verified September 4, 2026</p>
     <div class="founder-line">
       <img src="/founder-jason-colapietro.png" alt="Jason Colapietro" width="36" height="36" loading="lazy">
       <p>Built by <a href="https://suedeai.ai/founder" target="_blank" rel="noopener noreferrer">Jason Colapietro</a>, founder of Suede Labs AI.</p>
