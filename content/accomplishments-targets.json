@@ -1,0 +1,12 @@
+[
+  {
+    "file": "press/index.html",
+    "className": "wrap"
+  },
+  {
+    "file": "index.html",
+    "className": "wrap",
+    "compact": true,
+    "fullUrl": "/press/#accomplishments"
+  }
+]
