@@ -114,7 +114,9 @@ const sitemap = read("sitemap.xml");
 if (!/<loc>https:\/\/map\.suedeai\.ai\/<\/loc>[\s\S]*?<lastmod>2026-07-31<\/lastmod>/.test(sitemap)) {
   fail("sitemap.xml: root is missing the 2026-07-31 lastmod");
 }
-for (const heldRoute of ["/press/", "/deck/"]) {
+// /press/ came off the hold on 2026-09-04 (tests/registry-marketing-hold.test.mjs
+// requires it in the sitemap); only the deck stays held.
+for (const heldRoute of ["/deck/"]) {
   if (sitemap.includes(`<loc>https://map.suedeai.ai${heldRoute}</loc>`)) {
     fail(`sitemap.xml: held route ${heldRoute} must not be advertised`);
   }
