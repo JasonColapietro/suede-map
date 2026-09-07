@@ -41,10 +41,10 @@ for (const relativePath of publicFiles) {
 
 expectIncludes(
   "index.html",
-  "<title>Suede Universe Map | Every Suede Labs AI Surface</title>",
+  "<title>Suede Universe Map | Suede Labs AI Surfaces</title>",
   "target search title",
 );
-expectIncludes("index.html", '"dateModified": "2026-07-15"', "current schema modification date");
+expectIncludes("index.html", '"dateModified": "2026-09-07"', "current schema modification date");
 expectIncludes("press/index.html", "Florida document L19000146068", "source-bounded JCIG filing reference");
 
 for (const relativePath of htmlFiles) {
@@ -111,8 +111,8 @@ expectIncludes("press/index.html", "entity filing checked July 15, 2026", "sourc
 expectIncludes("deck/index.html", "entity language checked July 15, 2026", "source-specific verification date");
 
 const sitemap = read("sitemap.xml");
-if (!/<loc>https:\/\/map\.suedeai\.ai\/<\/loc>[\s\S]*?<lastmod>2026-07-31<\/lastmod>/.test(sitemap)) {
-  fail("sitemap.xml: root is missing the 2026-07-31 lastmod");
+if (!/<loc>https:\/\/map\.suedeai\.ai\/<\/loc>[\s\S]*?<lastmod>2026-09-07<\/lastmod>/.test(sitemap)) {
+  fail("sitemap.xml: root is missing the 2026-09-07 lastmod");
 }
 // /press/ came off the hold on 2026-09-04 (tests/registry-marketing-hold.test.mjs
 // requires it in the sitemap); only the deck stays held.
