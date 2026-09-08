@@ -82,10 +82,10 @@ Affiliation record: https://seo.suedeai.ai/evidence#credentials
 FAU research announcement: https://business.fau.edu/newsroom/press-releases/2025/tcu-entrepreneurship-rankings-college-business-research.php
 1909: https://www.weare1909.org/
 
-Eight feature placements across four outlets
+Nine feature placements across four outlets
 December 2025–July 2026
 TechBullion, Programming Insider, Altcoin Investor, and Indie Hackers have published coverage and founder essays about Suede Labs AI. The record includes the iOS and developer-tool launches, advancing in the Avalanche Build Games, creator ownership infrastructure, and self-funded education deployments in African classrooms. Two placements are Jason’s bylined essays.
-All eight placements: https://suedeai.ai/press
+All nine placements: https://suedeai.ai/press
 Avalanche Build Games coverage: https://techbullion.com/suede-labs-advances-in-the-avalanche-build-games-with-massive-infrastructure-play/
 Education coverage: https://techbullion.com/suede-labs-brings-ai-powered-creative-tools-to-students-the-quiet-revolution-in-africas-classrooms/
 
