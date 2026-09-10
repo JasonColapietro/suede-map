@@ -120,8 +120,11 @@
       "description": "A plain-English public operating map of every Suede Labs AI site, app, and tool: what each is for, how the public surfaces connect, and which link to click.",
       "isPartOf": { "@id": "https://map.suedeai.ai/#website" },
       "datePublished": "2026-07-03",
-      "dateModified": "2026-07-15"
+      "dateModified": "2026-09-10",
+      "author": { "@id": "https://suedeai.ai/founder#person" }
     }
+    ,
+    {"@type": "FAQPage", "@id": "https://map.suedeai.ai/#faq", "mainEntity": [{"@type": "Question", "name": "What is the Suede Universe Map?", "acceptedAnswer": {"@type": "Answer", "text": "A plain-English wayfinding page for everything Suede Labs AI and JC Investment Group run in public: the person, the registered company, the three front doors, the shipped tools, and the listed domains. It maps what exists and where to click. It is not a cap table or a record of legal ownership."}}, {"@type": "Question", "name": "Is Agentix the same as Suede Agent Studio?", "acceptedAnswer": {"@type": "Answer", "text": "No, and it is the most common mix-up. agents.suedeai.ai is Suede Agent Studio, where you build agents. agentix.suedeai.ai is the earnings tracker that shows what those agents have made. Different addresses, different jobs."}}, {"@type": "Question", "name": "Which address is the canonical Suede API?", "acceptedAnswer": {"@type": "Answer", "text": "api.suedeai.xyz is canonical. The address api.suedeai.ai answers identically but is not canonical, and there is deliberately no redirect between the two, because redirecting a live pay-per-call gateway would break agent clients mid-payment."}}, {"@type": "Question", "name": "Are suede.social and social.suedeai.ai different sites?", "acceptedAnswer": {"@type": "Answer", "text": "No. They are two addresses for one website. There is also a separate Suede Social app in the iOS App Store. Two doors, one place."}}, {"@type": "Question", "name": "What does a green dot next to an address mean?", "acceptedAnswer": {"@type": "Answer", "text": "That the address answered a live request when this map was last checked, on the date stamped at the bottom of this page. Third-party addresses such as Substack or Amazon carry no dot, because this map makes no liveness claim about them."}}]}
   ]
 }
 </script>
@@ -540,6 +543,17 @@
     .rv { opacity: 1; transform: none; transition: none; }
     a.site, a.door, table.ledger tbody tr { transition: none; }
   }
+
+  /* FAQ — the questions this map exists to answer */
+  #faq .faq-list{max-width:56rem;margin-top:1.4rem;border-top:1px solid var(--hairline)}
+  #faq details{border-bottom:1px solid var(--hairline);background:var(--card)}
+  #faq summary{list-style:none;cursor:pointer;padding:1rem 1.1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  #faq summary::-webkit-details-marker{display:none}
+  #faq summary h3{margin:0;font-size:1rem;font-weight:600;color:var(--ink)}
+  #faq summary::after{content:"+";color:var(--muted);font-family:var(--mono,monospace);font-size:1.25rem;line-height:1}
+  #faq details[open] summary::after{content:"\2212"}
+  #faq details p{margin:0;padding:0 1.1rem 1.1rem;color:var(--muted);max-width:70ch;line-height:1.6}
+
 </style>
 
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -562,7 +576,7 @@
   <canvas id="constellation" aria-hidden="true"></canvas>
   <div class="wrap">
     <div class="in">
-      <p class="eyebrow">Suede Labs AI · Registry Map · <span class="rd">Verified July 2026</span></p>
+      <p class="eyebrow">Suede Labs AI · Registry Map · <span class="rd">Verified September 2026</span></p>
       <h1>The whole Suede universe, on <em>one page</em></h1>
       <p class="lede">
         Jason Colapietro builds and operates <strong>about 30 websites and 8 phone apps</strong> across
@@ -1036,6 +1050,35 @@
 </section>
 
 <!-- THIN SPOTS -->
+<section class="sect" id="faq">
+  <div class="wrap">
+    <h2>Questions this map exists to answer</h2>
+    <p class="sub">The confusions that come up most often, answered in one line each.</p>
+    <div class="faq-list">
+        <details class="rv">
+          <summary><h3>What is the Suede Universe Map?</h3></summary>
+          <p>A plain-English wayfinding page for everything Suede Labs AI and JC Investment Group run in public: the person, the registered company, the three front doors, the shipped tools, and the listed domains. It maps what exists and where to click. It is not a cap table or a record of legal ownership.</p>
+        </details>
+        <details class="rv">
+          <summary><h3>Is Agentix the same as Suede Agent Studio?</h3></summary>
+          <p>No, and it is the most common mix-up. agents.suedeai.ai is Suede Agent Studio, where you build agents. agentix.suedeai.ai is the earnings tracker that shows what those agents have made. Different addresses, different jobs.</p>
+        </details>
+        <details class="rv">
+          <summary><h3>Which address is the canonical Suede API?</h3></summary>
+          <p>api.suedeai.xyz is canonical. The address api.suedeai.ai answers identically but is not canonical, and there is deliberately no redirect between the two, because redirecting a live pay-per-call gateway would break agent clients mid-payment.</p>
+        </details>
+        <details class="rv">
+          <summary><h3>Are suede.social and social.suedeai.ai different sites?</h3></summary>
+          <p>No. They are two addresses for one website. There is also a separate Suede Social app in the iOS App Store. Two doors, one place.</p>
+        </details>
+        <details class="rv">
+          <summary><h3>What does a green dot next to an address mean?</h3></summary>
+          <p>That the address answered a live request when this map was last checked, on the date stamped at the bottom of this page. Third-party addresses such as Substack or Amazon carry no dot, because this map makes no liveness claim about them.</p>
+        </details>
+    </div>
+  </div>
+</section>
+
 <section class="sect" id="thin" hidden>
   <div class="wrap">
     <h2><span class="glyph-flag">⚑</span> Where the map was thin — and what changed</h2>
@@ -1097,7 +1140,7 @@
 
 <footer>
   <div class="wrap">
-    <p><b>How this map was checked:</b> every address shown with a green dot answered a live request on July&nbsp;15,&nbsp;2026 (first verified July&nbsp;3; the one non-responder flagged then, docs.suedeai.ai, was brought online July&nbsp;4). The nine confusion spots from the first compile were all fixed and re-verified live on July&nbsp;4. Suede ACP (acp.suedeai.ai) was added to the map July&nbsp;10. The AI voice and likeness protection playbooks (suedeai.org) were added to the router July&nbsp;11 after both pages answered live requests. Descriptions come from the live pages themselves, the public domain directory at jcinvestmentgroup.ventures/domains, and the public Suede-AI GitHub organization. Entity language was checked against the Florida public filing for JC Investment Group LLC (document L19000146068) on July&nbsp;15.</p>
+    <p><b>How this map was checked:</b> every address shown with a green dot answered a live request on July&nbsp;15,&nbsp;2026 (first verified July&nbsp;3; the one non-responder flagged then, docs.suedeai.ai, was brought online July&nbsp;4). The nine confusion spots from the first compile were all fixed and re-verified live on July&nbsp;4. Suede ACP (acp.suedeai.ai) was added to the map July&nbsp;10. The AI voice and likeness protection playbooks (suedeai.org) were added to the router July&nbsp;11 after both pages answered live requests. Descriptions come from the live pages themselves, the public domain directory at jcinvestmentgroup.ventures/domains, and the public Suede-AI GitHub organization. Entity language was checked against the Florida public filing for JC Investment Group LLC (document L19000146068) on July&nbsp;15. Re-checked September&nbsp;10,&nbsp;2026: all 35 green-dot addresses answered a live request.</p>
     <p><b>Claim boundary:</b> this public operating map does not establish legal title, parent/subsidiary relationships, or ownership percentages.</p>
     <p class="mono">Suede Labs AI · JC Investment Group LLC · map compiled July 3, 2026 · fix pass July 4, 2026 · entity review July 15, 2026</p>
     <p class="doors-line mono">
