@@ -1,1 +1,10 @@
 media/raw-*.mp4
+
+# Markdown is internal by default. With only the media rule above, CLAUDE.md
+# deployed as a static asset and answered 200 under a robots.txt that invites
+# every crawler (record-audit.py in suede-seo, 2026-09-11). This project deploys
+# through the Git integration, which honours .vercelignore: suedeai-org closed
+# the same leak the same way and its CLAUDE.md now 404s. The accomplishments
+# record is the one markdown file meant to be public.
+*.md
+!docs/accomplishments.md
