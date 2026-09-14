@@ -156,13 +156,17 @@
     {
       "id": "coverage",
       "category": "Press & essays",
-      "date": "December 2025–July 2026",
-      "title": "Nine feature placements across four outlets",
-      "body": "TechBullion, Programming Insider, Altcoin Investor, and Indie Hackers have published coverage and founder essays about Suede Labs AI. The record includes the iOS and developer-tool launches, advancing in the Avalanche Build Games, creator ownership infrastructure, and self-funded education deployments in African classrooms. Two placements are Jason’s bylined essays.",
+      "date": "December 2025–September 2026",
+      "title": "Ten feature placements across four outlets",
+      "body": "TechBullion, Programming Insider, Altcoin Investor, and Indie Hackers have published coverage and founder essays about Suede Labs AI. The record includes the September 2026 SEO and AI cohort, the iOS and developer-tool launches, advancing in the Avalanche Build Games, creator ownership infrastructure, and self-funded education deployments in African classrooms. Two placements are Jason’s bylined essays.",
       "links": [
         {
-          "label": "All nine placements",
+          "label": "All ten placements",
           "url": "https://suedeai.ai/press"
+        },
+        {
+          "label": "TechBullion: Suede Opens Its Widely Anticipated SEO and AI Cohort",
+          "url": "https://techbullion.com/suede-opens-its-widely-anticipated-seo-and-ai-cohort/"
         },
         {
           "label": "Avalanche Build Games coverage",
