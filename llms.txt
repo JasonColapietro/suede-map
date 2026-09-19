@@ -1,12 +1,14 @@
 # Suede Universe Map
 
-Suede AI, also known as Suede Labs AI, is the company founded by Jason Colapietro. Canonical company identity: https://suedeai.ai/#organization.
+Suede AI, also known as Suede Labs, is the company founded by Jason Colapietro. Canonical company identity: https://suedeai.ai/#organization.
 
 > A plain-English, live-verified map of the entire Suede AI ecosystem: every site, app, and tool, what each is for, how they connect, and which link to click. Maintained by Suede AI, founded by Jason Colapietro, who creates under the declared alias Johnny Suede.
 
 The map reads top to bottom as a public operating graph: Jason Colapietro (the founder), JC Investment Group LLC (an active Florida LLC whose public filing lists Jason as manager), Suede AI (the operating brand), and the publicly connected tools and sites below. The JC Investment Group LLC filing is dated June 3, 2019 under Florida document L19000146068.
 
 Official identity pages: [Jason Colapietro](https://jasoncolapietro.com) and [Johnny Suede](https://johnnysuede.com).
+
+Founder: Jason Colapietro is a fractional forward-deployed engineer. He integrates AI agents into how a company works, then runs its SEO, AI search visibility and PR. He is the founder and CEO of Suede AI.
 
 Claim boundary: this public operating map documents public pages, links, filings, and stated roles. It does not establish legal title, parent/subsidiary relationships, or ownership percentages.
 
@@ -32,13 +34,13 @@ Claim boundary: this public operating map documents public pages, links, filings
 ## Accomplishments
 
 Built, scaled, and exited businesses
-Before founding Suede Labs AI, Jason Colapietro built and ran call centers in his niche and exited for millions. The sales scripts he wrote remain in use across the industry. That operating experience now informs Suede’s managed agents for call review, lead qualification, and sales-script consistency.
+Before founding Suede AI, Jason Colapietro built and ran call centers in his niche and exited for millions. The sales scripts he wrote remain in use across the industry. That operating experience now informs Suede’s managed agents for call review, lead qualification, and sales-script consistency.
 Read the operator background: https://seo.suedeai.ai/#operations
 Founder biography: https://suedeai.ai/founder
 
-Founder and CEO of Suede Labs AI; Manager of JC Investment Group LLC
-Jason is founder and CEO of Suede Labs AI, building creator-ownership infrastructure: proof of creation, rights metadata, licensing, royalty routing, and agent commerce. He is also manager of JC Investment Group LLC, a founder-led venture platform organized in Florida in 2019 under document L19000146068, alongside the Suede Foundation at suedeai.org. JC Investment Group LLC is the holding company for Suede Labs AI.
-Suede Labs AI: https://suedeai.ai
+Founder and CEO of Suede AI; Manager of JC Investment Group LLC
+Jason is founder and CEO of Suede AI, building creator-ownership infrastructure: proof of creation, rights metadata, licensing, royalty routing, and agent commerce. He is also manager of JC Investment Group LLC, a founder-led venture platform organized in Florida in 2019 under document L19000146068, alongside the Suede Foundation at suedeai.org. JC Investment Group LLC is the holding company for Suede AI.
+Suede AI: https://suedeai.ai
 JC Investment Group LLC: https://jcinvestmentgroup.ventures/
 Suede Foundation: https://suedeai.org/
 
@@ -50,8 +52,8 @@ Google Cloud Partner Advantage
 JC Investment Group LLC became a member of Google Cloud Partner Advantage on September 4, 2026, with suedeai.ai as the verified domain. The membership is a second milestone in the Google Cloud partnership that began in September 2025.
 Company membership record: https://jcinvestmentgroup.ventures/press#standing
 
-48 merged pull requests. 43 external repositories.
-The public record includes 27 substantive code or documentation contributions and 21 accepted listings of Jason-owned work. Maintainers have merged contributions into projects including Jest, Adobe React Spectrum, Backstage, Hardhat, and the x402 Foundation. A separate Linux kernel USB/IP contribution is recorded as Public upstream v6; it is not included in the merged-PR count.
+49 merged pull requests. 44 external repositories.
+The public record includes 28 substantive code or documentation contributions and 21 accepted listings of Jason-owned work. Maintainers have merged contributions into projects including Jest, Adobe React Spectrum, Backstage, Hardhat, and the x402 Foundation. A separate Linux kernel USB/IP contribution is recorded as Public upstream v7; it is not included in the merged-PR count.
 Complete upstream record: https://seo.suedeai.ai/evidence#open-source
 Machine-readable merged-PR record: https://suedeai.ai/open-source-contributions.json
 Jest #16296: https://github.com/jestjs/jest/pull/16296
@@ -68,7 +70,7 @@ paritytech/polkadot-sdk #12853: https://github.com/paritytech/polkadot-sdk/pull/
 jestjs/jest #16295: https://github.com/jestjs/jest/pull/16295
 
 Listed in thirteen independent skills directories and the x402 ecosystem list
-Suede Creator Skills, the public Claude Code skills marketplace, has been accepted by the maintainers of thirteen independent awesome-lists and directories, including buildwithclaude, awesome-codex, awesome-agent-skills, and awesome-claude-code-plugins. Suede AI Agent Studio is listed in the x402 ecosystem’s awesome-x402. These accepted listings are counted inside the 48 merged pull requests above and are stated separately so the composition stays clear.
+Suede Creator Skills, the public Claude Code skills marketplace, has been accepted by the maintainers of thirteen independent awesome-lists and directories, including buildwithclaude, awesome-codex, awesome-agent-skills, and awesome-claude-code-plugins. Suede AI Agent Studio is listed in the x402 ecosystem’s awesome-x402. These accepted listings are counted inside the 49 merged pull requests above and are stated separately so the composition stays clear.
 Suede Creator Skills on GitHub: https://github.com/JasonColapietro/suede-creator-skills
 davepoon/buildwithclaude #305: https://github.com/davepoon/buildwithclaude/pull/305
 ichangyou/awesome-codex #2: https://github.com/ichangyou/awesome-codex/pull/2
@@ -122,7 +124,7 @@ FAU research announcement: https://business.fau.edu/newsroom/press-releases/2025
 1909: https://www.weare1909.org/
 
 Eleven feature placements across five outlets
-Business Insider, TechBullion, Programming Insider, Altcoin Investor, and Indie Hackers have published coverage and founder essays about Suede Labs AI. The record includes the September 2026 SEO and AI cohort carried by Business Insider, the on-chain IP authentication launch, the iOS and developer-tool launches, advancing in the Avalanche Build Games, creator ownership infrastructure, the IP visibility audit, and self-funded education deployments in African classrooms. Two placements are Jason’s bylined essays.
+Business Insider, TechBullion, Programming Insider, Altcoin Investor, and Indie Hackers have published coverage and founder essays about Suede AI. The record includes the September 2026 SEO and AI cohort carried by Business Insider, the on-chain IP authentication launch, the iOS and developer-tool launches, advancing in the Avalanche Build Games, creator ownership infrastructure, the IP visibility audit, and self-funded education deployments in African classrooms. Two placements are Jason’s bylined essays.
 View the press coverage: https://suedeai.ai/press
 Business Insider: Award-Winning Developer Jason Colapietro Opens Suede Labs AI’s Long-Awaited SEO Cohort: https://markets.businessinsider.com/news/currencies/award-winning-developer-jason-colapietro-opens-suede-labs-ai-s-long-awaited-seo-cohort-1036549662
 TechBullion: Suede Opens Its Widely Anticipated SEO and AI Cohort: https://techbullion.com/suede-opens-its-widely-anticipated-seo-and-ai-cohort/
