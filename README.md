@@ -2,7 +2,7 @@
 
 > **[Suede AI](https://suedeai.ai) · By [Jason Colapietro](https://jasoncolapietro.com), Founder and CEO**
 
-Suede AI is also known as Suede Labs AI.
+Suede AI is also known as Suede Labs.
 
 Plain-English wayfinding map of the entire Suede AI / JC Investment Group ecosystem — every site, app, and tool, what each is for, how they connect, and which link to click. Built for readers who aren't technical.
 

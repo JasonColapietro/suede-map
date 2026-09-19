@@ -2,7 +2,7 @@
 
 ## What this is
 
-The **Suede Universe Map** — live at **https://map.suedeai.ai** — a plain-English wayfinding page for the whole Suede Labs AI / JC Investment Group ecosystem, written for non-technical readers. Pure static site, **no build step, no package.json, no framework**. Three pages:
+The **Suede Universe Map** — live at **https://map.suedeai.ai** — a plain-English wayfinding page for the whole Suede AI / JC Investment Group ecosystem, written for non-technical readers. Pure static site, **no build step, no package.json, no framework**. Three pages:
 
 - `index.html` (~1100 lines) — the map itself: everything (content, CSS, JS) is inline in this one file.
 - `deck/index.html` — ecosystem investor deck (map.suedeai.ai/deck/).
