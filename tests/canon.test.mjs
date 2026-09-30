@@ -3,10 +3,11 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-// Estate canon, 2026-09-19: "Suede AI" is the one primary company name; Suede Labs
-// and Suede Labs AI are alternates only. Facts: 49 merged PRs across 44 external
-// repositories (28 substantive + 21 listings), kernel USB/IP patch at Public
-// upstream v7 (under review, not merged), nine iOS apps on Jason's developer page.
+// Estate canon, 2026-09-19 (name ruling 2026-09-30): "Suede AI" is the one primary
+// company name; Suede Labs is its only alternate and "Suede Labs AI" is retired.
+// Facts: 49 merged PRs across 44 external repositories (28 substantive + 21
+// listings), kernel USB/IP patch at Public upstream v7 (under review, not merged),
+// nine iOS apps on Jason's developer page.
 
 const root = new URL("../", import.meta.url);
 const read = (file) => readFile(new URL(file, root), "utf8");
@@ -25,16 +26,17 @@ test("accomplishments.json is the byte-identical canonical copy", async () => {
   const bytes = await readFile(new URL("content/accomplishments.json", root));
   assert.equal(
     createHash("sha1").update(bytes).digest("hex"),
-    "15e282cb8d8b259103da12d186913fd55060295e",
+    "01d71e7653e07abe2a2a72b5d15a9927daf0d49a",
   );
 });
 
-test("Organization schema: Suede AI primary, Suede Labs names as alternates only", async () => {
+test("Organization schema: Suede AI primary, Suede Labs as the only alternate", async () => {
   for (const file of HTML) {
     const org = findById(graphOf(await read(file)), "https://suedeai.ai/#organization");
     assert.ok(org, `${file}: expected the Suede AI organization node`);
     assert.equal(org.name, "Suede AI", file);
-    assert.deepEqual(org.alternateName, ["Suede Labs", "Suede Labs AI"], file);
+    assert.equal(org.alternateName, "Suede Labs", file);
+    assert.doesNotMatch(JSON.stringify(org), /Suede Labs AI/i, `${file}: retired name`);
   }
 });
 
