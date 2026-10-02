@@ -178,3 +178,7 @@ AI Crawler Access Index: https://suedeai.ai/blog/ai-crawler-access-index
 Developer skills: https://skills.suedeai.ai/
 Substack: https://jasoncolapietro.substack.com/
 <!-- accomplishments:end -->
+
+## Source and citation guide
+
+- [AI Instructions](https://map.suedeai.ai/ai-instructions/): Site identity, authoritative sources and citation guidance.
