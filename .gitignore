@@ -1,2 +1,3 @@
 .vercel
 media/raw-*.mp4
+.env*
