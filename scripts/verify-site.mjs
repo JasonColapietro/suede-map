@@ -47,8 +47,8 @@ expectIncludes(
 expectIncludes("index.html", '"dateModified": "2026-10-03"', "current schema modification date");
 expectIncludes(
   "index.html",
-  "One-page site: AI marketing, search visibility, and entity SEO by Jason Colapietro",
-  "source-backed jasoncolapietro.xyz description",
+  'jasoncolapietro.xyz</td><td class="quiet mono">→ <a href="https://seo.suedeai.ai/field-notes"',
+  "jasoncolapietro.xyz points at its seo.suedeai.ai/field-notes destination",
 );
 expectExcludes(
   "index.html",
