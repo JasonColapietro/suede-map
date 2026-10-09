@@ -26,7 +26,7 @@ test("accomplishments.json is the byte-identical canonical copy", async () => {
   const bytes = await readFile(new URL("content/accomplishments.json", root));
   assert.equal(
     createHash("sha1").update(bytes).digest("hex"),
-    "01d71e7653e07abe2a2a72b5d15a9927daf0d49a",
+    "cf8458e913ac19618ebc41d71cfcdedb825c0d64",
   );
 });
 
@@ -44,7 +44,7 @@ test("Person schema carries the canon jobTitle", async () => {
   for (const file of ["index.html", "press/index.html"]) {
     const person = findById(graphOf(await read(file)), "https://suedeai.ai/founder#person");
     assert.ok(person, `${file}: expected the founder Person node`);
-    assert.equal(person.jobTitle, "Founder and CEO, Suede AI", file);
+    assert.deepEqual(person.jobTitle, ["Founder and CEO, Suede AI", "Fractional Forward-Deployed Engineer"], file);
   }
 });
 
@@ -74,8 +74,8 @@ test("canon facts replace the retired numbers", async () => {
     assert.doesNotMatch(text, /\b(?:8|eight) iOS apps/i, file);
   }
   const llms = await read("llms.txt");
-  assert.match(llms, /49 merged pull requests\. 44 external repositories\./);
-  assert.match(llms, /28 substantive code or documentation contributions and 21 accepted listings/);
+  assert.match(llms, /54 merged pull requests\. 46 external repositories\./);
+  assert.match(llms, /33 substantive code or documentation contributions and 21 accepted listings/);
   assert.match(llms, /Public upstream v7/);
 });
 
