@@ -44,7 +44,7 @@ test("Person schema carries the canon jobTitle", async () => {
   for (const file of ["index.html", "press/index.html"]) {
     const person = findById(graphOf(await read(file)), "https://suedeai.ai/founder#person");
     assert.ok(person, `${file}: expected the founder Person node`);
-    assert.equal(person.jobTitle, "Founder and CEO, Suede AI", file);
+    assert.deepEqual(person.jobTitle, ["Founder and CEO, Suede AI", "Fractional Forward-Deployed Engineer"], file);
   }
 });
 

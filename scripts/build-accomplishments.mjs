@@ -8,7 +8,7 @@ const esc = value => value.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>'
 const start = '<!-- accomplishments:start -->';
 const end = '<!-- accomplishments:end -->';
 
-const partners = `<ul class="accomplishments-partners">${data.visuals.partners.map(p => `<li><a class="accomplishments-partner" href="${esc(p.url)}"><img src="${esc(p.image)}" alt="" width="42" height="42" loading="lazy"><span><strong>${esc(p.name)}</strong><span>${esc(p.label)}</span></span></a></li>`).join('')}</ul>`;
+const partners = `<ul class="accomplishments-partners">${data.visuals.partners.map(p => `<li><a class="accomplishments-partner" href="${esc(p.url)}"><img src="${esc(p.image)}" alt="${esc(p.name)} logo" width="42" height="42" loading="lazy"><span><strong>${esc(p.name)}</strong><span>${esc(p.label)}</span></span></a></li>`).join('')}</ul>`;
 const gallery = `<div class="accomplishments-gallery">${data.visuals.screenshots.map(s => `<figure class="accomplishments-capture"><a href="${esc(s.image)}" aria-label="Open full-size image: ${esc(s.title)}"><img src="${esc(s.image)}" alt="${esc(s.alt)}" width="${s.width}" height="${s.height}" loading="lazy"></a><figcaption><strong>${esc(s.title)}</strong><p>${esc(s.caption)}</p><span class="accomplishments-capture-links"><a href="${esc(s.url)}">${esc(s.linkLabel)}</a><a href="https://seo.suedeai.ai/evidence#directory">View the archive</a></span></figcaption></figure>`).join('')}</div>`;
 for (const target of targets) {
  const records = target.compact ? data.records.filter(r => ['directory-recognition-current','google-cloud','open-source','books','coverage'].includes(r.id)) : data.records;
