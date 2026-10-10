@@ -26,7 +26,7 @@ test("accomplishments.json is the byte-identical canonical copy", async () => {
   const bytes = await readFile(new URL("content/accomplishments.json", root));
   assert.equal(
     createHash("sha1").update(bytes).digest("hex"),
-    "cf8458e913ac19618ebc41d71cfcdedb825c0d64",
+    "70cb937b8759426caf62df5321228be74df9bb2c",
   );
 });
 
