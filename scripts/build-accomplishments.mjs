@@ -4,6 +4,9 @@ import { readFileSync, writeFileSync } from 'node:fs';
 const read = path => readFileSync(new URL('../' + path, import.meta.url), 'utf8');
 const data = JSON.parse(read('content/accomplishments.json'));
 const targets = JSON.parse(read('content/accomplishments-targets.json'));
+// A bare origin (https://host) is the same page as https://host/; emit the
+// canonical trailing-slash form so crawlers do not see two URLs for one page.
+const canonicalUrl = url => /^https?:\/\/[^/?#]+$/.test(url) ? url + '/' : url;
 const esc = value => value.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const start = '<!-- accomplishments:start -->';
 const end = '<!-- accomplishments:end -->';
@@ -12,7 +15,7 @@ const partners = `<ul class="accomplishments-partners">${data.visuals.partners.m
 const gallery = `<div class="accomplishments-gallery">${data.visuals.screenshots.map(s => `<figure class="accomplishments-capture"><a href="${esc(s.image)}" aria-label="Open full-size image: ${esc(s.title)}"><img src="${esc(s.image)}" alt="${esc(s.alt)}" width="${s.width}" height="${s.height}" loading="lazy"></a><figcaption><strong>${esc(s.title)}</strong><p>${esc(s.caption)}</p><span class="accomplishments-capture-links"><a href="${esc(s.url)}">${esc(s.linkLabel)}</a><a href="https://seo.suedeai.ai/evidence#directory">View the archive</a></span></figcaption></figure>`).join('')}</div>`;
 for (const target of targets) {
  const records = target.compact ? data.records.filter(r => ['directory-recognition-current','google-cloud','open-source','books','coverage'].includes(r.id)) : data.records;
- const cards = records.map(r => `<article class="accomplishment" id="accomplishment-${esc(r.id)}"><p class="accomplishment-meta">${esc(r.category)}</p><h3>${esc(r.title)}</h3><p>${esc(r.body)}</p><ul class="accomplishment-links">${r.links.map(l => `<li><a href="${esc(l.url)}">${esc(l.label)}</a></li>`).join('')}</ul></article>`).join('\n');
+ const cards = records.map(r => `<article class="accomplishment" id="accomplishment-${esc(r.id)}"><p class="accomplishment-meta">${esc(r.category)}</p><h3>${esc(r.title)}</h3><p>${esc(r.body)}</p><ul class="accomplishment-links">${r.links.map(l => `<li><a href="${esc(canonicalUrl(l.url))}">${esc(l.label)}</a></li>`).join('')}</ul></article>`).join('\n');
  const content = `${start}\n<section id="accomplishments" class="accomplishments ${esc(target.className)}" aria-labelledby="accomplishments-title"><p class="accomplishments-kicker">Jason Colapietro / Suede AI</p><h2 id="accomplishments-title">${esc(target.compact ? 'A record built in public.' : data.title)}</h2><p class="accomplishments-intro">${esc(data.intro)}</p><div class="accomplishments-visuals"><h3>${target.compact ? 'Partnerships &amp; programs' : 'Directory listings &amp; partnerships'}</h3>${partners}${target.compact ? '' : gallery}</div><div class="accomplishments-list">${cards}</div>${target.compact ? `<p class="accomplishments-more"><a href="${esc(target.fullUrl)}">Explore all accomplishments and source records</a></p>` : `<p class="accomplishments-more"><a href="${esc(data.source)}">Explore the original evidence archive on Suede AI SEO</a></p>`}</section>\n${end}`;
  const original = read(target.file);
  if (!original.includes(start) || !original.includes(end)) throw new Error(`Missing record markers in ${target.file}`);
