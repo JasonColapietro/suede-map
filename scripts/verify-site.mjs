@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { spawnSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -41,10 +42,10 @@ for (const relativePath of publicFiles) {
 
 expectIncludes(
   "index.html",
-  "<title>Suede Universe Map | Every Suede AI Surface</title>",
+  "<title>Suede Universe Map | How Every Suede AI Surface Connects</title>",
   "target search title",
 );
-expectIncludes("index.html", '"dateModified": "2026-10-11"', "current schema modification date");
+expectIncludes("index.html", '"dateModified": "2026-10-12"', "current schema modification date");
 expectIncludes(
   "index.html",
   'jasoncolapietro.xyz</td><td class="quiet mono">→ <a href="https://seo.suedeai.ai/field-notes"',
@@ -121,9 +122,34 @@ expectIncludes("press/index.html", "entity filing checked July 15, 2026", "sourc
 expectIncludes("deck/index.html", "entity language checked July 15, 2026", "source-specific verification date");
 
 const sitemap = read("sitemap.xml");
-if (!/<loc>https:\/\/map\.suedeai\.ai\/<\/loc>[\s\S]*?<lastmod>2026-10-11<\/lastmod>/.test(sitemap)) {
-  fail("sitemap.xml: root is missing the 2026-10-11 lastmod");
+if (!/<loc>https:\/\/map\.suedeai\.ai\/<\/loc>[\s\S]*?<lastmod>2026-10-12<\/lastmod>/.test(sitemap)) {
+  fail("sitemap.xml: root is missing the 2026-10-12 lastmod");
 }
+
+// The full-text feed is generated from index.html and press/index.html, so a
+// page edit without a rebuild leaves agents reading stale copy.
+{
+  const run = spawnSync(process.execPath, [join(repoRoot, "scripts", "build-llms-full.mjs"), "--check"], { encoding: "utf8" });
+  if (run.status !== 0) fail(`llms-full.txt: ${run.stderr.trim() || "stale"}`);
+  const full = read("llms-full.txt");
+  if (!full.startsWith("# ")) fail("llms-full.txt: must open with a Markdown heading");
+  if (!read("llms.txt").includes("https://map.suedeai.ai/llms-full.txt")) fail("llms.txt: must link llms-full.txt");
+  for (const [file, url] of [["index.html", "https://map.suedeai.ai/"], ["press/index.html", "https://map.suedeai.ai/press/"], ["ai-instructions/index.html", "https://map.suedeai.ai/ai-instructions/"]]) {
+    const html = read(file);
+    const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1] || "";
+    const description = (html.match(/<meta name="description" content="([^"]*)"/) || [])[1] || "";
+    if (title.length > 65) fail(`${file}: title is ${title.length} characters`);
+    if (description.length < 120 || description.length > 160) fail(`${file}: description is ${description.length} characters`);
+    if (!/<meta property="og:image" content="https:\/\//.test(html)) fail(`${file}: missing absolute og:image`);
+    if (!html.includes('<meta name="twitter:card" content="summary_large_image">')) fail(`${file}: missing twitter card`);
+    if (url !== "https://map.suedeai.ai/" && !html.includes('"BreadcrumbList"')) fail(`${file}: missing BreadcrumbList`);
+    if (!html.includes(`<link rel="canonical" href="${url}">`)) fail(`${file}: canonical is not ${url}`);
+  }
+  for (const file of ["index.html", "press/index.html", "llms.txt"]) {
+    if (read(file).includes("map.suedeai.ai/deck")) fail(`${file}: links the redirected /deck`);
+  }
+}
+
 // /press/ came off the hold on 2026-09-04 (tests/registry-marketing-hold.test.mjs
 // requires it in the sitemap); only the deck stays held.
 for (const heldRoute of ["/deck/"]) {

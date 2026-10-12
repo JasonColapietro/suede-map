@@ -15,8 +15,9 @@ Claim boundary: this public operating map documents public pages, links, filings
 ## Map
 
 - [The Suede Universe Map](https://map.suedeai.ai/): Public operating graph from founder to entity to brand to every publicly connected product, plus a "which link do I click" router table.
-- [Investor deck](https://map.suedeai.ai/deck/): Ecosystem investor deck.
+- [Investor brief](https://suedeai.org/investors/): Suede AI investor brief on suedeai.org.
 - [Press kit](https://map.suedeai.ai/press/): Press assets and background.
+- [Full text of the map and press kit](https://map.suedeai.ai/llms-full.txt): every card, router row and FAQ answer as plain Markdown.
 
 ## Core Suede properties
 
