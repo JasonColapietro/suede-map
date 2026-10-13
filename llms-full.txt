@@ -92,7 +92,7 @@ The guitar-world publications and communities Suede runs.
 - [GuitarChords.info](https://guitarchords.info): Free tools: chord library, scales, tuner, metronome.
 - [Guitar.solutions](https://guitar.solutions): Engineering-grade reference for guitar signal chains, pickup to speaker.
 - [Guitar Services](https://guitar.services): Jason’s guitar work in one place: two guitar books, a signal chain reference, chord and scale libraries, and AI practice tools.
-- [suedeMarket](https://market.suedeai.ai/): A marketplace to buy and sell musical instruments, built for both people and AI agents.
+- [suedeMarket gear guides](https://market.suedeai.ai/): Practical buying and selling checklists for inspecting and describing used instruments. The marketplace is retired.
 - [Suede NFT Studio](https://nft.suedeai.ai): Solana NFT tools: collections, metadata, and rights tracking for on-chain drops.
 - [Suede Cosmos](https://cosmos.suedeai.ai): A navigable galaxy of music — stars cluster by genre and brighten by relevance, click any to explore.
 
@@ -170,7 +170,7 @@ These are **different spellings of the same names** listed in the public domain 
 - Get better at guitar: [strumly.suedeai.ai](https://strumly.suedeai.ai)
 - Nerd out about famous guitarists’ gear: [dna.suedeai.ai](https://dna.suedeai.ai)
 - Find Jason’s guitar books, guides, and tools in one place: [guitar.services](https://guitar.services)
-- Buy or sell a musical instrument: [market.suedeai.ai](https://market.suedeai.ai/)
+- Read instrument buying and selling checklists: [market.suedeai.ai](https://market.suedeai.ai/)
 - Build an AI agent that earns money: [agents.suedeai.ai](https://agents.suedeai.ai)
 - Check what my agents have earned: [agentix.suedeai.ai](https://agentix.suedeai.ai)
 - Get my brand graded or run a creator campaign: [promo.suedeai.ai](https://promo.suedeai.ai)
