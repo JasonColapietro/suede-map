@@ -45,7 +45,7 @@ expectIncludes(
   "<title>Suede Universe Map | How Every Suede AI Surface Connects</title>",
   "target search title",
 );
-expectIncludes("index.html", '"dateModified": "2026-10-12"', "current schema modification date");
+expectIncludes("index.html", '"dateModified": "2026-10-19"', "current schema modification date");
 expectIncludes(
   "index.html",
   'jasoncolapietro.xyz</td><td class="quiet mono">→ <a href="https://seo.suedeai.ai/field-notes"',
@@ -122,8 +122,8 @@ expectIncludes("press/index.html", "entity filing checked July 15, 2026", "sourc
 expectIncludes("deck/index.html", "entity language checked July 15, 2026", "source-specific verification date");
 
 const sitemap = read("sitemap.xml");
-if (!/<loc>https:\/\/map\.suedeai\.ai\/<\/loc>[\s\S]*?<lastmod>2026-10-12<\/lastmod>/.test(sitemap)) {
-  fail("sitemap.xml: root is missing the 2026-10-12 lastmod");
+if (!/<loc>https:\/\/map\.suedeai\.ai\/<\/loc>[\s\S]*?<lastmod>2026-10-19<\/lastmod>/.test(sitemap)) {
+  fail("sitemap.xml: root is missing the 2026-10-19 lastmod");
 }
 
 // The full-text feed is generated from index.html and press/index.html, so a
@@ -156,6 +156,27 @@ for (const heldRoute of ["/deck/"]) {
   if (sitemap.includes(`<loc>https://map.suedeai.ai${heldRoute}</loc>`)) {
     fail(`sitemap.xml: held route ${heldRoute} must not be advertised`);
   }
+}
+
+// Unknown paths get 404.html (Vercel serves it with a 404 status). It must stay
+// out of the index and must not claim a canonical; it answered with the
+// platform default page, with no noindex, until 2026-10-19.
+{
+  const notFound = read("404.html");
+  if (!notFound.includes('<meta name="robots" content="noindex, follow">')) fail("404.html: missing noindex, follow");
+  if (notFound.includes('rel="canonical"')) fail("404.html: a missing page must not name a canonical");
+  if (sitemap.includes("404")) fail("sitemap.xml: lists the 404 page");
+}
+
+// Alias rows say where an address goes today. flagship.suedeai.ai stopped
+// mirroring suedeai.ai and now 308s to it (probed 2026-10-19).
+if (read("index.html").includes("mirrors suedeai.ai")) fail("index.html: flagship.suedeai.ai no longer mirrors suedeai.ai; it 308s");
+
+// Every public page names a contact and the privacy policy (E-E-A-T trust signal).
+for (const file of ["index.html", "press/index.html"]) {
+  const html = read(file);
+  if (!html.includes('href="mailto:info@suedeai.ai"')) fail(`${file}: no contact address`);
+  if (!html.includes('href="https://suedeai.ai/privacy"')) fail(`${file}: no privacy policy link`);
 }
 
 if (failures.length) {
