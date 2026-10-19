@@ -4,10 +4,14 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 // Estate canon, 2026-09-19 (name ruling 2026-09-30): "Suede AI" is the one primary
-// company name; Suede Labs is its only alternate and "Suede Labs AI" is retired.
-// Facts: 49 merged PRs across 44 external repositories (28 substantive + 21
-// listings), kernel USB/IP patch at Public upstream v7 (under review, not merged),
-// nine iOS apps on Jason's developer page.
+// company name. Facts: 54 merged PRs across 46 external repositories (33
+// substantive + 21 listings), kernel USB/IP patch at Public upstream v7 (under
+// review, not merged), nine iOS apps on Jason's developer page.
+//
+// Identity spec v2 (2026-10-19): this map is a satellite. It references the
+// canonical Organization and Person by @id and never mints its own values for
+// them (no description, no alternateName, no competing sameAs). The canonical
+// nodes live on suedeai.ai.
 
 const root = new URL("../", import.meta.url);
 const read = (file) => readFile(new URL(file, root), "utf8");
@@ -26,25 +30,40 @@ test("accomplishments.json is the byte-identical canonical copy", async () => {
   const bytes = await readFile(new URL("content/accomplishments.json", root));
   assert.equal(
     createHash("sha1").update(bytes).digest("hex"),
-    "70cb937b8759426caf62df5321228be74df9bb2c",
+    "61d8924b1d671b379d35a4c2133f2346aa981cee",
   );
 });
 
-test("Organization schema: Suede AI primary, Suede Labs as the only alternate", async () => {
+const ORG_STUB_KEYS = new Set(["@type", "@id", "name", "url", "founder"]);
+const PERSON_STUB_KEYS = new Set(["@type", "@id", "name", "url", "jobTitle", "worksFor"]);
+
+test("Organization schema is a reference stub to the canonical Suede AI node", async () => {
   for (const file of HTML) {
     const org = findById(graphOf(await read(file)), "https://suedeai.ai/#organization");
     assert.ok(org, `${file}: expected the Suede AI organization node`);
     assert.equal(org.name, "Suede AI", file);
-    assert.equal(org.alternateName, "Suede Labs", file);
-    assert.doesNotMatch(JSON.stringify(org), /Suede Labs AI/i, `${file}: retired name`);
+    assert.equal(org.url, "https://suedeai.ai", file);
+    for (const key of Object.keys(org)) assert.ok(ORG_STUB_KEYS.has(key), `${file}: Organization stub carries ${key}`);
+    if (org.founder) assert.deepEqual(org.founder, { "@id": "https://suedeai.ai/founder#person" }, file);
   }
 });
 
-test("Person schema carries the canon jobTitle", async () => {
+test("Person schema is a reference stub with the one canon jobTitle", async () => {
   for (const file of ["index.html", "press/index.html"]) {
     const person = findById(graphOf(await read(file)), "https://suedeai.ai/founder#person");
     assert.ok(person, `${file}: expected the founder Person node`);
-    assert.deepEqual(person.jobTitle, ["Founder and CEO, Suede AI", "Fractional Forward-Deployed Engineer"], file);
+    assert.equal(person.name, "Jason Colapietro", file);
+    assert.equal(person.url, "https://suedeai.ai/founder", file);
+    assert.equal(person.jobTitle, "Founder and CEO, Suede AI", file);
+    assert.deepEqual(person.worksFor, { "@id": "https://suedeai.ai/#organization" }, file);
+    for (const key of Object.keys(person)) assert.ok(PERSON_STUB_KEYS.has(key), `${file}: Person stub carries ${key}`);
+  }
+});
+
+test("no schema node gives Suede AI the bare alternate name \"Suede\"", async () => {
+  for (const file of [...HTML, "ai-instructions/index.html"]) {
+    const html = await read(file);
+    assert.doesNotMatch(html, /"alternateName":\s*(?:"Suede"|\[[^\]]*"Suede"[,\]])/, file);
   }
 });
 

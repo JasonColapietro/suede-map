@@ -1,9 +1,16 @@
 # Suede Universe Map: full text
 
-> A plain-English public operating map of every Suede AI site, app, and tool: what each is for, how the public surfaces connect, and which link to click.
+> Suede AI builds AI agent platforms businesses use to run their work, and white-labels them for agencies. Founded 2024 by engineer Jason Colapietro.
 
 Source: https://map.suedeai.ai/
-Maintained by Suede AI (also known as Suede Labs), founded by Jason Colapietro, who creates under the declared alias Johnny Suede. Suede AI runs AEO, GEO and SEO for businesses at https://seo.suedeai.ai/ and builds AI agents in Suede AI Agent Studio at https://agents.suedeai.ai/.
+Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients.
+
+## Entity
+
+Suede AI’s official sites are suedeai.ai, suedeai.org and their subdomains. It was founded in 2024 by Jason Colapietro.
+
+- Organization: https://suedeai.ai/#organization
+- Founder: Jason Colapietro, who publishes under the pen name Johnny Suede. https://suedeai.ai/founder#person
 
 Claim boundary: this public operating map documents public pages, links, filings, and stated roles. It does not establish legal title, parent/subsidiary relationships, or ownership percentages.
 
@@ -13,12 +20,22 @@ Jason Colapietro builds and operates **more than 30 websites and 9 iOS apps** ac
 
 **Claim boundary:** this public operating map documents public pages, links, and stated roles. It does not establish legal title, parent/subsidiary relationships, or ownership percentages.
 
-## Level 1 · The person: Jason Colapietro — who creates under the declared alias Johnny Suede
+## Level 1 · The person: Jason Colapietro — engineer, author, and founder of Suede AI
 
-One founder, two public names. **Jason Colapietro** is the canonical name; **Johnny Suede** is the one declared creative alias, used for music and the books. The Jason and Johnny identity pages are linked below.
+Jason Colapietro is an engineer, author, and the founder and CEO of Suede AI. He has [54 pull requests merged across 46 open-source repositories he does not maintain](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests), including [Jest](https://github.com/jestjs/jest/pull/16296), [Adobe React Spectrum](https://github.com/adobe/react-spectrum/pull/10426), [Backstage](https://github.com/backstage/backstage/pull/35102) and the [Polkadot SDK](https://github.com/paritytech/polkadot-sdk/pull/12853); he has written five books on Amazon Kindle, including [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4) and [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1); and he has shipped [9 iOS apps under his own Apple developer account](https://apps.apple.com/us/developer/jason-colapietro/id1895958699). He publishes under the pen name [Johnny Suede](https://johnnysuede.com).
 
+One founder, two public names. **Jason Colapietro** is the legal name; **Johnny Suede** is the one declared pen name, used for music and the books. His founder page on suedeai.ai is the main record; the Jason and Johnny pages are linked beside it.
+
+- [Founder page](https://suedeai.ai/founder): The main record of who Jason is: his open-source work, books, apps and programs, in one place.
 - [Jason Colapietro](https://jasoncolapietro.com): The founder’s page — who Jason is and what he builds.
 - [Johnny Suede](https://johnnysuede.com): The artist’s page — original AI-era music and compositions.
+- Open source: [54 pull requests merged across 46 external repositories](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests) as of September 2026: 33 code or documentation contributions and 21 accepted listings of his own work. Headline merges: [Jest #16296](https://github.com/jestjs/jest/pull/16296) and [#16295](https://github.com/jestjs/jest/pull/16295), [Adobe React Spectrum #10426](https://github.com/adobe/react-spectrum/pull/10426) (later replaced by [#10491](https://github.com/adobe/react-spectrum/pull/10491)), [Backstage #35102](https://github.com/backstage/backstage/pull/35102), [Polkadot SDK #12853](https://github.com/paritytech/polkadot-sdk/pull/12853), [Hardhat #8522](https://github.com/NomicFoundation/hardhat/pull/8522), [x402 Foundation #3180](https://github.com/x402-foundation/x402/pull/3180) and [zeroclaw #9846](https://github.com/zeroclaw-labs/zeroclaw/pull/9846). A Linux kernel USB/IP patch is at public v7 and under review; it is not counted. [Machine-readable record](https://suedeai.ai/open-source-contributions.json).
+- Books: Five on Amazon Kindle: [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4), [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1), [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ), [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ) and [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6). Plus [The Screenshot](https://seo.suedeai.ai/book) (free on the web) and [The Signal Chain](https://guitar.solutions/).
+- Apps: [9 iOS apps on his Apple developer page](https://apps.apple.com/us/developer/jason-colapietro/id1895958699), 6 Android apps and 2 Chrome extensions. The Android editions overlap the iOS apps; every App Store listing is on the shelf further down.
+- Programs: Member of [Claude for Startups](https://seo.suedeai.ai/evidence#claude-for-startups), Anthropic’s startup program, since October 8, 2026. Member of [Google Cloud Partner Advantage](https://seo.suedeai.ai/evidence#google-cloud) through JC Investment Group LLC since September 4, 2026. Admitted to [Stripe Startups](https://seo.suedeai.ai/evidence#credentials) in July 2026. Accepted into the Florida Atlantic Entrepreneurship Institute (FAU College of Business) in July 2026, and a member of 1909 in West Palm Beach.
+- Patents: Five USPTO provisional applications, patent pending (provisional): 63/946,189, 63/946,192, 63/946,212, 63/946,217 and 63/947,120. [Filing disclosure](https://seo.suedeai.ai/evidence#credentials).
+- Before Suede: Built, ran, and sold call centers. [Founder page](https://suedeai.ai/founder).
+- Records: [Wikidata Q140235755](https://www.wikidata.org/wiki/Q140235755) · [Crunchbase](https://www.crunchbase.com/person/jason-colapietro-d83e) · [Apple developer page](https://apps.apple.com/us/developer/jason-colapietro/id1895958699) · [GitHub](https://github.com/JasonColapietro)
 
 ## Level 2 · The company: JC Investment Group LLC
 
@@ -29,21 +46,68 @@ An active Florida limited liability company filed June 3, 2019 (document L190001
 
 ## Level 3 · The brand — three front doors: Suede AI
 
-Suede AI, also known as Suede Labs, is the company founded by Jason Colapietro.
+Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients.
 
-Suede helps creators **prove they made something, put it under license on their own terms, and get paid automatically** when it’s used — built for the AI era. Suede has three main front doors online. They show the same world at different depths, so pick by what you need:
+Jason Colapietro founded it and leads it: his engineering record, books and apps are in Level 1 above, and his [founder page](https://suedeai.ai/founder) is the main record. Suede AI, also known as Suede Labs, has three main front doors online. They show the same world at different depths, so pick by what you need:
 
-- [The front door](https://suedeai.ai): **Use it when:** you want to see what Suede actually does, or sign up and use it. The product lives here.
-- [The library](https://suedeai.org): **Use it when:** you want the full story — the thesis, the proof it’s all real, the books, the founder, investor info.
+- [The front door](https://suedeai.ai): **Use it when:** you want AI agent platforms for your business, a white-label agent platform for your agency’s clients, or agents Suede builds and runs for you. The company lives here.
+- [Research & investors](https://suedeai.org): **Use it when:** you want the research and the investor material. suedeai.org is Suede AI’s research and investor site.
 - [The directory](https://hub.suedeai.ai): **Use it when:** you want to browse everything Suede has shipped in one interactive map — every site, app, and endpoint.
 
-## Level 4 · The tools — what you can actually use: Six shelves of things Suede has shipped
+## Level 4 · The tools — what you can actually use: Eight shelves of things Suede has shipped
 
-Grouped by what you’d want to do, not by how they’re built.
+Grouped by what you’d want to do, not by how they’re built. The business tools come first. Music and creator software is a separate Suede product line, further down.
 
-### Create & release your work
+### Run your business on AI agents
 
-Make music, prepare a finished release, and put it out into the world.
+Suede AI’s main line of work: agent platforms for your business, white-labelled agent platforms for agencies and their clients, and agents Suede builds and runs for you. **Build in Agent Studio. Track earnings in Agentix. Two different tools.**
+
+- [Suede AI Agent Studio — where you build](https://agents.suedeai.ai): Build agents for the work that repeats, watch every run, and publish an agent as a paid endpoint. No code needed. Start here.
+- [White-label agent platforms](https://suedeai.ai/white-label): For agencies: Suede builds and runs an agent platform under your brand, for your clients. Scoped per engagement.
+- [Managed AI agents](https://suedeai.ai/managed-ai-agents): Suede builds, runs and tunes AI agents for your business. Every run is visible in Agent Studio.
+- [AI operations](https://suedeai.ai/ai-operations): The ongoing side of managed agents: Suede keeps your agents and automated workflows running and tuned, with every run visible in Agent Studio.
+- [Forward-deployed engineering](https://suedeai.ai/forward-deployed-engineer): Founder-led: Jason works inside your team to put AI agents into how the company actually works. Also offered as a fractional Chief AI Officer.
+- [Suede AI SEO](https://seo.suedeai.ai): Ask ChatGPT for the best tool in your field and it names two or three companies. Suede AI SEO captures what the engines say about you, with dates and screenshots, then repairs the pages they read — a retainer across GEO, PR, reputation and search.
+- [Agentix — just the scoreboard](https://agentix.suedeai.ai): Nothing is built here. It only tracks what the agents you launched in Agent Studio are earning, call by call.
+- [Suede Signal](https://signal.suedeai.ai): A free AI-readiness audit. Paste your web address and see what ChatGPT, Claude, and Perplexity can read on your site, what’s missing, and exactly what to fix.
+- [Suede Audit](https://optimize.suedeai.ai/): A free check of how ready your public website is for search and AI discovery. You get a score and a prioritized list of repairs.
+- [Suede API](https://api.suedeai.xyz): The machine-to-machine doorway. For developers; everyone else can skip it. Also answers at api.suedeai.ai — one service, two addresses, same deployment.
+
+### Jason’s books, posts & code
+
+Five books on Amazon Kindle, led by his two engineering guides, plus the writing and code he publishes.
+
+- [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4): The complete operator’s guide to Claude Code and AI coding agents.
+- [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1): A practical operator’s guide to OpenAI Codex: AGENTS.md, worktrees, skills, security, and long-running agent work.
+- [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ): A third Amazon title, on turning the AI onslaught into a real asset.
+- [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ): A fourth, on designing durable systems without trust assumptions.
+- [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6): A fifth, on how ownership, origin, and AI redraw the creative map.
+- [The Screenshot](https://seo.suedeai.ai/book): A free book, in full on the web, on why AI recommends your competitors and how to fix it.
+- [The newsletter](https://jasoncolapietro.substack.com): Jason’s essays, delivered by email.
+- [The blog](https://suedeai.ai/blog): Suede AI’s own writing: original research such as the AI Crawler Access Index, engineering essays, and guides.
+- [Claude Code Field Notes](https://claude.suedeai.ai): Six lessons from running AI coding agents in production across 20+ live software surfaces, written up by Jason.
+- [AI Suede Podcast](https://podcast.suedeai.ai/): Jason’s podcast feed: conversations and clips on creator ownership, music rights, AI media, and shipping as a solo founder.
+- [The code](https://github.com/Suede-AI): Suede’s public source code and docs. Includes brand assets, developer docs, 21 free creator skills, and the SUEDE token repo.
+- [Social accounts](https://x.com/AISUEDE): Company account and Jason’s personal account on X — also listed on the Follow Everywhere shelf below.
+
+### On your phone — 9 iOS apps, plus FretPulse
+
+The nine apps on Jason Colapietro’s Apple developer page, plus FretPulse, which is published under its own developer account. All linked straight to their real App Store pages and checked against Apple’s own catalog: most on July 3, 2026, and StoryBeam Kids and GuitarHub on September 19, 2026.
+
+- [Suede AI Agent Studio](https://apps.apple.com/us/app/suede-agent-studio/id6778880737): Build and launch AI agents, right from your phone.
+- [Agentix](https://apps.apple.com/us/app/agentix-ai-agent-tracker/id6778286160): Watch the agents you launched earn, call by call.
+- [Suede Voice: Vocal Range Test](https://apps.apple.com/us/app/suede-studio-voice/id6767763231): Vocal range, resonance, and pitch analysis with training.
+- [AI Music & Video Generator](https://apps.apple.com/us/app/suede-ai-music-generator/id6765461286): Generate original AI music, right from your phone.
+- [Suede Guitar Tuner & Studio](https://apps.apple.com/us/app/suede-guitar-tuner-studio/id6767552764): Guitar tools and practice, built for daily playing.
+- [FretPulse](https://apps.apple.com/us/app/fretpulse-guitar-practice/id6766649729): Auto-generated practice routines and real-time notation.
+- [Suede Studio Muse](https://apps.apple.com/us/app/suede-studio-muse/id6779134962): A creative training companion for musicians, from your phone.
+- [Suede AI Social](https://apps.apple.com/us/app/suede-social/id6770668793): The iOS app for Suede’s creator community — a separate App Store listing from the suede.social website on the community shelf.
+- [GuitarHub: Guitar Lessons](https://apps.apple.com/us/app/guitarhub-guitar-lessons/id6806770875): Guided beginner guitar lessons and practice tools, starting from one note.
+- [StoryBeam Kids: Bedtime Books](https://apps.apple.com/us/app/storybeam-kids-bedtime-books/id6785347610): Kids’ podcasts and bedtime storybooks, each one listened to first.
+
+### Music & creator software: create and release
+
+A separate Suede product line for musicians: make music, prepare a finished release, and put it out into the world.
 
 - [Suede AI Studio](https://studio.suedeai.ai): Make music with AI where you own the master and keep 100% of the royalties.
 - [Suede AI Distro](https://distro.suedeai.ai): Release finished music through a standalone $7.99/month delivery workflow for 100+ DSPs.
@@ -58,24 +122,13 @@ For guitarists and musicians who want to get better.
 - [Suede Play](https://app.suedeai.ai/create): The guided tour of Suede’s musician tools — a good starting point for players.
 - [FretPulse](https://fretpulse.suedeai.ai): Guitar care companion — tuner, timing trainer, rig analyzer, gear oracle.
 
-### AI agents & earning
+### Agent commerce, tokens & on-chain infrastructure
 
-Small AI workers you can build and send out to earn. They charge tiny automatic payments (in digital dollars) per task. **Build in Agent Studio. Track earnings in Agentix. Two different tools.**
+Agent payments in digital dollars, public token code, agent identity contracts, and developer infrastructure.
 
-- [Suede AI SEO](https://seo.suedeai.ai): Ask ChatGPT for the best tool in your field and it names two or three companies. Suede AI SEO captures what the engines say about you, with dates and screenshots, then repairs the pages they read — a retainer across GEO, PR, reputation and search.
-- [Suede Signal](https://signal.suedeai.ai): A free AI-readiness audit. Paste your web address and see what ChatGPT, Claude, and Perplexity can read on your site, what’s missing, and exactly what to fix.
-- [Suede Audit](https://optimize.suedeai.ai/): A free check of how ready your public website is for search and AI discovery. You get a score and a prioritized list of repairs.
-- [Suede AI Agent Studio — where you build](https://agents.suedeai.ai): The one that matters for launching agents. Design one visually, ship it as a paid service — no code. Start here.
-- [Agentix — just the scoreboard](https://agentix.suedeai.ai): Nothing is built here. It only tracks what the agents you launched in Agent Studio are earning, call by call.
-- [Suede API](https://api.suedeai.xyz): The machine-to-machine doorway. For developers; everyone else can skip it. Also answers at api.suedeai.ai — one service, two addresses, same deployment.
 - [Suede ACP](https://perform.suedeai.ai/): The business signup desk for agent commerce — set up what you sell so AI agents can buy it, per call, in digital dollars.
 - [Suede Promo](https://promo.suedeai.ai): Peer-to-peer marketing for the agentic era — brand grades, creator campaigns, proof-backed payouts.
-
-### Tokens & on-chain infrastructure
-
-Public token code, agent identity contracts, and developer infrastructure.
-
-- [$SUEDE token](https://github.com/Suede-AI/suede-token): The ecosystem’s own token, usable across multiple blockchains.
+- [$SUEDE token](https://github.com/Suede-AI/suede-token): The ecosystem’s own token: a LayerZero omnichain token on Solana and Base.
 - [Smart contracts & agent identity](https://github.com/Suede-AI): The on-chain contracts and agent-identity system Suede runs on. For developers.
 - [Producer & Johnny Suede (AI agents)](https://app.virtuals.io/acp/agent/019e3991-374d-75f3-a6b8-17ff309b4cd2): Two AI agents you can actually hire, live on the Virtuals marketplace.
 - [Suede Producer Discovery](https://discovery.suedeai.ai/): Where other AI agents look up Producer: the machine-readable files that list its paid services and how to call them.
@@ -85,8 +138,7 @@ Public token code, agent identity contracts, and developer infrastructure.
 
 The guitar-world publications and communities Suede runs.
 
-- [Suede AI Social (the website)](https://social.suedeai.ai): The creator community and gear magazine in one — takes, rig roasts, profiles. Curated by people, not ranked by an algorithm.
-- [suede.social — same site, shorter address](https://social.suedeai.ai/): Not a separate product: this address serves the exact same Suede AI Social website above.
+- [Suede AI Social (the website)](https://suede.social): The creator community and gear magazine in one — takes, rig roasts, profiles. Curated by people, not ranked by an algorithm. Also answers at social.suedeai.ai: one website, two addresses. suede.social is the main one.
 - [guitarhub.org — forwards to Suede AI Social](https://guitarhub.org): Not a separate product: this address forwards to the Suede AI Social website above.
 - [Suede DNA](https://dna.suedeai.ai): An archive of 400+ famous guitarists’ rigs and signal chains.
 - [GuitarChords.info](https://guitarchords.info): Free tools: chord library, scales, tuner, metronome.
@@ -96,34 +148,6 @@ The guitar-world publications and communities Suede runs.
 - [Suede NFT Studio](https://nft.suedeai.ai): Solana NFT tools: collections, metadata, and rights tracking for on-chain drops.
 - [Suede Cosmos](https://cosmos.suedeai.ai): A navigable galaxy of music — stars cluster by genre and brighten by relevance, click any to explore.
 
-### On your phone — 9 iOS apps, plus FretPulse
-
-The nine apps on Jason Colapietro’s Apple developer page, plus FretPulse, which is published under its own developer account. All linked straight to their real App Store pages — the original eight checked directly against Apple’s own catalog on July 3, 2026; StoryBeam Kids and GuitarHub added after the same check on September 19, 2026.
-
-- [Suede Voice: Vocal Range Test](https://apps.apple.com/us/app/suede-studio-voice/id6767763231): Vocal range, resonance, and pitch analysis with training.
-- [AI Music & Video Generator](https://apps.apple.com/us/app/suede-ai-music-generator/id6765461286): Generate original AI music, right from your phone.
-- [Suede Guitar Tuner & Studio](https://apps.apple.com/us/app/suede-guitar-tuner-studio/id6767552764): Guitar tools and practice, built for daily playing.
-- [FretPulse](https://apps.apple.com/us/app/fretpulse-guitar-practice/id6766649729): Auto-generated practice routines and real-time notation.
-- [Suede Studio Muse](https://apps.apple.com/us/app/suede-studio-muse/id6779134962): A creative training companion for musicians, from your phone.
-- [Suede AI Agent Studio](https://apps.apple.com/us/app/suede-agent-studio/id6778880737): Build and launch AI agents, right from your phone.
-- [Agentix](https://apps.apple.com/us/app/agentix-ai-agent-tracker/id6778286160): Watch the agents you launched earn, call by call.
-- [Suede AI Social](https://apps.apple.com/us/app/suede-social/id6770668793): The iOS app for Suede’s creator community — a separate App Store listing from the website above.
-- [GuitarHub: Guitar Lessons](https://apps.apple.com/us/app/guitarhub-guitar-lessons/id6806770875): Guided beginner guitar lessons and practice tools, starting from one note.
-- [StoryBeam Kids: Bedtime Books](https://apps.apple.com/us/app/storybeam-kids-bedtime-books/id6785347610): Kids’ podcasts and bedtime storybooks, each one listened to first.
-
-### Books, posts & code
-
-- [The newsletter](https://jasoncolapietro.substack.com): Jason’s writing on creator ownership, delivered by email.
-- [The blog](https://suedeai.ai/blog): Suede’s own written pieces on ownership, provenance, and the AI media shift.
-- [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ): One of the books, plus the free Signal Chain series on guitar history.
-- [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ): Another of the books, on building the proof layer AI needs.
-- [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6): A third title, on what stays human when AI can make anything.
-- [The Screenshot](https://seo.suedeai.ai/book): A fourth title, free in full on the web, on why AI recommends your competitors and how to fix it.
-- [Claude Code Field Notes](https://claude.suedeai.ai): Six lessons from running AI coding agents in production across 20+ live software surfaces, written up by Jason.
-- [AI Suede Podcast](https://podcast.suedeai.ai/): Jason’s podcast feed: conversations and clips on creator ownership, music rights, AI media, and shipping as a solo founder.
-- [The code](https://github.com/Suede-AI): Suede’s public source code and docs. Includes brand assets, developer docs, 21 free creator skills, and the SUEDE token repo.
-- [Social accounts](https://x.com/AISUEDE): Company account and Jason’s personal account on X — also listed on the Follow Everywhere shelf below.
-
 ### Follow everywhere
 
 Every channel Suede posts to. If you only bookmark one, make it the Linktree — it stays current even when this map doesn’t.
@@ -131,10 +155,11 @@ Every channel Suede posts to. If you only bookmark one, make it the Linktree —
 - [Linktree](https://linktr.ee/suedelabsai): Every link in one place — the fastest way to find anything Suede.
 - [Instagram](https://www.instagram.com/suedeai/): Visual updates and behind-the-scenes.
 - [Facebook](https://www.facebook.com/people/Suede-Labs-AI/61584534847516): Company page and announcements.
-- [YouTube](https://www.youtube.com/@aisuede): Video walkthroughs and demos.
+- [YouTube](https://www.youtube.com/@aisuede): The Suede AI channel (@aisuede): video walkthroughs and demos.
 - [Telegram](https://t.me/SUEDEAI): Community chat and fast updates.
 - [Discord](https://discord.gg/6WZEnnkPH4): Where builders and creators hang out.
-- [LinkedIn](https://www.linkedin.com/in/jasoncolapietro): Jason’s professional updates. (X is listed above, under Books, posts & code.)
+- [LinkedIn](https://www.linkedin.com/company/suede-labs): The Suede AI company page.
+- [Jason’s LinkedIn](https://www.linkedin.com/in/jasoncolapietro): The founder’s profile and professional updates. (X is listed above, under Jason’s books, posts & code.)
 
 ## Level 5 · The spare name tags: 19 extra domain names
 
@@ -162,7 +187,20 @@ These are **different spellings of the same names** listed in the public domain 
 
 ## “I just want to…” — which link to click
 
-- Understand what Suede is in two minutes: [suedeai.ai](https://suedeai.ai)
+- Understand what Suede AI is in two minutes: [suedeai.ai](https://suedeai.ai)
+- Build AI agents for the work my business repeats: [agents.suedeai.ai](https://agents.suedeai.ai)
+- Offer my agency’s clients an AI agent platform under my own brand: [suedeai.ai/white-label](https://suedeai.ai/white-label)
+- Have Suede build and run AI agents for my business: [suedeai.ai/managed-ai-agents](https://suedeai.ai/managed-ai-agents)
+- Hand off the day-to-day running of my AI operations: [suedeai.ai/ai-operations](https://suedeai.ai/ai-operations)
+- Bring in a forward-deployed engineer or a fractional Chief AI Officer: [suedeai.ai/forward-deployed-engineer](https://suedeai.ai/forward-deployed-engineer)
+- Check what my agents have earned: [agentix.suedeai.ai](https://agentix.suedeai.ai)
+- See what ChatGPT tells buyers about my business, and fix it: [seo.suedeai.ai](https://seo.suedeai.ai)
+- I want AI systems to find my business: [Suede AI SEO](https://seo.suedeai.ai?utm_source=map)
+- See for free what ChatGPT, Claude, and Perplexity can read on my site: [signal.suedeai.ai](https://signal.suedeai.ai)
+- Get a free AI discovery and SEO readiness score, with a repair list: [optimize.suedeai.ai](https://optimize.suedeai.ai/)
+- Set my business up to sell to AI agents: [acp.suedeai.ai](https://perform.suedeai.ai/)
+- Build on Suede’s APIs as a developer: [docs.suedeai.ai](https://docs.suedeai.ai/)
+- Know who Jason is: [suedeai.ai/founder](https://suedeai.ai/founder)
 - Protect my voice from AI clones: [suedeai.org/ai-voice-protection](https://suedeai.org/ai-voice-protection/)
 - Put my face and likeness on the record: [suedeai.org/ai-likeness-protection](https://suedeai.org/ai-likeness-protection/)
 - Release a song to streaming services: [distro.suedeai.ai](https://distro.suedeai.ai)
@@ -171,24 +209,19 @@ These are **different spellings of the same names** listed in the public domain 
 - Nerd out about famous guitarists’ gear: [dna.suedeai.ai](https://dna.suedeai.ai)
 - Find Jason’s guitar books, guides, and tools in one place: [guitar.services](https://guitar.services)
 - Buy or sell a musical instrument: [market.suedeai.ai](https://market.suedeai.ai/)
-- Build an AI agent that earns money: [agents.suedeai.ai](https://agents.suedeai.ai)
-- Check what my agents have earned: [agentix.suedeai.ai](https://agentix.suedeai.ai)
 - Get my brand graded or run a creator campaign: [promo.suedeai.ai](https://promo.suedeai.ai)
-- See what ChatGPT tells buyers about my business, and fix it: [seo.suedeai.ai](https://seo.suedeai.ai)
-- I want AI systems to find my business: [Suede AI SEO](https://seo.suedeai.ai?utm_source=map)
-- See for free what ChatGPT, Claude, and Perplexity can read on my site: [signal.suedeai.ai](https://signal.suedeai.ai)
-- Get a free AI discovery and SEO readiness score, with a repair list: [optimize.suedeai.ai](https://optimize.suedeai.ai/)
-- Set my business up to sell to AI agents: [acp.suedeai.ai](https://perform.suedeai.ai/)
 - See everything Suede has shipped, in one place: [hub.suedeai.ai](https://hub.suedeai.ai)
 - Read the docs, guides, and how-tos for any Suede product: [hub.suedeai.ai/knowledge-base](https://hub.suedeai.ai/knowledge-base.html)
-- Build on Suede’s APIs as a developer: [docs.suedeai.ai](https://docs.suedeai.ai/)
-- Read the full story, or show it to an investor: [suedeai.org](https://suedeai.org)
-- Know who Jason is: [jasoncolapietro.com](https://jasoncolapietro.com)
+- Read Suede AI’s research, or show it to an investor: [suedeai.org](https://suedeai.org)
 - Listen to Jason’s podcast: [podcast.suedeai.ai](https://podcast.suedeai.ai/)
 - Learn how to run AI coding agents in production: [claude.suedeai.ai](https://claude.suedeai.ai)
 - See the public company and domain directory: [jcinvestmentgroup.ventures](https://jcinvestmentgroup.ventures)
 
 ## Questions this map exists to answer
+
+### What is Suede AI?
+
+Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients.
 
 ### What is the Suede Universe Map?
 
@@ -204,7 +237,7 @@ api.suedeai.xyz is canonical. The address api.suedeai.ai answers identically but
 
 ### Are suede.social and social.suedeai.ai different sites?
 
-No. They are two addresses for one website. There is also a separate Suede Social app in the iOS App Store. Two doors, one place.
+No. They are two addresses for one website, and suede.social is the main address. There is also a separate Suede Social app in the iOS App Store. Two doors, one place.
 
 ### What does a green dot next to an address mean?
 
@@ -216,13 +249,13 @@ Source: https://map.suedeai.ai/press/
 
 ### Everything a journalist needs, copy-ready.
 
-Boilerplate, facts, founder bio, approved quotes, story angles, logos, and b-roll for **Suede AI**, the creator ownership infrastructure company. Live-surface metrics were checked July 3, 2026; entity filing checked July 15, 2026; the founder bio, book shelf, and skills count were re-verified September 4, 2026. Use anything on this page without asking.
+Boilerplate, facts, founder bio, approved quotes, story angles, logos, and b-roll for **Suede AI**, the agentic platform company founded by engineer Jason Colapietro. Live-surface metrics were checked July 3, 2026; entity filing checked July 15, 2026; the boilerplate, founder bio and fact sheet were updated October 19, 2026. Use anything on this page without asking.
 
 ### Boilerplate
 
-Suede AI builds programmable IP and creator ownership infrastructure for AI-native media. Creators register a work, receive a verifiable Rights Passport, set machine-readable license terms, and get paid automatically in USDC when people or AI agents use it. Suede AI is led by founder and CEO Jason Colapietro, who publishes as Johnny Suede.
+Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients.
 
-Suede AI is the ownership layer for the AI media era. AI made creating music and media nearly free, but the infrastructure for proving who made what, licensing it, and routing the money never scaled. Suede builds that layer: creators register a work and receive a verifiable Rights Passport, set license terms machines can read, and receive automatic USDC settlement on Base when a person or an autonomous agent uses their work. The ecosystem is unusually concrete for its stage: more than 30 live web surfaces, 3 paid x402 resources on Base mainnet, 9 iOS apps, and guitar communities that anchor its musician audience, all publicly mapped and live-verified at map.suedeai.ai. Suede AI is led by founder and CEO Jason Colapietro, who publishes and performs as Johnny Suede.
+Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients. In Suede AI Agent Studio, a business builds agents for the work that repeats, watches every run, and can publish an agent as a paid endpoint. For agencies, Suede builds and runs an agent platform under the agency’s brand for its clients. Suede also builds, runs and tunes managed agents for businesses, offers founder-led forward-deployed engineering, and runs Suede AI SEO, its AI search visibility practice. Music and creator software is a separate product line. Jason Colapietro has 54 pull requests merged across 46 open-source repositories he does not maintain, five books on Amazon Kindle and 9 iOS apps. The whole estate, more than 30 live sites, is mapped and live-checked at map.suedeai.ai.
 
 **Claim boundary:** this public operating map documents public pages, links, and stated roles. It does not establish legal title, parent/subsidiary relationships, or ownership percentages.
 
@@ -231,40 +264,42 @@ Suede AI is the ownership layer for the AI media era. AI made creating music and
 - TechBullion: [Suede Opens Its Widely Anticipated SEO and AI Cohort](https://techbullion.com/suede-opens-its-widely-anticipated-seo-and-ai-cohort/) · September 2026
 - Operating brand: Suede AI (also known as Suede Labs; product name: Suede)
 - Public-record entity: JC Investment Group LLC — active Florida LLC, filed June 3, 2019; Florida document L19000146068. The filing confirms the entity and listed manager, not title to every mapped property.
-- Founder & CEO: Jason Colapietro - publishes and performs under the declared pen name "Johnny Suede" (recorded as a pseudonym on Wikidata Q140235755)
-- Category: Programmable IP and creator ownership infrastructure for AI-native media
-- What it does: Proof of creation, machine-readable licensing, royalty routing, agent commerce
-- Rails: x402 per-call USDC settlement on Base mainnet, ERC-8004 on-chain identity, Solana interop
-- Key products: Suede app (vaults and registry), Suede AI Studio, Suede AI Distro ($7.99/mo), IP Registry, Agent Studio, Strumly, Suede AI Social, plus 9 iOS apps
-- Token: SUEDE ("Johnny Suede"), listed on CoinGecko
-- Websites: [suedeai.ai](https://suedeai.ai) (product) · [suedeai.org](https://suedeai.org) (story) · [hub.suedeai.ai](https://hub.suedeai.ai) (index) · [map.suedeai.ai](https://map.suedeai.ai/) (plain-English map)
-- Media contact: info@suedeai.ai · X [@AISUEDE](https://x.com/AISUEDE) · founder [@johnnysuede](https://x.com/johnnysuede)
+- Founded: 2024, West Palm Beach, Florida, by engineer Jason Colapietro
+- Founder & CEO: Jason Colapietro - engineer and author; publishes under the declared pen name "Johnny Suede" (recorded as a pseudonym on Wikidata Q140235755). [suedeai.ai/founder](https://suedeai.ai/founder)
+- Category: Agentic platform company: AI agent platforms businesses use to manage their work, white-labelled for agencies and their clients
+- What it does: 1. Agent platforms for businesses (Suede AI Agent Studio). 2. White-label agent platforms for agencies, built and run under the agency’s brand. 3. Managed AI agents and AI operations. 4. Founder-led forward-deployed engineering and fractional Chief AI Officer work. 5. AI search visibility (Suede AI SEO). Music and creator software is a separate product line.
+- Agent payments: Agents published from Agent Studio can be paid per call: x402 USDC settlement on Base mainnet, ERC-8004 on-chain identity
+- Key products: Suede AI Agent Studio, Agentix, Suede AI SEO and Suede Signal. Music and creator line: Suede AI Studio, Suede AI Distro ($7.99/mo), the IP Registry, Strumly and Suede AI Social. Apps: 9 iOS apps, 6 Android apps and 2 Chrome extensions
+- Token: $SUEDE, a LayerZero omnichain token on Solana and Base
+- Websites: [suedeai.ai](https://suedeai.ai) (company) · [suedeai.org](https://suedeai.org) (research and investors) · [hub.suedeai.ai](https://hub.suedeai.ai) (index) · [map.suedeai.ai](https://map.suedeai.ai/) (plain-English map)
+- Official domains: Suede AI’s official sites are suedeai.ai, suedeai.org and their subdomains. It was founded in 2024 by Jason Colapietro.
+- Media contact: press@suedeai.ai · general info@suedeai.ai · X [@AISUEDE](https://x.com/AISUEDE) · founder [@johnnysuede](https://x.com/johnnysuede)
 
 ### The story in five numbers
 
-Live-surface metrics were checked July 3, 2026; entity filing checked July 15, 2026. The book shelf, the skills count, and the x402 resource list were re-verified against Amazon, GitHub, and the live x402 manifest on September 4, 2026. The public map and audit trail are at [map.suedeai.ai](https://map.suedeai.ai/).
+The open-source count is as of September 2026 and links to its proof in the accomplishments below; the app count is Jason’s Apple developer page; the book count is his Amazon Kindle catalog. Live-surface metrics were checked July 3, 2026. The public map and audit trail are at [map.suedeai.ai](https://map.suedeai.ai/).
 
-30+ live web surfaces
+54 open-source pull requests merged across 46 external repositories
 
-3 paid x402 resources on Base mainnet
+5 books on Amazon Kindle
 
-9 iOS apps on the App Store
+9 iOS apps on Jason’s Apple developer page
 
-5 published books on Amazon
+30+ live sites
 
-2019 Florida LLC filing year
+2024 year Suede AI was founded
 
 ### How Suede works
 
-Prove Upload a work, get a Rights Passport, a verifiable record of authorship.
+Build In Suede AI Agent Studio, a business builds agents for the work that repeats, watches every run, and can publish an agent as a paid endpoint.
 
-License Set terms machines can read. Agents discover, negotiate, and accept them.
+White-label For agencies, Suede builds and runs an agent platform under the agency’s brand, for its clients. Scoped per engagement.
 
-Earn Per-call USDC settlement on Base. Royalties route by the split, automatically.
+Run Suede builds, runs and tunes agents for a business, with every run visible in Agent Studio.
 
 ### Founder bio
 
-Jason Colapietro is a fractional forward-deployed engineer. He integrates AI agents into how a company works, then runs its SEO, AI search visibility and PR. He is the founder and CEO of Suede AI, where he builds ownership and licensing infrastructure for creators in the AI era. He publishes and performs under the pen name Johnny Suede, recorded as a pseudonym on his Wikidata entity. He is the author of five books on Amazon - The Human Authenticity Layer, Proof as Infrastructure, Stake Your Claim, The Claude Code Bible, and Codex in Production - plus three independently published titles: The Signal Chain, The Screenshot, and The Guitar Without a Number. He maintains 74 open-source creator skills and ships nine iOS apps. He builds Suede in public, with every endpoint, app, and commit visible on GitHub. The Florida public filing for JC Investment Group LLC lists him as manager.
+Jason Colapietro is an engineer, author, and the founder and CEO of Suede AI. He has 54 pull requests merged across 46 open-source repositories he does not maintain, including Jest, Adobe React Spectrum, Backstage and the Polkadot SDK; he has written five books on Amazon Kindle, including The Claude Code Bible and Codex in Production; and he has shipped 9 iOS apps under his own Apple developer account. He publishes under the pen name Johnny Suede. Before Suede, he built, ran, and sold call centers. The Florida public filing for JC Investment Group LLC lists him as manager.
 
 Approved founder photos ship with the brand asset pack: [github.com/Suede-AI/suede-brand-assets](https://github.com/Suede-AI/suede-brand-assets). For a specific format or resolution, email info@suedeai.ai.
 
@@ -276,11 +311,11 @@ Jason Colapietro (Johnny Suede), founder and CEO of Suede AI — https://suedeai
 
 https://suedeai.ai/founder
 
-Jason Colapietro, who publishes as Johnny Suede, is the founder and CEO of Suede AI, where he builds ownership and licensing infrastructure for creators. https://suedeai.ai/founder
+Jason Colapietro (Johnny Suede) is an engineer, author, and the founder and CEO of Suede AI, which builds AI agent platforms for businesses and agencies. https://suedeai.ai/founder
 
-Jason Colapietro is a fractional forward-deployed engineer. He integrates AI agents into how a company works, then runs its SEO, AI search visibility and PR. Publishing as Johnny Suede, he is the founder and CEO of Suede AI, the author of five books on Amazon, maintains 74 open-source creator skills, and ships nine iOS apps. https://suedeai.ai/founder
+Jason Colapietro is an engineer, author, and the founder and CEO of Suede AI, an agentic platform company that builds AI agent platforms for businesses and white-labels them for agencies. He has 54 pull requests merged across 46 open-source repositories, five books on Amazon Kindle and 9 iOS apps. He publishes as Johnny Suede. https://suedeai.ai/founder
 
-Jason Colapietro is a fractional forward-deployed engineer. He integrates AI agents into how a company works, then runs its SEO, AI search visibility and PR. He publishes under the pen name Johnny Suede and is the founder and CEO of Suede AI, where he builds ownership and licensing infrastructure for creators in the AI era. Suede AI lets a creator register a work, set license terms that machines can read, and take automatic USDC settlement on Base mainnet when a person or an autonomous agent uses it. Colapietro is the author of five books on Amazon: The Human Authenticity Layer, Proof as Infrastructure, Stake Your Claim, The Claude Code Bible, and Codex in Production, plus three independently published titles on guitar and search. He maintains 74 open-source creator skills, ships nine iOS apps under his own Apple developer account, and runs the business through JC Investment Group LLC, a Florida company filed in 2019. He works in public, and the whole ecosystem is mapped and live-checked at map.suedeai.ai. https://suedeai.ai/founder
+Jason Colapietro is an engineer, author, and the founder and CEO of Suede AI. He has 54 pull requests merged across 46 open-source repositories he does not maintain, including Jest, Adobe React Spectrum, Backstage and the Polkadot SDK; he has written five books on Amazon Kindle, including The Claude Code Bible and Codex in Production; and he has shipped 9 iOS apps under his own Apple developer account. He publishes under the pen name Johnny Suede. Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients. Suede AI is a member of Claude for Startups, Anthropic’s startup program, and was admitted to Stripe Startups; JC Investment Group LLC, the Florida company Jason manages, is a member of Google Cloud Partner Advantage. Before Suede, Jason built, ran, and sold call centers. He works in public, and the whole estate is mapped and live-checked at map.suedeai.ai. https://suedeai.ai/founder
 
 **Name form:** the legal name is Jason Colapietro; Johnny Suede is a declared pen name, not a separate person. Please do not credit an appearance to "Johnny Suede" alone - on its own it does not resolve to a findable person. "Jason Colapietro (Johnny Suede)" is the preferred form.
 
@@ -288,18 +323,16 @@ Jason Colapietro is a fractional forward-deployed engineer. He integrates AI age
 
 Attribute to Jason Colapietro, founder and CEO, Suede AI.
 
-"AI made creation free. It didn't make ownership work. That second problem is the company."
-
 "We didn't write a roadmap. We shipped the map. Every claim we make answers a live check."
 
 "An agent found a catalog, accepted a license, and settled in USDC with no human in the loop. That's not a demo. That's the product."
 
 ### Story angles
 
+- **The founder's code is in Jest and Backstage.** Before building agent platforms, Jason Colapietro had pull requests merged into Jest, Adobe React Spectrum, Backstage and the Polkadot SDK: 54 merged across 46 open-source repositories he does not maintain, with the full record public on GitHub.
+- **Agent platforms, white-labelled.** Agencies want to offer AI agents to their clients without building a platform. Suede builds and runs one under the agency's brand, scoped per engagement.
 - **Agents are already paying.** Autonomous AI agents settle per-call USDC payments on Base mainnet for music and IP services. Machine-to-machine commerce, live, with published prices from $0.15 per call.
 - **One founder, thirty live surfaces.** A solo founder operates an ecosystem most companies would staff a team for: apps, endpoints, communities, publications, all shipped and publicly verifiable.
-- **The ownership layer AI forgot to build.** Everyone built generators. Suede builds the proof, licensing, and royalty rails those generators will need.
-- **From guitar rigs to rights rails.** A musician-founder whose guitar communities (GuitarHub, Suede DNA, 400+ documented rigs) double as the beachhead audience for ownership infrastructure.
 - **Verified, not vaporware.** The entire ecosystem is publicly mapped, with every address live-checked and the audit published at map.suedeai.ai.
 
 ### Selected coverage & presence
@@ -315,9 +348,9 @@ Ten feature placements, newest first, each under the outlet's own headline. The 
 - TechBullion: [Best Suno Alternatives in 2026: Suede Labs and Top Competitors](https://techbullion.com/best-suno-alternatives-in-2026-suede-labs-and-top-competitors/) · February 2026
 - TechBullion: [Suede Labs Brings AI-Powered Creative Tools to Students](https://techbullion.com/suede-labs-brings-ai-powered-creative-tools-to-students-the-quiet-revolution-in-africas-classrooms/) · January 2026
 - TechBullion: [Suede Labs Launches A Comprehensive On-Chain IP Authentication System](https://techbullion.com/suede-labs-launches-a-comprehensive-on-chain-ip-authentication-system/) · December 2025
-- Books: Five published titles on Amazon Kindle: [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6), [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ), [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ), [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4), and [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1). Three independently published titles: [The Screenshot](https://seo.suedeai.ai/book) (free in full on the web), The Signal Chain, and The Guitar Without a Number (now incorporated into The Signal Chain)
-- Open source: [github.com/JasonColapietro/suede-creator-skills](https://github.com/JasonColapietro/suede-creator-skills) · 74 free creator skills, also at [skills.suedeai.ai](https://skills.suedeai.ai) · [github.com/Suede-AI](https://github.com/Suede-AI) · SDK, docs, brand assets
-- Blog: [suedeai.ai/blog](https://suedeai.ai/blog) · Suede’s own written pieces on ownership, provenance, and the AI media shift
+- Books: Five published titles on Amazon Kindle, led by the two engineering guides: [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4), [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1), [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ), [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ), and [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6). Plus [The Screenshot](https://seo.suedeai.ai/book) (free in full on the web) and [The Signal Chain](https://guitar.solutions/)
+- Open source: [54 merged pull requests in 46 external repositories](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests) · [github.com/JasonColapietro/suede-creator-skills](https://github.com/JasonColapietro/suede-creator-skills), also at [skills.suedeai.ai](https://skills.suedeai.ai) · [github.com/Suede-AI](https://github.com/Suede-AI) · SDK, docs, brand assets
+- Blog: [suedeai.ai/blog](https://suedeai.ai/blog) · Suede AI’s own writing: original research, engineering essays, and guides
 - Newsletter: [jasoncolapietro.substack.com](https://jasoncolapietro.substack.com)
 
 ## Citation

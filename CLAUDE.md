@@ -12,7 +12,9 @@ The **Suede Universe Map** — live at **https://map.suedeai.ai** — a plain-En
 
 There is no JSON/data file. Surfaces are registered by hand as `<a class="site">` cards inside `.cardgrid` blocks, organized as a **five-level public operating graph** in `index.html` (`<section class="map" id="map">`):
 
-1. Level 1 the person → 2. the public-record entity → 3. the brand's three front doors (`.cardgrid.doors`) → 4. six `.shelf` groups of shipped tools → 5. publicly listed domains — levels joined by source-bounded `.rail-verb` connectors.
+1. Level 1 the person → 2. the public-record entity → 3. the brand's three front doors (`.cardgrid.doors`) → 4. eight `.shelf` groups of shipped tools → 5. publicly listed domains — levels joined by source-bounded `.rail-verb` connectors.
+
+**Positioning (identity spec v2, 2026-10-19 — `tests/identity-v2.test.mjs` guards it):** Suede AI is an agentic platform company. Level 1 leads with Jason's linked engineering record, books and apps; Level 3 carries COMPANY_ONE_LINER verbatim; the first shelf is the agentic business stack (Agent Studio, white-label, managed agents, AI operations, forward-deployed engineering, Suede AI SEO, Agentix, Signal/Audit, API) and business rows lead the router. Music and creator software is a separate, later product line. JSON-LD references the canonical `https://suedeai.ai/#organization` and `https://suedeai.ai/founder#person` as stubs (@id, name, url, plus founder/jobTitle/worksFor): no descriptions, alternateName or sameAs of our own. Never name or compare against another company that uses the Suede name.
 
 The graph is a wayfinding and operating map, not a cap table or title record. Do not infer legal ownership, parent/subsidiary relationships, or ownership percentages from public links, a domain directory, or brand proximity.
 
@@ -35,7 +37,7 @@ The graph is a wayfinding and operating map, not a cap table or title record. Do
 
 - **Agentix ≠ Agent Studio:** `agents.suedeai.ai` = build agents; `agentix.suedeai.ai` = earnings tracker. The map exists partly to keep these straight.
 - **`api.suedeai.xyz` is the canonical API host**; `api.suedeai.ai` answers identically but is not canonical, and deliberately **no 301** exists (redirecting a live pay-per-call gateway breaks agent clients). Fixed/verified July 4 — see `#thin`.
-- **`suede.social` and `social.suedeai.ai` are one website** (plus a separate iOS app, id6770668793). Two addresses, one place.
+- **`suede.social` and `social.suedeai.ai` are one website** (plus a separate iOS app, id6770668793). Two addresses, one place. Link the canonical host, `https://suede.social`; mention social.suedeai.ai only as text.
 - **`hub2.suedeai.ai` 308s to `hub.suedeai.ai`** — one hub only.
 - Current Apple app names: "AI Music & Video Generator" (was Studio Inspiration, then "Suede: AI Music Generator") and "Suede Guitar Tuner & Studio" (was Studio Guitar). Don't reintroduce the old names.
 - `flagship.suedeai.ai` now 308s to `suedeai.ai` (re-probed 2026-10-19; it used to mirror it). `audit.suedeai.ai` does **not** — it 308s to `scan.suedeai.ai` (re-probed 2026-09-04). Both are reserve-domains ledger entries.
