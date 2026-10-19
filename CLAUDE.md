@@ -38,7 +38,7 @@ The graph is a wayfinding and operating map, not a cap table or title record. Do
 - **`suede.social` and `social.suedeai.ai` are one website** (plus a separate iOS app, id6770668793). Two addresses, one place.
 - **`hub2.suedeai.ai` 308s to `hub.suedeai.ai`** — one hub only.
 - Current Apple app names: "AI Music & Video Generator" (was Studio Inspiration, then "Suede: AI Music Generator") and "Suede Guitar Tuner & Studio" (was Studio Guitar). Don't reintroduce the old names.
-- `flagship.suedeai.ai` is a name-tag alias mirroring suedeai.ai. `audit.suedeai.ai` does **not** — it 308s to `scan.suedeai.ai` (re-probed 2026-09-04). Both are reserve-domains ledger entries.
+- `flagship.suedeai.ai` now 308s to `suedeai.ai` (re-probed 2026-10-19; it used to mirror it). `audit.suedeai.ai` does **not** — it 308s to `scan.suedeai.ai` (re-probed 2026-09-04). Both are reserve-domains ledger entries.
 - Registering a new surface = card in the right shelf **and** (usually) a `#router` row **and** a live check **and** bumping the footer date lines + `sitemap.xml` `<lastmod>`.
 
 ## Verification commands

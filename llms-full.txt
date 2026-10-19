@@ -158,7 +158,7 @@ These are **different spellings of the same names** listed in the public domain 
 - johnnysuedemusic.com: → [johnnysuede.com/music](https://johnnysuede.com/music/)
 - colapietro.stream: → [suedeai.ai/blog](https://suedeai.ai/blog)
 - [audit.suedeai.ai](https://seo.suedeai.ai/): → scan.suedeai.ai
-- [flagship.suedeai.ai](https://flagship.suedeai.ai): → mirrors suedeai.ai
+- flagship.suedeai.ai: → [suedeai.ai](https://suedeai.ai/)
 
 ## “I just want to…” — which link to click
 
