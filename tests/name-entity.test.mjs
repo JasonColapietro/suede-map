@@ -11,7 +11,10 @@ const root = new URL("../", import.meta.url);
 // the only declared alias is "Johnny Suede".
 const FALSE_ALIAS = "Jay Colapietro";
 
-test("founder schema carries only the declared alias and identity links", async () => {
+// Identity spec v2 (2026-10-19): the map references the canonical founder node on
+// suedeai.ai by @id instead of minting its own alias and sameAs lists, so the
+// schema here cannot drift from the canonical record (or reassert a false alias).
+test("founder schema references the canonical Person without its own alias list", async () => {
   const html = await readFile(new URL("index.html", root), "utf8");
   const match = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
 
@@ -23,9 +26,9 @@ test("founder schema carries only the declared alias and identity links", async 
 
   assert.ok(founder, "expected founder Person entity");
   assert.equal(founder.name, "Jason Colapietro");
-  assert.deepEqual(founder.alternateName, ["Johnny Suede"]);
-  assert.ok(founder.sameAs.includes("https://jasoncolapietro.com"));
-  assert.ok(founder.sameAs.includes("https://johnnysuede.com"));
+  assert.equal(founder.url, "https://suedeai.ai/founder");
+  assert.equal(founder.alternateName, undefined);
+  assert.equal(founder.sameAs, undefined);
 });
 
 test("visible copy and LLM feed use the same two-name identity", async () => {
