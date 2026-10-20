@@ -37,7 +37,7 @@
         },
         {
           "label": "Every merged PR outside Jason’s own repositories, on GitHub",
-          "url": "https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests"
+          "url": "https://github.com/search?q=is%3Apr+author%3AJasonColapietro+author%3ASuede-AI+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests"
         }
       ]
     },

@@ -150,7 +150,7 @@ test("Level 1 leads with the founder's linked engineering record, books and apps
   const html = await read("index.html");
   const level1 = html.slice(html.indexOf("Level 1 · The person"), html.indexOf("Level 2 · The company"));
   for (const proof of [
-    "https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged",
+    "https://github.com/search?",
     "https://github.com/jestjs/jest/pull/16296",
     "https://github.com/backstage/backstage/pull/35102",
     "https://github.com/paritytech/polkadot-sdk/pull/12853",

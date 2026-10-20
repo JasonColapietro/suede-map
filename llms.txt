@@ -42,7 +42,7 @@ Claim boundary: this public operating map documents public pages, links, filings
 
 ## Optional
 
-- [Every merged pull request outside Jason's own repositories](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests): the live GitHub search behind the open-source count.
+- [Every merged pull request outside Jason's own repositories](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+author%3ASuede-AI+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests): the live GitHub search behind the open-source count.
 - [Machine-readable merged-PR record](https://suedeai.ai/open-source-contributions.json)
 - [Apple developer page](https://apps.apple.com/us/developer/jason-colapietro/id1895958699): 9 iOS apps.
 
@@ -57,7 +57,7 @@ Machine-readable merged-PR record: https://suedeai.ai/open-source-contributions.
 Jest #16296: https://github.com/jestjs/jest/pull/16296
 Adobe React Spectrum #10426: https://github.com/adobe/react-spectrum/pull/10426
 Adobe React Spectrum #10491 (replacement): https://github.com/adobe/react-spectrum/pull/10491
-Every merged PR outside Jason’s own repositories, on GitHub: https://github.com/search?q=is%3Apr+author%3AJasonColapietro+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests
+Every merged PR outside Jason’s own repositories, on GitHub: https://github.com/search?q=is%3Apr+author%3AJasonColapietro+author%3ASuede-AI+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests
 
 A feature in Adobe’s design system, and fixes in Backstage, Hardhat, zeroclaw, and the Polkadot SDK
 The contributions to lead with: a public useShowFocusIndicator hook accepted into Adobe React Spectrum by a core maintainer; a catalog-graph fix in Backstage, the CNCF developer-portal framework; removal of the retired Holesky chain descriptor from Hardhat, merged by a project lead; a daemon socket-ownership fix in the zeroclaw runtime, 767 lines of Rust across two crates; an RPC capacity-release fix in the Polkadot SDK; and two Jest fixes, one isolating virtual mock module IDs and one tolerating a transient watcher error.
