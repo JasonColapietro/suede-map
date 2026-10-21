@@ -31,7 +31,7 @@ test("accomplishments.json is the byte-identical canonical copy", async () => {
   // 2026-10-21: add the source-linked personal training credential record.
   assert.equal(
     createHash("sha1").update(bytes).digest("hex"),
-    "26fb00b2aa90b7b23afac161afa2cd9f52b8acdc",
+    "568a4bdc2d63f8038d58b6e2f63985b89ecfb055",
   );
 });
 
