@@ -28,10 +28,10 @@ const findById = (graph, id) =>
 
 test("accomplishments.json is the byte-identical canonical copy", async () => {
   const bytes = await readFile(new URL("content/accomplishments.json", root));
-  // 2026-10-20: include both verified authors in the proof search; claims and dates are unchanged.
+  // 2026-10-21: add the source-linked personal training credential record.
   assert.equal(
     createHash("sha1").update(bytes).digest("hex"),
-    "932dbb93a613d4e3980125895edf65cd3c4f41f2",
+    "8950e2422bed98b1d9b2cf49cabfc18f71e9397f",
   );
 });
 

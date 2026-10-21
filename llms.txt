@@ -113,6 +113,11 @@ Suede AI Agent Studio: https://agents.suedeai.ai
 Agentix: https://agentix.suedeai.ai
 x402-foundation/x402 #3180: https://github.com/x402-foundation/x402/pull/3180
 
+16 earned training credentials across six providers
+Jason Colapietro has earned six Claude Academy credentials, five Semrush Academy certificates, one HubSpot Academy AEO certificate, two Google Skills completion badges, one Databricks Academy accreditation, and one IBM SkillsBuild badge, Craft Precise Prompts for AI Models. Google Cloud GEAR program membership is recorded separately from the 16 earned personal training credentials.
+Training credential gallery: https://seo.suedeai.ai/evidence#training-credentials
+IBM SkillsBuild badge on Credly: https://www.credly.com/badges/5ddf36c2-fd1e-449d-b388-aa15fb07d242/public_url
+
 Member of Claude for Startups
 Suede AI has been a member of Claude for Startups, Anthropic’s startup program, since October 8, 2026. It is a startup-program membership, not a partnership.
 Acceptance record: https://seo.suedeai.ai/evidence#claude-for-startups
