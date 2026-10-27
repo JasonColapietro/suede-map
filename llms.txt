@@ -2,7 +2,7 @@
 
 > Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients. The Suede Universe Map is the plain-English, live-verified map of every public Suede AI site, app and tool: what each is for, how they connect, and which link to click.
 
-Founder: Jason Colapietro is an engineer, author, and the founder and CEO of Suede AI. He has 54 pull requests merged across 46 open-source repositories he does not maintain, including Jest, Adobe React Spectrum, Backstage and the Polkadot SDK; he has written five books on Amazon Kindle, including The Claude Code Bible and Codex in Production; and he has shipped 9 iOS apps under his own Apple developer account. He publishes under the pen name Johnny Suede. His founder page, the main record, is https://suedeai.ai/founder.
+Founder: Jason Colapietro is an engineer, author, and the founder and CEO of Suede AI. He has 54 pull requests merged across 46 open-source repositories he does not maintain, including Jest, Adobe React Spectrum, Backstage and the Polkadot SDK; he has written five books on Amazon in hardcover, paperback, and Kindle, including The Claude Code Bible and Codex in Production; and he has shipped 9 iOS apps under his own Apple developer account. He publishes under the pen name Johnny Suede. His founder page, the main record, is https://suedeai.ai/founder.
 
 ## Entity
 
@@ -75,8 +75,8 @@ davepoon/buildwithclaude #305: https://github.com/davepoon/buildwithclaude/pull/
 ichangyou/awesome-codex #2: https://github.com/ichangyou/awesome-codex/pull/2
 xpaysh/awesome-x402 #518: https://github.com/xpaysh/awesome-x402/pull/518
 
-Five books on Amazon Kindle, led by two engineering guides
-The Claude Code Bible and Codex in Production, Jason’s operator guides to AI coding agents, lead a five-book Amazon Kindle catalog that also holds Proof as Infrastructure, Stake Your Claim and The Human Authenticity Layer. The two operator guides were republished on KDP as Edition 2 on September 4, 2026. He also publishes The Screenshot, free to read on the web with its source edition on GitHub, and The Signal Chain at guitar.solutions.
+Five books on Amazon in hardcover, paperback, and Kindle, led by two engineering guides
+The Claude Code Bible and Codex in Production, Jason’s operator guides to AI coding agents, lead a five-book Amazon catalog of hardcover, paperback, and Kindle editions that also holds Proof as Infrastructure, Stake Your Claim and The Human Authenticity Layer. The two operator guides were republished on KDP as Edition 2 on September 4, 2026. He also publishes The Screenshot, free to read on the web with its source edition on GitHub, and The Signal Chain at guitar.solutions.
 The Claude Code Bible on Amazon: https://www.amazon.com/dp/B0HHTMJWB4
 Codex in Production on Amazon: https://www.amazon.com/dp/B0HHTF3LG1
 Proof as Infrastructure on Amazon: https://www.amazon.com/dp/B0GMB2VLXQ
