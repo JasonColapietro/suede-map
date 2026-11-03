@@ -41,12 +41,27 @@ test("the canonical one-liner and official-domains line are published verbatim",
   }
 });
 
-test("meta descriptions say what Suede AI is", async () => {
-  for (const file of ["index.html", "press/index.html"]) {
+// map.suedeai.ai pages carry their own descriptions. The company meta line
+// belongs to suedeai.ai, and reusing it word for word made / and /press/ look
+// like duplicates of the flagship (2026-11-03 audit).
+const PAGE_DESCRIPTIONS = {
+  "index.html":
+    "Every Suede AI product, site and app on one page, with the link each one owns and how they connect. Verified September 2026.",
+  "press/index.html":
+    "Press kit for Suede AI: boilerplate, fact sheet, founder bio, approved quotes, story angles, brand assets and b-roll, with the record behind each claim.",
+};
+
+test("each map page carries its own description, never the flagship's company line", async () => {
+  for (const [file, description] of Object.entries(PAGE_DESCRIPTIONS)) {
     const html = await read(file);
-    assert.ok(html.includes(`<meta name="description" content="${COMPANY_META}">`), file);
+    assert.ok(html.includes(`<meta name="description" content="${description}">`), `${file}: meta description`);
+    assert.ok(html.includes(`<meta property="og:description" content="${description}">`), `${file}: og:description`);
+    assert.ok(html.includes(`<meta name="twitter:description" content="${description}">`), `${file}: twitter:description`);
+    assert.ok(!html.includes(`content="${COMPANY_META}"`), `${file}: must not reuse the suedeai.ai meta description`);
     assert.match(html, /<title>[^<]*Suede[^<]*<\/title>/, file);
   }
+  const descriptions = Object.values(PAGE_DESCRIPTIONS);
+  assert.equal(new Set(descriptions).size, descriptions.length, "page descriptions are unique");
   assert.match(await read("index.html"), /<title>Suede Universe Map \|/);
 });
 
