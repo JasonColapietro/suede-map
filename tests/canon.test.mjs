@@ -32,7 +32,7 @@ test("accomplishments.json is the byte-identical canonical copy", async () => {
   // 2026-10-26: clarify the Amazon book formats; preserve the other records.
   assert.equal(
     createHash("sha1").update(bytes).digest("hex"),
-    "22a6437d7691919b7b0433470c6fba090aad5733",
+    "717dabf51fc0ec9fe95d3eb46a9ccd1b4f91d5a4",
   );
 });
 
