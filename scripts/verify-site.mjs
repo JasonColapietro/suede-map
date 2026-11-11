@@ -77,12 +77,20 @@ for (const relativePath of htmlFiles) {
   for (const [, rawJson] of schemas) {
     try {
       const schema = JSON.parse(rawJson);
-      const serialized = JSON.stringify(schema);
-      for (const key of ["parentOrganization", "subOrganization"]) {
-        if (serialized.includes(`\"${key}\"`)) {
-          fail(`${relativePath}: JSON-LD contains forbidden ${key}`);
+      // The owner confirmed this one company hierarchy on 2026-11-11.
+      // Other portfolio links still do not establish legal ownership.
+      const checkHierarchy = (node) => {
+        if (Array.isArray(node)) return node.forEach(checkHierarchy);
+        if (!node || typeof node !== "object") return;
+        if (node.subOrganization) fail(`${relativePath}: JSON-LD contains an unconfirmed subOrganization`);
+        if (node.parentOrganization && (node["@id"] !== "https://suedeai.ai/#organization"
+            || node.parentOrganization["@id"] !== "https://jcinvestmentgroup.ventures/#organization"
+            || node.parentOrganization.name !== "JC Investment Group LLC")) {
+          fail(`${relativePath}: JSON-LD contains an unconfirmed parentOrganization`);
         }
-      }
+        Object.values(node).forEach(checkHierarchy);
+      };
+      checkHierarchy(schema);
     } catch (error) {
       fail(`${relativePath}: invalid JSON-LD (${error.message})`);
     }
