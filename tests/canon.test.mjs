@@ -36,16 +36,22 @@ test("accomplishments.json is the byte-identical canonical copy", async () => {
   );
 });
 
-const ORG_STUB_KEYS = new Set(["@type", "@id", "name", "url", "founder"]);
+const ORG_STUB_KEYS = new Set(["@type", "@id", "name", "url", "founder", "alternateName", "parentOrganization", "address", "hasMerchantReturnPolicy"]);
 const PERSON_STUB_KEYS = new Set(["@type", "@id", "name", "url", "jobTitle", "worksFor"]);
 
-test("Organization schema is a reference stub to the canonical Suede AI node", async () => {
+test("Organization schema matches the confirmed canonical company profile", async () => {
   for (const file of HTML) {
     const org = findById(graphOf(await read(file)), "https://suedeai.ai/#organization");
     assert.ok(org, `${file}: expected the Suede AI organization node`);
     assert.equal(org.name, "Suede AI", file);
     assert.equal(org.url, "https://suedeai.ai", file);
     for (const key of Object.keys(org)) assert.ok(ORG_STUB_KEYS.has(key), `${file}: Organization stub carries ${key}`);
+    assert.deepEqual(org.alternateName, ["Suede Labs AI", "Suede Labs", "Suede"], file);
+    assert.equal(org.parentOrganization?.name, "JC Investment Group LLC", file);
+    assert.equal(org.address?.streetAddress, "138 Victorian Lane", file);
+    assert.equal(org.address?.addressLocality, "Jupiter", file);
+    assert.equal(org.address?.postalCode, "33458", file);
+    assert.equal(org.hasMerchantReturnPolicy?.merchantReturnDays, 90, file);
     if (org.founder) assert.deepEqual(org.founder, { "@id": "https://suedeai.ai/founder#person" }, file);
   }
 });
