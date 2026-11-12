@@ -27,7 +27,7 @@ for (const target of targets) {
  // The map homepage leads with the founder's record (identity spec v2, 2026-10-19):
  // engineering, books, apps, program memberships, then coverage. Order follows the JSON.
  const records = target.compact ? data.records.filter(r => ['training-credentials','open-source','books','android-chrome','claude-startups','partner-advantage','coverage'].includes(r.id)) : data.records;
- const cards = records.map(r => `<article class="accomplishment" id="accomplishment-${esc(r.id)}"><p class="accomplishment-meta">${esc(r.category)}</p><h3>${esc(r.title)}</h3><p>${esc(r.body)}</p><ul class="accomplishment-links">${r.links.map(l => `<li><a href="${esc(canonicalUrl(l.url))}">${bookCover(r,l)}${esc(l.label)}</a></li>`).join('')}</ul></article>`).join('\n');
+ const cards = records.map(r => `<article class="accomplishment" id="accomplishment-${esc(r.id)}"><p class="accomplishment-meta">${esc(r.category)}</p><h3>${esc(r.title)}</h3><p>${esc(r.body)}</p><ul class="accomplishment-links">${r.links.map(l => l.image ? `<li><span>${esc(l.label)}</span><img src="${esc(l.image)}" alt="${esc(l.label)} article screenshot with MSN masthead" width="1400" height="1157" loading="lazy" style="display:block;width:100%;max-width:700px;height:auto;margin-top:12px;border-radius:8px"></li>` : `<li><a href="${esc(canonicalUrl(l.url))}">${bookCover(r,l)}${esc(l.label)}</a></li>`).join('')}</ul></article>`).join('\n');
  const content = `${start}\n<section id="accomplishments" class="accomplishments ${esc(target.className)}" aria-labelledby="accomplishments-title"><p class="accomplishments-kicker">Jason Colapietro / Suede AI</p><h2 id="accomplishments-title">${esc(target.compact ? 'A record built in public.' : data.title)}</h2><p class="accomplishments-intro">${esc(data.intro)}</p><div class="accomplishments-visuals"><h3>${target.compact ? 'Partnerships &amp; programs' : 'Directory listings &amp; partnerships'}</h3>${partners}${target.compact ? '' : gallery}</div><div class="accomplishments-list">${cards}</div>${target.compact ? `<p class="accomplishments-more"><a href="${esc(target.fullUrl)}">Explore all accomplishments and source records</a></p>` : `<p class="accomplishments-more"><a href="${esc(data.source)}">Explore the original evidence archive on Suede AI SEO</a></p>`}</section>\n${end}`;
  const original = read(target.file);
  if (!original.includes(start) || !original.includes(end)) throw new Error(`Missing record markers in ${target.file}`);
@@ -38,8 +38,9 @@ for (const target of targets) {
 
 const feedPath = 'llms.txt';
 const feed = read(feedPath);
-const text = '\n## Accomplishments\n\n'+data.records.map(r => r.title+'\n'+r.body+'\n'+r.links.map(l => l.label+': '+l.url).join('\n')).join('\n\n')+'\n';
+const text = '\n## Accomplishments\n\n'+data.records.map(r => r.title+'\n'+r.body+'\n'+r.links.map(l => l.label+(l.image ? ' (article screenshot shown on this site)' : ': '+l.url)).join('\n')).join('\n\n')+'\n';
 if (!feed.includes(start) || !feed.includes(end)) throw new Error(`Missing record markers in ${feedPath}`);
 const updatedFeed = feed.slice(0,feed.indexOf(start)) + start + text + end + feed.slice(feed.indexOf(end)+end.length);
 if (process.argv.includes('--check')) { if (feed !== updatedFeed) throw new Error(`Regenerate ${feedPath}`); }
 else writeFileSync(new URL('../'+feedPath,import.meta.url),updatedFeed);
+
