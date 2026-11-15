@@ -30,9 +30,10 @@ test("accomplishments.json is the byte-identical canonical copy", async () => {
   const bytes = await readFile(new URL("content/accomplishments.json", root));
   // 2026-10-21: add the source-linked personal training credential record.
   // 2026-10-26: clarify the Amazon book formats; preserve the other records.
+  // 2026-11-15: add the Clutch Top 30 Florida / Top 50 US AI consultants ranking.
   assert.equal(
     createHash("sha1").update(bytes).digest("hex"),
-    "717dabf51fc0ec9fe95d3eb46a9ccd1b4f91d5a4",
+    "53ecb5002ec1fe62619bb99cec33c6fe8df56819",
   );
 });
 

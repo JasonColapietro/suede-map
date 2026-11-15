@@ -270,6 +270,7 @@ Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapi
 - What it does: 1. Agent platforms for businesses (Suede AI Agent Studio). 2. White-label agent platforms for agencies, built and run under the agency’s brand. 3. Managed AI agents and AI operations. 4. Founder-led forward-deployed engineering and fractional Chief AI Officer work. 5. AI search visibility (Suede AI SEO). Music and creator software is a separate product line.
 - Agent payments: Agents published from Agent Studio can be paid per call: x402 USDC settlement on Base mainnet, ERC-8004 on-chain identity
 - Key products: Suede AI Agent Studio, Agentix, Suede AI SEO and Suede Signal. Music and creator line: Suede AI Studio, Suede AI Distro ($7.99/mo), the IP Registry, Strumly and Suede AI Social. Apps: 9 iOS apps, 6 Android apps and 2 Chrome extensions
+- Recognition: Suede AI ranks among [Clutch](https://clutch.co/profile/suede-ai-seo)'s [Top 30 AI Consultants in Florida](https://clutch.co/consulting/ai/florida) and [Top 50 AI Consultants nationwide](https://clutch.co/us/consulting/ai) (November 2026).
 - Token: $SUEDE, a LayerZero omnichain token on Solana and Base
 - Websites: [suedeai.ai](https://suedeai.ai) (company) · [suedeai.org](https://suedeai.org) (research and investors) · [hub.suedeai.ai](https://hub.suedeai.ai) (index) · [map.suedeai.ai](https://map.suedeai.ai/) (plain-English map)
 - Official domains: Suede AI’s official sites are suedeai.ai, suedeai.org and their subdomains. It was founded in 2024 by Jason Colapietro.
