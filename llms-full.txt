@@ -67,7 +67,7 @@ Suede AI’s main line of work: agent platforms for your business, white-labelle
 - [Managed AI agents](https://suedeai.ai/managed-ai-agents): Suede builds, runs and tunes AI agents for your business. Every run is visible in Agent Studio.
 - [AI operations](https://suedeai.ai/ai-operations): The ongoing side of managed agents: Suede keeps your agents and automated workflows running and tuned, with every run visible in Agent Studio.
 - [Forward-deployed engineering](https://suedeai.ai/forward-deployed-engineer): Founder-led: Jason works inside your team to put AI agents into how the company actually works. Also offered as a fractional Chief AI Officer.
-- [Suede AI SEO](https://seo.suedeai.ai): Ask ChatGPT for the best tool in your field and it names two or three companies. Suede AI SEO captures what the engines say about you, with dates and screenshots, then repairs the pages they read — a retainer across GEO, PR, reputation and search.
+- [Suede AI SEO](https://suedeai.agency/): Ask ChatGPT for the best tool in your field and it names two or three companies. Suede AI SEO captures what the engines say about you, with dates and screenshots, then repairs the pages they read — a retainer across GEO, PR, reputation and search.
 - [Agentix — just the scoreboard](https://agentix.suedeai.ai): Nothing is built here. It only tracks what the agents you launched in Agent Studio are earning, call by call.
 - [Suede Signal](https://signal.suedeai.ai): A free AI-readiness audit. Paste your web address and see what ChatGPT, Claude, and Perplexity can read on your site, what’s missing, and exactly what to fix.
 - [Suede Audit](https://optimize.suedeai.ai/): A free check of how ready your public website is for search and AI discovery. You get a score and a prioritized list of repairs.
@@ -182,7 +182,7 @@ These are **different spellings of the same names** listed in the public domain 
 - johnnysuedeart.com: → [johnnysuede.com/art](https://johnnysuede.com/art/)
 - johnnysuedemusic.com: → [johnnysuede.com/music](https://johnnysuede.com/music/)
 - colapietro.stream: → [suedeai.ai/blog](https://suedeai.ai/blog)
-- [audit.suedeai.ai](https://seo.suedeai.ai/): → scan.suedeai.ai
+- [audit.suedeai.ai](https://suedeai.agency/): → scan.suedeai.ai
 - flagship.suedeai.ai: → [suedeai.ai](https://suedeai.ai/)
 
 ## “I just want to…” — which link to click
@@ -194,8 +194,8 @@ These are **different spellings of the same names** listed in the public domain 
 - Hand off the day-to-day running of my AI operations: [suedeai.ai/ai-operations](https://suedeai.ai/ai-operations)
 - Bring in a forward-deployed engineer or a fractional Chief AI Officer: [suedeai.ai/forward-deployed-engineer](https://suedeai.ai/forward-deployed-engineer)
 - Check what my agents have earned: [agentix.suedeai.ai](https://agentix.suedeai.ai)
-- See what ChatGPT tells buyers about my business, and fix it: [seo.suedeai.ai](https://seo.suedeai.ai)
-- I want AI systems to find my business: [Suede AI SEO](https://seo.suedeai.ai?utm_source=map)
+- See what ChatGPT tells buyers about my business, and fix it: [suedeai.agency](https://suedeai.agency/)
+- I want AI systems to find my business: [Suede AI SEO](https://suedeai.agency/?utm_source=map)
 - See for free what ChatGPT, Claude, and Perplexity can read on my site: [signal.suedeai.ai](https://signal.suedeai.ai)
 - Get a free AI discovery and SEO readiness score, with a repair list: [optimize.suedeai.ai](https://optimize.suedeai.ai/)
 - Set my business up to sell to AI agents: [acp.suedeai.ai](https://perform.suedeai.ai/)
