@@ -129,7 +129,7 @@ test("the first shelf is the agentic business stack, and music comes later", asy
     "https://suedeai.ai/white-label",
     "https://suedeai.ai/managed-ai-agents",
     "https://suedeai.ai/ai-operations",
-    "https://seo.suedeai.ai",
+    "https://suedeai.agency/",
     "https://agentix.suedeai.ai",
     "https://signal.suedeai.ai",
     "https://api.suedeai.xyz",
