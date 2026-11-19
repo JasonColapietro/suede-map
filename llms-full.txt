@@ -71,6 +71,8 @@ Suede AI’s main line of work: agent platforms for your business, white-labelle
 - [Agentix — just the scoreboard](https://agentix.suedeai.ai): Nothing is built here. It only tracks what the agents you launched in Agent Studio are earning, call by call.
 - [Suede Signal](https://signal.suedeai.ai): A free AI-readiness audit. Paste your web address and see what ChatGPT, Claude, and Perplexity can read on your site, what’s missing, and exactly what to fix.
 - [Suede Audit](https://optimize.suedeai.ai/): A free check of how ready your public website is for search and AI discovery. You get a score and a prioritized list of repairs.
+- [Contractor websites](https://design.suedelabsai.com/): Custom 5-page websites for contractors: $0 upfront, then $49 a month for managed hosting and support. You own your code and your domain.
+- [Press release](https://press.suedeai.ai/): The press release on The Manifest’s Florida AI deployment list as of Oct. 31, 2026, with bios, a logo, a headshot and a press contact.
 - [Suede API](https://api.suedeai.xyz): The machine-to-machine doorway. For developers; everyone else can skip it. Also answers at api.suedeai.ai — one service, two addresses, same deployment.
 
 ### Jason’s books, posts & code
@@ -112,6 +114,7 @@ A separate Suede product line for musicians: make music, prepare a finished rele
 - [Suede AI Studio](https://studio.suedeai.ai): Make music with AI where you own the master and keep 100% of the royalties.
 - [Suede AI Distro](https://distro.suedeai.ai): Release finished music through a standalone $7.99/month delivery workflow for 100+ DSPs.
 - [Suede Create](https://app.suedeai.ai/create): Create AI music and video in the browser. The app home address now forwards to the proof-of-creation guide; this link opens the creation screen.
+- [Artist Coordination](https://ip.suedeai.ai/): An interactive demo that runs in your browser with fictional records: deepfake safety review, local file comparison, release preparation, collaborator splits, and artist-profile corrections. → opens the demo at ip.suedeai.ai/artist-coordination/demo
 
 ### Learn & practice
 
@@ -145,6 +148,7 @@ The guitar-world publications and communities Suede runs.
 - [Guitar.solutions](https://guitar.solutions): Engineering-grade reference for guitar signal chains, pickup to speaker.
 - [Guitar Services](https://guitar.services): Jason’s guitar work in one place: two guitar books, a signal chain reference, chord and scale libraries, and AI practice tools.
 - [suedeMarket gear guides](https://market.suedeai.ai/): Practical buying and selling checklists for inspecting and describing used instruments. The marketplace is retired.
+- [Rack & Reel](https://musictech.info/): Guides to outboard recording gear, analog studio equipment and the plugins that model it, plus recording tutorials, studio tips and a glossary.
 - [Suede NFT Studio](https://nft.suedeai.ai): Solana NFT tools: collections, metadata, and rights tracking for on-chain drops.
 - [Suede Cosmos](https://cosmos.suedeai.ai): A navigable galaxy of music — stars cluster by genre and brighten by relevance, click any to explore.
 
@@ -198,6 +202,7 @@ These are **different spellings of the same names** listed in the public domain 
 - I want AI systems to find my business: [Suede AI SEO](https://suedeai.agency/?utm_source=map)
 - See for free what ChatGPT, Claude, and Perplexity can read on my site: [signal.suedeai.ai](https://signal.suedeai.ai)
 - Get a free AI discovery and SEO readiness score, with a repair list: [optimize.suedeai.ai](https://optimize.suedeai.ai/)
+- Get a custom contractor website for $0 upfront: [design.suedelabsai.com](https://design.suedelabsai.com/)
 - Set my business up to sell to AI agents: [acp.suedeai.ai](https://perform.suedeai.ai/)
 - Build on Suede’s APIs as a developer: [docs.suedeai.ai](https://docs.suedeai.ai/)
 - Know who Jason is: [suedeai.ai/founder](https://suedeai.ai/founder)
@@ -205,15 +210,20 @@ These are **different spellings of the same names** listed in the public domain 
 - Put my face and likeness on the record: [suedeai.org/ai-likeness-protection](https://suedeai.org/ai-likeness-protection/)
 - Release a song to streaming services: [distro.suedeai.ai](https://distro.suedeai.ai)
 - Make music with AI and keep the master: [studio.suedeai.ai](https://studio.suedeai.ai)
+- Try the Artist Coordination demo with fictional records: [ip.suedeai.ai](https://ip.suedeai.ai/)
 - Get better at guitar: [strumly.suedeai.ai](https://strumly.suedeai.ai)
 - Nerd out about famous guitarists’ gear: [dna.suedeai.ai](https://dna.suedeai.ai)
 - Find Jason’s guitar books, guides, and tools in one place: [guitar.services](https://guitar.services)
 - Read instrument buying and selling checklists: [market.suedeai.ai](https://market.suedeai.ai/)
+- Read guides to outboard gear, analog studio equipment and plugins: [musictech.info](https://musictech.info/)
 - Get my brand graded or run a creator campaign: [promo.suedeai.ai](https://promo.suedeai.ai)
 - See everything Suede has shipped, in one place: [hub.suedeai.ai](https://hub.suedeai.ai)
 - Read the docs, guides, and how-tos for any Suede product: [hub.suedeai.ai/knowledge-base](https://hub.suedeai.ai/knowledge-base.html)
 - Read Suede AI’s research, or show it to an investor: [suedeai.org](https://suedeai.org)
 - Listen to Jason’s podcast: [podcast.suedeai.ai](https://podcast.suedeai.ai/)
+- Read the press release on The Manifest’s Florida AI deployment list: [press.suedeai.ai](https://press.suedeai.ai/)
+- Get the press kit: boilerplate, fact sheet, founder bio and brand assets: [map.suedeai.ai/press](https://map.suedeai.ai/press/)
+- See how people and AI assistants should cite this map: [map.suedeai.ai/ai-instructions](https://map.suedeai.ai/ai-instructions/)
 - Learn how to run AI coding agents in production: [claude.suedeai.ai](https://claude.suedeai.ai)
 - See the public company and domain directory: [jcinvestmentgroup.ventures](https://jcinvestmentgroup.ventures)
 
