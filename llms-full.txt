@@ -30,10 +30,10 @@ One founder, two public names. **Jason Colapietro** is the legal name; **Johnny 
 - [Jason Colapietro](https://jasoncolapietro.com): The founder’s page — who Jason is and what he builds.
 - [Johnny Suede](https://johnnysuede.com): The artist’s page — original AI-era music and compositions.
 - Open source: [54 pull requests merged across 46 external repositories](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+author%3ASuede-AI+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests) as of September 2026: 33 code or documentation contributions and 21 accepted listings of his own work. Headline merges: [Jest #16296](https://github.com/jestjs/jest/pull/16296) and [#16295](https://github.com/jestjs/jest/pull/16295), [Adobe React Spectrum #10426](https://github.com/adobe/react-spectrum/pull/10426) (later replaced by [#10491](https://github.com/adobe/react-spectrum/pull/10491)), [Backstage #35102](https://github.com/backstage/backstage/pull/35102), [Polkadot SDK #12853](https://github.com/paritytech/polkadot-sdk/pull/12853), [Hardhat #8522](https://github.com/NomicFoundation/hardhat/pull/8522), [x402 Foundation #3180](https://github.com/x402-foundation/x402/pull/3180) and [zeroclaw #9846](https://github.com/zeroclaw-labs/zeroclaw/pull/9846). A Linux kernel USB/IP patch is at public v7 and under review; it is not counted. [Machine-readable record](https://suedeai.ai/open-source-contributions.json).
-- Books: Five on Amazon in hardcover, paperback, and Kindle: [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4), [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1), [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ), [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ) and [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6). Plus [The Screenshot](https://seo.suedeai.ai/book) (free on the web) and [The Signal Chain](https://guitar.solutions/).
+- Books: Five on Amazon in hardcover, paperback, and Kindle: [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4), [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1), [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ), [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ) and [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6). Plus [The Screenshot](https://suedeai.ai/seo/book) (free on the web) and [The Signal Chain](https://guitar.solutions/).
 - Apps: [9 iOS apps on his Apple developer page](https://apps.apple.com/us/developer/jason-colapietro/id1895958699), 6 Android apps and 2 Chrome extensions. The Android editions overlap the iOS apps; every App Store listing is on the shelf further down.
-- Programs: Member of [Claude for Startups](https://seo.suedeai.ai/evidence#claude-for-startups), Anthropic’s startup program, since October 8, 2026. Member of [Google Cloud Partner Advantage](https://seo.suedeai.ai/evidence#google-cloud) through JC Investment Group LLC since September 4, 2026. Admitted to [Stripe Startups](https://seo.suedeai.ai/evidence#credentials) in July 2026. Accepted into the Florida Atlantic Entrepreneurship Institute (FAU College of Business) in July 2026, and a member of 1909 in West Palm Beach.
-- Patents: Five USPTO provisional applications, patent pending (provisional): 63/946,189, 63/946,192, 63/946,212, 63/946,217 and 63/947,120. [Filing disclosure](https://seo.suedeai.ai/evidence#credentials).
+- Programs: Member of [Claude for Startups](https://suedeai.ai/seo/evidence#claude-for-startups), Anthropic’s startup program, since October 8, 2026. Member of [Google Cloud Partner Advantage](https://suedeai.ai/seo/evidence#google-cloud) through JC Investment Group LLC since September 4, 2026. Admitted to [Stripe Startups](https://suedeai.ai/seo/evidence#credentials) in July 2026. Accepted into the Florida Atlantic Entrepreneurship Institute (FAU College of Business) in July 2026, and a member of 1909 in West Palm Beach.
+- Patents: Five USPTO provisional applications, patent pending (provisional): 63/946,189, 63/946,192, 63/946,212, 63/946,217 and 63/947,120. [Filing disclosure](https://suedeai.ai/seo/evidence#credentials).
 - Business background: Two decades building and running businesses. [Founder page](https://suedeai.ai/founder).
 - Records: [Wikidata Q140235755](https://www.wikidata.org/wiki/Q140235755) · [Crunchbase](https://www.crunchbase.com/person/jason-colapietro-d83e) · [Apple developer page](https://apps.apple.com/us/developer/jason-colapietro/id1895958699) · [GitHub](https://github.com/JasonColapietro)
 
@@ -62,7 +62,7 @@ Grouped by what you’d want to do, not by how they’re built. The business too
 
 Suede AI’s main line of work: agent platforms for your business, white-labelled agent platforms for agencies and their clients, and agents Suede builds and runs for you. **Build in Agent Studio. Track earnings in Agentix. Two different tools.**
 
-- [Suede AI Agent Studio — where you build](https://agents.suedeai.ai): Build agents for the work that repeats, watch every run, and publish an agent as a paid endpoint. No code needed. Start here.
+- [Suede AI Agent Studio — where you build](https://suedeai.app): Build agents for the work that repeats, watch every run, and publish an agent as a paid endpoint. No code needed. Start here.
 - [White-label agent platforms](https://suedeai.ai/white-label): For agencies: Suede builds and runs an agent platform under your brand, for your clients. Scoped per engagement.
 - [Managed AI agents](https://suedeai.ai/managed-ai-agents): Suede builds, runs and tunes AI agents for your business. Every run is visible in Agent Studio.
 - [AI operations](https://suedeai.ai/ai-operations): The ongoing side of managed agents: Suede keeps your agents and automated workflows running and tuned, with every run visible in Agent Studio.
@@ -84,7 +84,7 @@ Five books on Amazon in hardcover, paperback, and Kindle, led by his two enginee
 - [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ): A third Amazon title, on turning the AI onslaught into a real asset.
 - [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ): A fourth, on designing durable systems without trust assumptions.
 - [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6): A fifth, on how ownership, origin, and AI redraw the creative map.
-- [The Screenshot](https://seo.suedeai.ai/book): A free book, in full on the web, on why AI recommends your competitors and how to fix it.
+- [The Screenshot](https://suedeai.ai/seo/book): A free book, in full on the web, on why AI recommends your competitors and how to fix it.
 - [The newsletter](https://jasoncolapietro.substack.com): Jason’s essays, delivered by email.
 - [The blog](https://suedeai.ai/blog): Suede AI’s own writing: original research such as the AI Crawler Access Index, engineering essays, and guides.
 - [Claude Code Field Notes](https://claude.suedeai.ai): Six lessons from running AI coding agents in production across 20+ live software surfaces, written up by Jason.
@@ -177,7 +177,7 @@ These are **different spellings of the same names** listed in the public domain 
 - colapietro.vip: Private — asks for a PIN, not a public page
 - colapietrolabs.com: → [suedeai.org/research](https://suedeai.org/research/)
 - [jasoncolapietro.vip](https://jasoncolapietro.vip): One-page site: press, speaking, and media
-- jasoncolapietro.xyz: → [seo.suedeai.ai/field-notes](https://seo.suedeai.ai/field-notes)
+- jasoncolapietro.xyz: → [seo.suedeai.ai/field-notes](https://suedeai.ai/seo/field-notes)
 - jasonsuedeai.com: → [hub.suedeai.ai](https://hub.suedeai.ai/)
 - johnnysuedeai.com: → [perform.suedeai.ai/learn](https://perform.suedeai.ai/learn)
 - jasonsuedelabs.com: → [jasoncolapietro.com/how-i-ship](https://jasoncolapietro.com/how-i-ship/)
@@ -192,7 +192,7 @@ These are **different spellings of the same names** listed in the public domain 
 ## “I just want to…” — which link to click
 
 - Understand what Suede AI is in two minutes: [suedeai.ai](https://suedeai.ai)
-- Build AI agents for the work my business repeats: [agents.suedeai.ai](https://agents.suedeai.ai)
+- Build AI agents for the work my business repeats: [agents.suedeai.ai](https://suedeai.app)
 - Offer my agency’s clients an AI agent platform under my own brand: [suedeai.ai/white-label](https://suedeai.ai/white-label)
 - Have Suede build and run AI agents for my business: [suedeai.ai/managed-ai-agents](https://suedeai.ai/managed-ai-agents)
 - Hand off the day-to-day running of my AI operations: [suedeai.ai/ai-operations](https://suedeai.ai/ai-operations)
@@ -348,7 +348,7 @@ Attribute to Jason Colapietro, founder and CEO, Suede AI.
 
 ### Selected coverage & presence
 
-Ten feature placements, newest first, each under the outlet's own headline. The same record is published at [suedeai.ai/press](https://suedeai.ai/press) and [seo.suedeai.ai/press](https://seo.suedeai.ai/press).
+Ten feature placements, newest first, each under the outlet's own headline. The same record is published at [suedeai.ai/press](https://suedeai.ai/press) and [seo.suedeai.ai/press](https://suedeai.ai/seo/press).
 
 - Programming Insider: [In the Age of Infinite Content, Spam Is Instant Death](https://programminginsider.com/in-the-age-of-infinite-content-spam-is-instant-death/) · July 2026
 - Indie Hackers: [In the Age of Infinite Content, Spam Is Instant Death](https://www.indiehackers.com/post/in-the-age-of-infinite-content-spam-is-instant-death-4ca5Qi4vTHZ8aB3muBVK) · July 2026
@@ -359,7 +359,7 @@ Ten feature placements, newest first, each under the outlet's own headline. The 
 - TechBullion: [Best Suno Alternatives in 2026: Suede Labs and Top Competitors](https://techbullion.com/best-suno-alternatives-in-2026-suede-labs-and-top-competitors/) · February 2026
 - TechBullion: [Suede Labs Brings AI-Powered Creative Tools to Students](https://techbullion.com/suede-labs-brings-ai-powered-creative-tools-to-students-the-quiet-revolution-in-africas-classrooms/) · January 2026
 - TechBullion: [Suede Labs Launches A Comprehensive On-Chain IP Authentication System](https://techbullion.com/suede-labs-launches-a-comprehensive-on-chain-ip-authentication-system/) · December 2025
-- Books: Five published titles on Amazon in hardcover, paperback, and Kindle, led by the two engineering guides: [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4), [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1), [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ), [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ), and [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6). Plus [The Screenshot](https://seo.suedeai.ai/book) (free in full on the web) and [The Signal Chain](https://guitar.solutions/)
+- Books: Five published titles on Amazon in hardcover, paperback, and Kindle, led by the two engineering guides: [The Claude Code Bible](https://www.amazon.com/dp/B0HHTMJWB4), [Codex in Production](https://www.amazon.com/dp/B0HHTF3LG1), [Proof as Infrastructure](https://www.amazon.com/dp/B0GMB2VLXQ), [Stake Your Claim](https://www.amazon.com/dp/B0GRG8LGQQ), and [The Human Authenticity Layer](https://www.amazon.com/dp/B0GD5FX6N6). Plus [The Screenshot](https://suedeai.ai/seo/book) (free in full on the web) and [The Signal Chain](https://guitar.solutions/)
 - Open source: [54 merged pull requests in 46 external repositories](https://github.com/search?q=is%3Apr+author%3AJasonColapietro+author%3ASuede-AI+is%3Amerged+-user%3AJasonColapietro+-user%3ASuede-AI&type=pullrequests) · [github.com/JasonColapietro/suede-creator-skills](https://github.com/JasonColapietro/suede-creator-skills), also at [skills.suedeai.ai](https://skills.suedeai.ai) · [github.com/Suede-AI](https://github.com/Suede-AI) · SDK, docs, brand assets
 - Blog: [suedeai.ai/blog](https://suedeai.ai/blog) · Suede AI’s own writing: original research, engineering essays, and guides
 - Newsletter: [jasoncolapietro.substack.com](https://jasoncolapietro.substack.com)

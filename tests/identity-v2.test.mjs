@@ -125,7 +125,7 @@ test("the first shelf is the agentic business stack, and music comes later", asy
   const first = shelves[0];
   assert.match(first, /<h3>Run your business on AI agents<\/h3>/);
   for (const href of [
-    "https://agents.suedeai.ai",
+    "https://suedeai.app",
     "https://suedeai.ai/white-label",
     "https://suedeai.ai/managed-ai-agents",
     "https://suedeai.ai/ai-operations",
