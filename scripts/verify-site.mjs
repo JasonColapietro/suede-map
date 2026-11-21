@@ -42,7 +42,7 @@ for (const relativePath of publicFiles) {
 
 expectIncludes(
   "index.html",
-  "<title>Suede Universe Map | How Every Suede AI Surface Connects</title>",
+  "<title>Suede Universe Map | How Every Suede Surface Connects</title>",
   "target search title",
 );
 expectIncludes("index.html", '"dateModified": "2026-10-19"', "current schema modification date");

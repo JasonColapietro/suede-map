@@ -42,7 +42,7 @@ test("every served indexable page has a meta keywords tag", async () => {
     for (const term of terms) {
       assert.equal(term, term.toLowerCase().trim(), `${file}: "${term}" lowercase and trimmed`);
       assert.ok(term.length > 0, `${file}: empty term`);
-      assert.ok(!term.includes("suede labs ai"), `${file}: brand is Suede AI`);
+      assert.ok(!/suede (?:ai|labs)\b/.test(term), `${file}: brand is Suede`);
     }
   }
 });

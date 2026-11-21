@@ -2,7 +2,7 @@
   "updated": "2026-10-21",
   "source": "https://seo.suedeai.ai/evidence",
   "title": "Accomplishments, with the record behind them.",
-  "intro": "Jason Colapietro’s engineering record, books, shipped apps and program memberships come first, then Suede AI’s coverage and recognition. Each entry links to the underlying record.",
+  "intro": "Jason Colapietro’s engineering record, books, shipped apps and program memberships come first, then Suede’s coverage and recognition. Each entry links to the underlying record.",
   "records": [
     {
       "id": "open-source",
@@ -16,7 +16,7 @@
           "url": "https://suedeai.ai/founder#open-source-work"
         },
         {
-          "label": "Open-source evidence on Suede AI SEO",
+          "label": "Open-source evidence on Suede SEO",
           "url": "https://seo.suedeai.ai/evidence#open-source"
         },
         {
@@ -79,7 +79,7 @@
       "category": "Ecosystem",
       "date": "June–September 2026",
       "title": "Listed in fifteen independent skills directories and the x402 ecosystem list",
-      "body": "Suede Creator Skills, the public Claude Code skills marketplace, has been accepted by the maintainers of fifteen independent awesome-lists and directories, including buildwithclaude, awesome-codex, awesome-agent-skills, and awesome-claude-code-plugins. Suede AI Agent Studio is listed in the x402 ecosystem’s awesome-x402. These accepted listings are counted inside the 54 merged pull requests above and are stated separately so the composition stays clear.",
+      "body": "Suede Creator Skills, the public Claude Code skills marketplace, has been accepted by the maintainers of fifteen independent awesome-lists and directories, including buildwithclaude, awesome-codex, awesome-agent-skills, and awesome-claude-code-plugins. Suede Agent Studio is listed in the x402 ecosystem’s awesome-x402. These accepted listings are counted inside the 54 merged pull requests above and are stated separately so the composition stays clear.",
       "links": [
         {
           "label": "Suede Creator Skills on GitHub",
@@ -194,7 +194,7 @@
       "category": "Products",
       "date": "Portfolio record · September 2026",
       "title": "More than 30 sites, and a published app family",
-      "body": "Jason builds and operates the Suede estate: AI agent platforms first (Suede AI Agent Studio and Agentix), the Suede AI SEO practice and Suede Scan, developer infrastructure, and, as a separate product line, music and creator software such as Suede AI Studio, Suede AI Distro, Strumly, Suede Muse, Suede Social and Suede DNA. That is more than 30 live sites. Nine apps are published under Jason Colapietro’s Apple developer account. Eighteen owned brand domains carry a single canonical entity, entered at jasoncolapietro.com. The wider company portfolio includes FretPulse under its separate FretPulse LLC seller account.",
+      "body": "Jason builds and operates the Suede estate: AI agent platforms first (Suede Agent Studio and Agentix), the Suede SEO practice and Suede Scan, developer infrastructure, and, as a separate product line, music and creator software such as Suede Studio, Suede Distro, Strumly, Suede Muse, Suede Social and Suede DNA. That is more than 30 live sites. Nine apps are published under Jason Colapietro’s Apple developer account. Eighteen owned brand domains carry a single canonical entity, entered at jasoncolapietro.com. The wider company portfolio includes FretPulse under its separate FretPulse LLC seller account.",
       "links": [
         {
           "label": "Explore the product estate",
@@ -223,10 +223,10 @@
       "category": "Products",
       "date": "Live · 2026",
       "title": "Agent flows that ship as x402 endpoints settling in USDC on Base",
-      "body": "Suede AI Agent Studio lets a builder draw an agent as a node graph and launch it as an x402 pay-per-call endpoint settling in USDC on Base, with Agentix tracking per-call earnings. The work implements the x402 protocol and ERC-8004 and includes a merged fix in the x402 Foundation’s own repository. It builds on those standards as an implementer, not a standards author.",
+      "body": "Suede Agent Studio lets a builder draw an agent as a node graph and launch it as an x402 pay-per-call endpoint settling in USDC on Base, with Agentix tracking per-call earnings. The work implements the x402 protocol and ERC-8004 and includes a merged fix in the x402 Foundation’s own repository. It builds on those standards as an implementer, not a standards author.",
       "links": [
         {
-          "label": "Suede AI Agent Studio",
+          "label": "Suede Agent Studio",
           "url": "https://agents.suedeai.ai"
         },
         {
@@ -293,7 +293,7 @@
       "category": "Startup program",
       "date": "October 8, 2026",
       "title": "Member of Claude for Startups",
-      "body": "Suede AI has been a member of Claude for Startups, Anthropic’s startup program, since October 8, 2026. It is a startup-program membership, not a partnership.",
+      "body": "Suede has been a member of Claude for Startups, Anthropic’s startup program, since October 8, 2026. It is a startup-program membership, not a partnership.",
       "links": [
         {
           "label": "Acceptance record",
@@ -336,7 +336,7 @@
       "category": "Startup program",
       "date": "July 2026",
       "title": "Admitted to Stripe Startups",
-      "body": "Suede AI was admitted to Stripe Startups in July 2026. It is a program admission; no investment is implied.",
+      "body": "Suede was admitted to Stripe Startups in July 2026. It is a program admission; no investment is implied.",
       "links": [
         {
           "label": "Program admission record",
@@ -403,11 +403,11 @@
       "id": "entities",
       "category": "Business",
       "date": "JC Investment Group LLC organized 2019",
-      "title": "Founder and CEO of Suede AI; Manager of JC Investment Group LLC",
-      "body": "Jason is the founder and CEO of Suede AI, an agentic platform company that builds and runs AI agent platforms businesses use to manage their work, and white-labels them for agencies and their clients. He is also the listed manager of JC Investment Group LLC, organized in Florida in 2019 under document L19000146068. suedeai.org is Suede AI’s research and investor site.",
+      "title": "Founder and CEO of Suede; Manager of JC Investment Group LLC",
+      "body": "Jason is the founder and CEO of Suede, an agentic platform company that builds and runs AI agent platforms businesses use to manage their work, and white-labels them for agencies and their clients. He is also the listed manager of JC Investment Group LLC, organized in Florida in 2019 under document L19000146068. suedeai.org is Suede’s research and investor site.",
       "links": [
         {
-          "label": "Suede AI",
+          "label": "Suede",
           "url": "https://suedeai.ai"
         },
         {
@@ -427,7 +427,7 @@
     {
       "id": "operator",
       "category": "Business",
-      "date": "Before Suede AI",
+      "date": "Before Suede",
       "title": "Two decades building and running businesses",
       "body": "Jason Colapietro has spent two decades building and running businesses. That operating experience now informs Suede’s managed agents for call review, lead qualification, and sales-script consistency.",
       "links": [
@@ -471,7 +471,7 @@
       "category": "Press & essays",
       "date": "December 2025–September 2026",
       "title": "Thirteen placements across seven outlets",
-      "body": "Gigawatt Group, MSN, Markets Insider (FinanceWire press release), TechBullion, Programming Insider, Altcoin Investor, and Indie Hackers have published coverage, announcements and founder essays about Suede AI. The record includes Gigawatt Group’s September 2026 comparison of Suede AI’s managed GEO practice with Profound, the SEO and AI cohort carried by MSN and announced in a FinanceWire press release on Markets Insider, the on-chain IP authentication launch, the iOS and developer-tool launches, advancing in the Avalanche Build Games, the IP visibility audit, and self-funded education deployments in African classrooms. Two placements are Jason’s bylined essays.",
+      "body": "Gigawatt Group, MSN, Markets Insider (FinanceWire press release), TechBullion, Programming Insider, Altcoin Investor, and Indie Hackers have published coverage, announcements and founder essays about Suede. The record includes Gigawatt Group’s September 2026 comparison of Suede’s managed GEO practice with Profound, the SEO and AI cohort carried by MSN and announced in a FinanceWire press release on Markets Insider, the on-chain IP authentication launch, the iOS and developer-tool launches, advancing in the Avalanche Build Games, the IP visibility audit, and self-funded education deployments in African classrooms. Two placements are Jason’s bylined essays.",
       "links": [
         {
           "label": "View the press coverage",
@@ -516,7 +516,7 @@
       "category": "Public conversation",
       "date": "January & September 2025",
       "title": "Mario Nawfal posts and Crypto Roundtable AMA",
-      "body": "Mario Nawfal featured Suede in two public posts eight months apart. The Suede AI AMA also ran on his Crypto Roundtable. The posts discuss creator control, ownership, and a voice signature that can travel with the work.",
+      "body": "Mario Nawfal featured Suede in two public posts eight months apart. The Suede AMA also ran on his Crypto Roundtable. The posts discuss creator control, ownership, and a voice signature that can travel with the work.",
       "links": [
         {
           "label": "January post",
@@ -537,7 +537,7 @@
       "category": "Recognition",
       "date": "November 2026",
       "title": "Top 30 AI Consultants in Florida · Top 50 nationwide — Clutch, Nov 2026",
-      "body": "Suede AI ranks among Clutch's Top 30 AI Consultants in Florida and Top 50 AI Consultants nationwide (November 2026).",
+      "body": "Suede ranks among Clutch's Top 30 AI Consultants in Florida and Top 50 AI Consultants nationwide (November 2026).",
       "links": [
         {
           "label": "Top 30 AI Consultants in Florida",
@@ -558,7 +558,7 @@
       "category": "Recognition",
       "date": "Verified October 4, 2026",
       "title": "Best Overall + Best API Option — AI Agents Directory, 52+ music tools",
-      "body": "Suede AI holds both top-pick positions in AI Agents Directory's music category. The live category lists 52+ music tools.",
+      "body": "Suede holds both top-pick positions in AI Agents Directory's music category. The live category lists 52+ music tools.",
       "links": [
         {
           "label": "Live music category",
@@ -571,7 +571,7 @@
       "category": "Directory recognition",
       "date": "Archived 2026 category record",
       "title": "Best Overall and Best API Option",
-      "body": "The AI Agents Directory music-category capture names Suede AI Best Overall and Best API Option among 47 tools, with a 5.0-star listing. The archived record and the live category page are linked separately so readers can distinguish the recorded recognition from today’s directory.",
+      "body": "The AI Agents Directory music-category capture names Suede Best Overall and Best API Option among 47 tools, with a 5.0-star listing. The archived record and the live category page are linked separately so readers can distinguish the recorded recognition from today’s directory.",
       "links": [
         {
           "label": "Archived directory record",
@@ -588,7 +588,7 @@
       "category": "Public mention",
       "date": "February 2026",
       "title": "Named in a proposed Community Note",
-      "body": "Suede Labs was named as an opt-out option in a proposed Community Note shown in a screenshot Elon Musk posted. The mention is the note’s wording, not an endorsement.",
+      "body": "Suede was named as an opt-out option in a proposed Community Note shown in a screenshot Elon Musk posted. The mention is the note’s wording, not an endorsement.",
       "links": [
         {
           "label": "View the archived screenshot",
@@ -662,11 +662,11 @@
         "linkLabel": "Read the receipt"
       },
       {
-        "title": "Suede AI on AI Agents Directory",
+        "title": "Suede on AI Agents Directory",
         "image": "/accomplishment-assets/aiagents-directory-suede.png",
         "width": 990,
         "height": 470,
-        "alt": "Archived AI Agents Directory listing for Suede AI, showing a 5.0 rating from nine reviews",
+        "alt": "Archived AI Agents Directory listing for Suede, showing a 5.0 rating from nine reviews",
         "caption": "Archived 2026 listing: 5.0 from nine reviews. Open the live listing for its current rating and status.",
         "url": "https://aiagentsdirectory.com/agent/suede-ai",
         "linkLabel": "Open the live listing"
@@ -676,8 +676,8 @@
         "image": "/accomplishment-assets/aiagents-category-music.png",
         "width": 945,
         "height": 900,
-        "alt": "Archived AI Agents Directory music category naming Suede AI Best Overall and Best API Option among 47 tools",
-        "caption": "The archived 2026 music-category page names Suede AI in both top-pick positions.",
+        "alt": "Archived AI Agents Directory music category naming Suede Best Overall and Best API Option among 47 tools",
+        "caption": "The archived 2026 music-category page names Suede in both top-pick positions.",
         "url": "https://aiagentsdirectory.com/category/music",
         "linkLabel": "Open the live music category"
       }

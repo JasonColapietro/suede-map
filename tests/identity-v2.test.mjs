@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-// Suede AI identity spec v2 (2026-10-19). Suede AI is an agentic platform
+// Suede identity spec v2 (2026-10-19). Suede is an agentic platform
 // company; music and creator software is a separate, later product line; the
 // founder's record leads. These guards keep the served files on that canon.
 
@@ -10,11 +10,11 @@ const root = new URL("../", import.meta.url);
 const read = (file) => readFile(new URL(file, root), "utf8");
 
 const COMPANY_ONE_LINER =
-  "Suede AI is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients.";
+  "Suede is an agentic platform company founded in 2024 by engineer Jason Colapietro in West Palm Beach, Florida. It builds and runs AI agent platforms that businesses use to manage their work, and white-labels them for agencies and their clients.";
 const COMPANY_META =
-  "Suede AI builds AI agent platforms businesses use to run their work, and white-labels them for agencies. Founded 2024 by engineer Jason Colapietro.";
+  "Suede builds AI agent platforms businesses use to run their work, and white-labels them for agencies. Founded 2024 by engineer Jason Colapietro.";
 const OFFICIAL_DOMAINS_LINE =
-  "Suede AI’s official sites are suedeai.ai, suedeai.org and their subdomains. It was founded in 2024 by Jason Colapietro.";
+  "Suede’s official sites are suedeai.ai, suedeai.org and their subdomains. It was founded in 2024 by Jason Colapietro.";
 const CAPTURE_DISCLAIMER = "Dated model output, not an endorsement or a ranking Google issued.";
 const MARKETS_INSIDER_TITLE =
   "“Award-Winning Developer Jason Colapietro Opens Suede Labs AI’s Long-Awaited SEO Cohort”";
@@ -46,9 +46,9 @@ test("the canonical one-liner and official-domains line are published verbatim",
 // like duplicates of the flagship (2026-11-03 audit).
 const PAGE_DESCRIPTIONS = {
   "index.html":
-    "Every Suede AI product, site and app on one page, with the link each one owns and how they connect. Verified September 2026.",
+    "Every Suede product, site and app on one page, with the link each one owns and how they connect. Verified September 2026.",
   "press/index.html":
-    "Press kit for Suede AI: boilerplate, fact sheet, founder bio, approved quotes, story angles, brand assets and b-roll, with the record behind each claim.",
+    "Press kit for Suede: boilerplate, fact sheet, founder bio, approved quotes, story angles, brand assets and b-roll, with the record behind each claim.",
 };
 
 test("each map page carries its own description, never the flagship's company line", async () => {
@@ -158,7 +158,7 @@ test("Follow everywhere labels the founder's LinkedIn and lists the company page
   const html = await read("index.html");
   assert.ok(html.includes('<a href="https://www.linkedin.com/in/jasoncolapietro" target="_blank" rel="noopener">Jason’s LinkedIn</a>'));
   assert.ok(html.includes('href="https://www.linkedin.com/company/suede-labs"'));
-  assert.match(html, /youtube\.com\/@aisuede[^<]*<\/a><\/td><td class="quiet">The Suede AI channel/);
+  assert.match(html, /youtube\.com\/@aisuede[^<]*<\/a><\/td><td class="quiet">The Suede channel/);
 });
 
 test("Level 1 leads with the founder's linked engineering record, books and apps", async () => {

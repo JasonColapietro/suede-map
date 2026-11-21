@@ -1,10 +1,10 @@
 # Suede Universe Map
 
-> **[Suede AI](https://suedeai.ai) · By [Jason Colapietro](https://jasoncolapietro.com), Founder and CEO**
+> **[Suede](https://suedeai.ai) · By [Jason Colapietro](https://jasoncolapietro.com), Founder and CEO**
 
-Suede AI is also known as Suede Labs.
+Suede was formerly known as Suede AI and Suede Labs.
 
-Plain-English wayfinding map of the entire Suede AI / JC Investment Group ecosystem — every site, app, and tool, what each is for, how they connect, and which link to click. Built for readers who aren't technical.
+Plain-English wayfinding map of the entire Suede / JC Investment Group ecosystem — every site, app, and tool, what each is for, how they connect, and which link to click. Built for readers who aren't technical.
 
 **Live:** [map.suedeai.ai](https://map.suedeai.ai)
 

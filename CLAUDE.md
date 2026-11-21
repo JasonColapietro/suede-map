@@ -2,7 +2,7 @@
 
 ## What this is
 
-The **Suede Universe Map** — live at **https://map.suedeai.ai** — a plain-English wayfinding page for the whole Suede AI / JC Investment Group ecosystem, written for non-technical readers. Pure static site, **no build step, no package.json, no framework**. Three pages:
+The **Suede Universe Map** — live at **https://map.suedeai.ai** — a plain-English wayfinding page for the whole Suede / JC Investment Group ecosystem, written for non-technical readers. Pure static site, **no build step, no package.json, no framework**. Three pages:
 
 - `index.html` (~1100 lines) — the map itself: everything (content, CSS, JS) is inline in this one file.
 - `deck/index.html` — ecosystem investor deck (map.suedeai.ai/deck/).
@@ -14,7 +14,7 @@ There is no JSON/data file. Surfaces are registered by hand as `<a class="site">
 
 1. Level 1 the person → 2. the public-record entity → 3. the brand's three front doors (`.cardgrid.doors`) → 4. eight `.shelf` groups of shipped tools → 5. publicly listed domains — levels joined by source-bounded `.rail-verb` connectors.
 
-**Positioning (identity spec v2, 2026-10-19 — `tests/identity-v2.test.mjs` guards it):** Suede AI is an agentic platform company. Level 1 leads with Jason's linked engineering record, books and apps; Level 3 carries COMPANY_ONE_LINER verbatim; the first shelf is the agentic business stack (Agent Studio, white-label, managed agents, AI operations, forward-deployed engineering, Suede AI SEO, Agentix, Signal/Audit, API) and business rows lead the router. Music and creator software is a separate, later product line. JSON-LD references the canonical `https://suedeai.ai/#organization` and `https://suedeai.ai/founder#person` as stubs (@id, name, url, plus founder/jobTitle/worksFor): no descriptions, alternateName or sameAs of our own. Never name or compare against another company that uses the Suede name.
+**Positioning (identity spec v2, 2026-10-19 — `tests/identity-v2.test.mjs` guards it):** Suede is an agentic platform company. Level 1 leads with Jason's linked engineering record, books and apps; Level 3 carries COMPANY_ONE_LINER verbatim; the first shelf is the agentic business stack (Agent Studio, white-label, managed agents, AI operations, forward-deployed engineering, Suede SEO, Agentix, Signal/Audit, API) and business rows lead the router. Music and creator software is a separate, later product line. JSON-LD references the canonical `https://suedeai.ai/#organization` and `https://suedeai.ai/founder#person` as stubs (@id, name, url, plus founder/jobTitle/worksFor): no descriptions, alternateName or sameAs of our own. Never name or compare against another company that uses the Suede name.
 
 The graph is a wayfinding and operating map, not a cap table or title record. Do not infer legal ownership, parent/subsidiary relationships, or ownership percentages from public links, a domain directory, or brand proximity.
 
@@ -32,6 +32,8 @@ The graph is a wayfinding and operating map, not a cap table or title record. Do
 - After the spine: the **link router** (`#router`, an "I just want to…" `.ledger` table) and the **thin-spots fix ledger** (`#thin`, `.thin-item` entries with a `⚑` head, problem paragraph, and `Fixed July 4` line). The ledger is a historical record — append, don't rewrite.
 - Scroll-reveal uses class `rv` + the inline IntersectionObserver script; the hero constellation canvas is the only other JS. Both honor `prefers-reduced-motion`. No external scripts — keep it self-contained.
 - File ends with `<!-- ARTIFACT-END -->` — keep it last.
+
+**Brand name (owner direction, 2026-11-21):** the company is "Suede"; sub-brands are "Suede SEO", "Suede GEO", "Suede Agent Studio", "Suede Signal", "Suede Studio" and so on. Suede's own copy spells "full-stack" with the hyphen ("Full-Stack" in title-case headings); the SEO practice's positioning phrase is "full-stack GEO". "Suede AI" and "Suede Labs" appear only as the Organization's schema `alternateName` (`["Suede AI", "Suede Labs AI", "Suede Labs"]`), one "Suede was formerly known as Suede AI and Suede Labs." line per surface, and third-party records quoted verbatim (press headlines, the Google Web Guide query and answer, App Store / Play / Chrome Web Store listing names). Domains, URLs and the `Suede-AI` GitHub org keep their spelling. `tests/canon.test.mjs` enforces it; add any new verbatim third-party record to its `NAME_EXEMPT` list rather than renaming it.
 
 ## Known traps (facts the map itself asserts — don't contradict them)
 
